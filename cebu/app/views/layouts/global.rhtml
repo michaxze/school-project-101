@@ -1,0 +1,89 @@
+           <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<%= stylesheet_link_tag("default") %>
+<title>Cebub Directories</title>
+</head>
+<body>
+
+	<div id="wrapper">
+    	<div id="top-nav">
+        	<a href="" alt="" title="">Create account</a> &nbsp;|&nbsp; <a href="help.php" alt="" title="">Help</a> &nbsp;|&nbsp; <a href="" alt="" title="">Client Log-in</a>
+        </div>
+        <div id="logo">
+        	<a href="index"><img src="/images/cebu-directories-logo.png" alt="" title="" /></a>
+        </div>
+    
+    	<div id="menu">
+        	<ul>
+            		                <li class="selected"> <%= link_to("Home", :controller => "index" )%></li>
+					                <li> <%= link_to("Services", :controller => "services" )%></a></li>
+					                <li> <%= link_to("Listings", :controller => "listing" )%></li>
+					                <li> <%= link_to("Events", :controller => "events" )%></li>
+					                <li> <%= link_to("Advertise", :controller => "advertise" )%></li>
+					                <li> <%= link_to("Contact Us", :controller => "contactus" )%></li>
+				            </ul>
+            <div class="clear"> </div>
+        </div>              
+
+<div style="background: #FFFFFF; margin-top: -6px;">
+	<%= yield %>
+	
+    <div id="body-mark"> </div>
+    <div id="body-mark-right">
+        <img src="/images/marketing.png" /><br /><br />
+        <img src="/images/register-now.png" />
+        
+        <form style="text-align:left; margin-top: 40px; color: #124617;">
+            Business Lookup<br />
+            <input type="text" class="searchfield"/> <input type="submit" class="searchbutton" value=""/>
+        </form>
+    </div>
+    <div class="clear" style=" border-top: 3px solid #666666"> </div>
+</div>
+
+<div>
+	<div id="latest-listings"> 
+	   <%= render :partial => "index/latest_listing" -%>
+    </div>
+    <div style="float:left; width: 460px; margin-right: 10px;"> 
+
+		<!-- News Section -->
+    	<div style="border-bottom: 1px solid #CCC; height: 170px;">
+			<%= render :partial => 'index/whats_new' -%>
+    	</div>
+        <div id="low-body" style="width: 225px; margin-right: 5px;">
+			<%= render :partial => 'index/local_news' -%>
+        </div>
+        <div id="low-body" style="width: 230px;">
+		    <%= render :partial => 'index/new_articles' -%>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+	<%= render :partial => 'index/top_ads' -%>
+</div>
+<div class="clear"> </div>
+
+
+	<div id="footer">
+    	<img src="images/cebu-directories-icon.png" align="left" style="margin-right: 15px;"/>
+    	Cebu Directories  |  
+		<%= link_to("About Us", :controller => "aboutus" )%>  |  
+		<%= link_to("Listings", :controller => "listing" )%>  |  
+		<%= link_to("Events", :controller => "events" )%>  |  
+		Blogs  |  
+		Contact Us <br />
+        Services  |  
+		Web Development  |  
+		Hosting  |  
+		Internet Marketing <br />
+        Copyright of 2007 Cebu Directories  All rights reserved.
+    </div>
+
+<!-- wrapper close tag -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+           <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<%= stylesheet_link_tag("default") %>
+<title>Cebub Directories</title>
+</head>
+<body>
+
+	<div id="wrapper">
+    	<div id="top-nav">
+        	<a href="" alt="" title="">Create account</a> &nbsp;|&nbsp; <a href="help.php" alt="" title="">Help</a> &nbsp;|&nbsp; <a href="" alt="" title="">Client Log-in</a>
+        </div>
+        <div id="logo">
+        	<a href="index"><img src="/images/cebu-directories-logo.png" alt="" title="" /></a>
+        </div>
+    
+    	<div id="menu">
+        	<ul>
+            		                <li> <%= link_to("Home", :controller => "index" )%></li>
+					                <li> <%= link_to("Services", :controller => "services" )%></a></li>
+					                <li> <%= link_to("Listings", :controller => "listing" )%></li>
+					                <li> <%= link_to("Events", :controller => "events" )%></li>
+					                <li class="selected"> <%= link_to("Advertise", :controller => "advertise" )%></li>
+					                <li> <%= link_to("Contact Us", :controller => "contactus" )%></li>
+				            </ul>
+            <div class="clear"> </div>
+        </div>
+
+     
+
+
+
+
+
+		<div id="main-pages" style="width: 885px">
+
+        <%= render :partial => 'services/top_ads' -%>
+
+			<h1 class="pages-title" style="margin-top: 15px;">Advertise with Cebu Directories </h1>
+
+		    <p>
+		     <a href="" alt="Cebu Directories Business Listing" title="Cebu Directories Business Listing"> Cebu Directories </a>is the next leading Cebu Directory site for Cebu Businesses, Establishments and Talents. We provide comprehensive contents, resources for small, medium and large companies.
+
+		We at Cebu Directories offer an ideal sponsorship or advertising unit to build your company's brand. To advertise services or products, click on the Advertise link located on the left pane, right pane, top and bottom area on all listing pages including the home page. We ensure that your company is always visible. Sponsorship and advertising are important to us and we know that these are very relevant to our influencial guests. 
+			</p>
+
+		    <p>
+		    We at <a href="" alt="Cebu Directories Business Listing" title="Cebu Directories Business Listing">Cebu Directories</a> offer an ideal sponsorship or advertising unit to build your company's brand. To advertise services or products, click on the Advertise link located on the left pane, right pane, top and bottom area on all listing pages including the home page. We ensure that your company is always visible. Sponsorship and advertising are important to us and we know that these are very relevant to our influencial guests.
+			</p>
+
+		    <h2> Pricing </h2>
+		    <p>
+		    Pricing for advertisers were optioned by <b>monthly term, four(4) months term, eight(8) months term</b> or a <b>whole year premium package</b>. Pricing also varries on the size of ads you opt to choose. For the 1 year premium package we offer you the option to change the ads image six(6) times providing that you had the ads qualified on our required ads specification. There is no fixed schedule of when to change your ads image.
+		    </p>
+
+		    <h2> Inquiry </h2>
+		    <p>
+		    For your inquiries you may contact us by email through <a href="mailto:advertise@cebudirectories.com" alt="Email us here!" title="Email us here!"> advertise [at] cebudirectories [dot] com </a> or you may inquire using our <a href="">Contact forms</a>.
+		    </p>
+
+		    <h2> Happy Advertisers </h2>
+		    <p>
+		    <img src="ads/ads.png" />
+		        <img src="ads/ads.png" />
+		        <img src="ads/ads.png" />
+		        <img src="ads/ads.png" />
+		        <img src="ads/ads.png" />
+		        <img src="ads/ads.png" />
+		    </p>
+
+		    <div class="clear"> </div>
+		</div>
+
+		<div class="clear"> </div>
+
+
+
+                 
+       
+
+
+	<div id="footer">
+    	<img src="images/cebu-directories-icon.png" align="left" style="margin-right: 15px;"/>
+    	Cebu Directories  |  
+		<%= link_to("About Us", :controller => "aboutus" )%>  |  
+		<%= link_to("Listings", :controller => "listing" )%>  |  
+		<%= link_to("Events", :controller => "events" )%>  |  
+		Blogs  |  
+		Contact Us <br />
+        Services  |  
+		Web Development  |  
+		Hosting  |  
+		Internet Marketing <br />
+        Copyright of 2007 Cebu Directories  All rights reserved.
+    </div>
+
+<!-- wrapper close tag -->
+</div>
+
+</body>
+</html>

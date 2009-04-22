@@ -1,0 +1,148 @@
+           <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<%= stylesheet_link_tag("default") %>
+<title>Cebub Directories</title>
+</head>
+<body>
+
+	<div id="wrapper">
+    	<div id="top-nav">
+        	<a href="" alt="" title="">Create account</a> &nbsp;|&nbsp; <a href="help.php" alt="" title="">Help</a> &nbsp;|&nbsp; <a href="" alt="" title="">Client Log-in</a>
+        </div>
+        <div id="logo">
+        	<a href="index"><img src="/images/cebu-directories-logo.png" alt="" title="" /></a>
+        </div>
+    
+    	<div id="menu">
+        	<ul>
+            		                <li> <%= link_to("Home", :controller => "index" )%></li>
+					                <li > <%= link_to("Services", :controller => "services" )%></a></li>
+					                <li> <%= link_to("Listings", :controller => "listing" )%></li>
+					                <li class="selected"> <%= link_to("Events", :controller => "events" )%></li>
+					                <li> <%= link_to("Advertise", :controller => "advertise" )%></li>
+					                <li> <%= link_to("Contact Us", :controller => "contactus" )%></li>
+				            </ul>
+            <div class="clear"> </div>
+        </div>
+
+     
+
+
+
+
+		<div style="float:left;">
+			<div style="margin-bottom: 5px;">
+		    	<form>
+		        	<input type="text" class="search"/><input type="submit" value="" class="searchb"/>
+		        </form>
+		    </div>
+
+		    <div id="events">
+		    	<h2 class="event_headers"> Sponsored Events </h2>
+		        <ul>
+		        
+		        	<div style="clear: both; margin-bottom: 8px;">
+		                <li class="date"> <span class="month">JAN</span> <br /><span class="num">22</span> </li>
+		                <li class="event"> 
+		                    <a href="">Sinulog sa Sugbo Part II</a> <br />
+		                    <span id="breadcrumbs">Sinulog sa Sugbo Part II.  The licenses for most ...</span>
+		                </li>
+		                <div class="clear"></div>
+		            </div>
+
+		        
+		        </ul>
+		    </div>
+
+		    <div id="events">
+		    	<h2 class="event_headers"> <%= Date.today -%> Events </h2>
+		        <ul>
+		        
+		        	<div style="clear: both; margin-bottom: 8px;">
+		                <li class="reg"> <span class="month">JAN</span> <br /><span class="num">22</span> </li>
+		                <li class="event"> 
+		                    <a href="">Sinulog sa Sugbo Part II</a> <br />
+		                    <span id="breadcrumbs">Sinulog sa Sugbo Part II.  The licenses for most ...</span>
+		                </li>
+		                <div class="clear"></div>
+		            </div>
+
+		      
+		        </ul>
+		    </div>
+
+		</div>
+
+		<div id="main-listing">
+
+        <%= render :partial => 'services/top_ads' -%>
+
+			<div id="breadcrumbs" style="margin-top: 15px;"> <a href="">Home</a> > <a href="">Education</a> > <a href="">Universities</a> > <a href="">University of San Carlos</a> </div>
+			<h1 class="listing-title">University of San Carlos</h1>
+
+		    <center>
+		    <img src="images/image.png" />
+		    </center>
+
+		    <div id="listing-address" style="margin-top: 15px;"> #342-G McArthur Highway and a long Street Address</div>
+		    <div id="listing-phone"> 333 - 3333 </div>
+		    <div id="listing-mobile"> 09199999999 </div>
+		    <div id="listing-fax"> Fax </div>
+		    <div id="listing-email"> info [at] cebudirectories [dot] com </div>
+		    <div id="listing-website"> http://www.cebudirectories.com </div>
+
+		    <p>
+		    The licenses for most software are designed to take away your
+		freedom to share and change it.  By contrast, the GNU General Public
+		License is intended to guarantee your freedom to share and change free
+		software--to make sure the software is free for all its users.  This
+		General Public License applies to most of the Free Software
+		Foundation's software and to any other program whose authors commit to
+		using it.  (Some other Free Software Foundation software is covered by the GNU Library General Public License 
+		instead.)  You can apply it to your programs, too.
+			</p>
+
+		    <p>
+		    The licenses for most software are designed to take away your
+		freedom to share and change it.  By contrast, the GNU General Public
+		License is intended to guarantee your freedom to share and change free
+		software--to make sure the software is free for all its users.  This
+		General Public License applies to most of the Free Software
+		Foundation's software and to any other program whose authors commit to
+		using it.  (Some other Free Software Foundation software is covered by the GNU Library General Public License 
+		instead.)  You can apply it to your programs, too.
+			</p>
+
+		    <div class="clear"> </div>
+		</div>
+
+		<div class="clear"> </div>
+
+
+
+                 
+       
+
+
+	<div id="footer">
+    	<img src="images/cebu-directories-icon.png" align="left" style="margin-right: 15px;"/>
+    	Cebu Directories  |  
+		<%= link_to("About Us", :controller => "aboutus" )%>  |  
+		<%= link_to("Listings", :controller => "listing" )%>  |  
+		<%= link_to("Events", :controller => "events" )%>  |  
+		Blogs  |  
+		Contact Us <br />
+        Services  |  
+		Web Development  |  
+		Hosting  |  
+		Internet Marketing <br />
+        Copyright of 2007 Cebu Directories  All rights reserved.
+    </div>
+
+<!-- wrapper close tag -->
+</div>
+
+</body>
+</html>
