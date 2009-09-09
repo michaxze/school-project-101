@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import url(reset-min.css);
+@import url(accordion-style.css);
+
+*, body { 
+	padding: 0; 
+	margin: 0;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 11px;
+}
+a { text-decoration: none; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+h1 { font-size: 20px; }
+h2 { font-size: 18px; }
+h3 { font-size: 16px; }
+h4 { font-size: 14px; }
+h5 { font-size: 12px; }
+h6 { font-size: 10px; }
+
+/*** CEBU DIRECTORIES MAIN DIVS ***/
+#cd-body {
+	/*background: #CCC;*/
+	height: 100%;
+}
+#cd-wrapper { 
+	width: 960px;
+	margin: 0px auto;
+}
+#cd-header { }
+#cd-banner { 
+	height: 250px; 
+	width: 960px;
+	background: #300;
+}
+#cd-content {
+	background: #FFF;
+	width: 100%;
+}
+#cd-categories {
+	float: left;
+	width: 170px;
+	padding: 0px 15px;
+}
+#cd-listing {
+	float: left;
+	width: 500px;
+	height: 800px;
+}
+#cd-feature {
+	float: left;
+	width: 260px;
+	height: 800px;
+}
+#cd-footer {
+	background: #FFF;
+	width: 100%;
+	height: 100px;
+}
+#cd-header, #cd-banner 	{
+	margin-bottom: 5px;
+}
+
+#logo {
+	height: 380px; 
+	width: 50px;
+	float: left; 
+	margin-top:10px; 
+	margin-left: -51px; 
+	position: fixed;
+	background: url(../images/logo.png) top no-repeat;
+}
+
+/***  NAVIGATION ***/
+#cd-navigation {
+	margin-top: 5px;
+	margin-bottom:5px;
+	background: url(../images/navmenu.png) left top no-repeat;
+	width: 960px;
+	height: 38px;
+}
+#cd-navigation ul { margin: 0px; padding: 0px; }
+#cd-navigation ul li { float: left; height: 38px; list-style: none; }
+#cd-navigation ul li a { display: block; border: none; height: 38px; width: 120px; }
+
+/** NAVIGATION ITEMS **/
+#listing  { background: url(../images/navmenu.png) 0px 0 no-repeat; }
+#event    { background: url(../images/navmenu.png) -120px 0 no-repeat; }
+#blog     { background: url(../images/navmenu.png) -240px 0 no-repeat; }
+#services { background: url(../images/navmenu.png) -360px 0 no-repeat; }
+#advertise{ background: url(../images/navmenu.png) -480px 0 no-repeat; }
+#contact  { background: url(../images/navmenu.png) -600px 0 no-repeat; }
+/** HOVER STATE **/
+#listing:hover  { background: url(../images/navmenu.png) 1px -38px no-repeat; }
+#event:hover    { background: url(../images/navmenu.png) -120px -38px no-repeat; }
+#blog:hover     { background: url(../images/navmenu.png) -240px -38px no-repeat; }
+#services:hover { background: url(../images/navmenu.png) -360px -38px no-repeat; }
+#advertise:hover{ background: url(../images/navmenu.png) -480px -38px no-repeat; }
+#contact:hover  { background: url(../images/navmenu.png) -600px -38px no-repeat; }
+/** ACTIVE STATE **/
+#listing:active  { background: url(../images/navmenu.png) 1px -76px no-repeat; }
+#event:active    { background: url(../images/navmenu.png) -120px -76px no-repeat; }
+#blog:active     { background: url(../images/navmenu.png) -240px -76px no-repeat; }
+#services:active { background: url(../images/navmenu.png) -360px -76px no-repeat; }
+#advertise:active{ background: url(../images/navmenu.png) -480px -76px no-repeat; }
+#contact:active  { background: url(../images/navmenu.png) -600px -76px no-repeat; }
+/** ACTIVE STATE **/
+#listing-sel  { background: url(../images/navmenu.png) 1px -114px no-repeat; width: 120px; }
+#event-sel    { background: url(../images/navmenu.png) -120px -114px no-repeat; }
+#blog-sel     { background: url(../images/navmenu.png) -240px -114px no-repeat; }
+#services-sel { background: url(../images/navmenu.png) -360px -114px no-repeat; }
+#advertise-sel{ background: url(../images/navmenu.png) -480px -114px no-repeat; }
+#contact-sel  { background: url(../images/navmenu.png) -600px -114px no-repeat; }
+
+/*** MISCS ***/
+.shadow { background: url(../images/shadow.png) top center no-repeat; height: 20px; margin-top: -2px; }
+.clear { clear: both; }
