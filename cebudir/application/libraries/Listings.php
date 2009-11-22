@@ -24,7 +24,7 @@ class Listings_Core {
 	 *
      * @author	Paul Villacorta		<pwvillacorta@cebudirectories.com>
      */
-    public function get_listings($limit = null, $cat_id = '')
+    public function get_listings($limit = null, $cat_id = null)
     {
         $this->db->from($this->table_name);
         
@@ -35,6 +35,7 @@ class Listings_Core {
 				$this->db->where('bus_cat_id', $cat_id);	
 			}
 		}
+		
         if(isset($limit)) {
         	$this->db->limit($limit);
         }
