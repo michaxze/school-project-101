@@ -18,14 +18,23 @@ class Listings_Core {
     /**
      * Retrieves All Listings
      *
-     * @param	int	$limit		set result limit (optional)
-     * @return  array	$result		listings
+     * @param	int			$limit		set result limit (optional)
+	 * @param	int/array 	$cat_id		get listing by category
+     * @return  array		$result		listings
+	 *
      * @author	Paul Villacorta		<pwvillacorta@cebudirectories.com>
      */
-    public function get_listings($limit = null)
+    public function get_listings($limit = null, $cat_id = '')
     {
         $this->db->from($this->table_name);
-               
+        
+		if(isset($cat_id)) {
+			if(is_array($cat_id)) {
+				$this->db->in('bus_cat_id', $cat_id);
+			} else {
+				$this->db->where('bus_cat_id', $cat_id);	
+			}
+		}
         if(isset($limit)) {
         	$this->db->limit($limit);
         }
@@ -35,4 +44,13 @@ class Listings_Core {
 
         return $result->result_array(FALSE);
     }
+	
+	public function get_listing($name)
+	{
+		$this->db->from($this->table_name);
+		$this->db->where(array('bus_name' => $name));
+		$result = $this->db->get();
+		
+		return $result->result_array(FALSE);
+	}
 } // End of Listings Core

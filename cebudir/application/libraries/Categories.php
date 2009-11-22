@@ -26,9 +26,7 @@ class Categories_Core {
         $this->columns    = array('cat_id','cat_name','cat_description',
                                   'cat_header','cat_parent_id','cat_url',
                                   'is_shown');
-    }
-
-    
+    }    
 
     /**
      * Retrieves All Categories
@@ -53,7 +51,7 @@ class Categories_Core {
         }
         
         $result     = $this->db->get();
-	$categories = $result->result_array(FALSE);
+		$categories = $result->result_array(FALSE);
 
 	if($parent_only == true) {
 	    return $categories;
@@ -85,6 +83,47 @@ class Categories_Core {
         return $newCat;
     }
     
+	/**
+	 * This retrieves 
+	 */
+	public function get_child_categories($id)
+	{
+		$this->db->from($this->table_name);
+		$this->db->where('cat_parent_id', $id);
+		$this->db->where('cat_id <>', $id);
+		
+		$result = $this->db->get();
+		
+		return $result->result_array(FALSE);
+	}
+	
+	/**
+	 *
+	 */
+	public function get_category_by_name($cat_name)
+	{
+		// remove white spaces
+		$cat_name = trim($cat_name);
+		
+		$this->db->from($this->table_name);
+		$this->db->where('cat_name', $cat_name);
+		
+		$result = $this->db->get();
+		$cat = $result->result_array(FALSE);
+		
+		if(empty($result)) {
+			return FALSE;
+		}
+		
+		$child  = $this->get_child_categories($cat[0]['cat_id']);
+		
+		if(!empty($child)) {
+			$cat = array_merge($cat, $child);
+		}
+		
+		return $cat;
+	}
+	
     /**
      * Get specific Category
      * 
@@ -95,7 +134,7 @@ class Categories_Core {
     public function get_category($id)
     {
     	$this->db->from($this->table_name);
-    	$this->db->where('id', $id);
+    	$this->db->where('cat_id', $id);
     	
     	return $result->result_array(FALSE);
     }
