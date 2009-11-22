@@ -7,23 +7,20 @@
     
     <?php
 	if(strlen(trim($address)) > 0) {
-		echo '<div class="details_container"><div class="details"> ADDRESS:</div> <span class="details_text">' . $address . '</span></div>';	
+		echo '<div class="details_container"><div class="details address"> ADDRESS:</div> <span class="details_text">' . $address . '</span></div>';	
 	}
 	if(strlen(trim($telno)) > 0) {
-		echo '<div class="details_container"><div class="details"> TEL. NO: </div><span class="details_text">' . $telno . '</span></div>';	
+		echo '<div class="details_container"><div class="details telno"> TEL. NO: </div><span class="details_text">' . $telno . '</span></div>';	
 	}
 	if(strlen(trim($website)) > 0) {
-		echo '<div class="details_container"><div class="details"> WEBSITE: </div><span class="details_text">' . $website . '</span></div>';	
+		echo '<div class="details_container"><div class="details website"> WEBSITE: </div><span class="details_text">' . $website . '</span></div>';	
 	}
 	if(strlen(trim($email)) > 0) {
-		echo '<div class="details_container"><div class="details"> EMAIL: </div><span class="details_text">' . $email . '</span></div>';	
+		echo '<div class="details_container"><div class="details email"> EMAIL: </div><span class="details_text">' . $email . '</span></div>';	
 	}
 	if(strlen(trim($description)) > 0) {
-		echo '<div class="details_container">' . $description . '</div>';
+		echo '<div>' . $description . '</div>';
 	}
-    	//echo '<pre>';
-		//print_r($listing);
-		//echo '</pre>';
     ?>
     
 </div>
