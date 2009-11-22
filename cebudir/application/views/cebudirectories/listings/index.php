@@ -1,9 +1,9 @@
 <?php defined('SYSPATH') OR die('No direct access allowed.'); ?>
-<?php require_once('application\views\cebudirectories\header.php'); ?>    
+<?php require_once(APPPATH . 'views/cebudirectories/header.php'); ?>    
 
     <div id="cd-content">
     	<div id="cd-categories">
-    		<?php require_once('application\views\cebudirectories\menu_categories.php'); ?>
+    		<?php require_once(APPPATH . '/views/cebudirectories/menu_categories.php'); ?>
         </div>
         
         <div id="cd-listing">
@@ -19,10 +19,10 @@
         </div>
         
         <div id="cd-advertise">
-        	<?php require_once('application\views\cebudirectories\advertising.php'); ?>
+        	<?php require_once(APPPATH . '/views/cebudirectories/advertising.php'); ?>
         </div>
         
         <div class="clear"></div>
     </div>
 
-<?php require_once('application\views\cebudirectories\footer.php'); ?>
+<?php require_once(APPPATH . '/views/cebudirectories/footer.php'); ?>
