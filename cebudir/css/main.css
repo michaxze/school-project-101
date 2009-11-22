@@ -8,9 +8,15 @@
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 11px;
 }
-a { text-decoration: none; }
+a { 
+	text-decoration: none; 
+	color: #6D8309;
+}
 p { color: #333333; }
-h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+h1, h2, h3, h4, h5, h6 { 
+	font-weight: bold;
+	padding: 8px 0px;
+}
 h1 { font-size: 20px; }
 h2 { font-size: 18px; }
 h3 { font-size: 16px; }
@@ -55,6 +61,61 @@ h6 { font-size: 10px; }
 	background: url(../images/logo.png) top no-repeat;
 }
 
+/***  CD-CONTENT ***/
+#cd-content h1, #cd-content h2 { color: #6D8309; }
+#cd-content p { padding: 5px 10px; }
+
+/***  LISTINGS  ***/
+.details_container { height: 17px; }
+.details {
+	float: left;
+	font-size: 10px;
+	margin-left: 10px;
+}
+.details_text {
+	font-size: 11px;
+	color: #333333;
+	text-align: right;
+}
+.address, .telno, .website, .email {
+	height: 16px;
+	text-indent: 20px;
+	width: 85px;
+}
+.address { background: url(../images/contacticons.gif) 0px 0px no-repeat; }
+.telno   { background: url(../images/contacticons.gif) 0px -33px no-repeat; }
+.website { background: url(../images/contacticons.gif) 0px -50px no-repeat; }
+.email	 { background: url(../images/contacticons.gif) 0px -18px no-repeat; }
+/*** FORM-CONTACT ***/
+#form-contact {
+	margin: 5px 15px;
+	padding: 5px 0px;
+}
+#form-contact input[type="text"], #form-contact textarea,
+#form-contact select {
+	border: 1px solid #999;
+	width: 300px;
+	font-size: 16px;
+	padding: 5px;
+	margin: 3px 0px 10px 0px;
+}
+#form-contact label { font-size: 12px; }
+#form-contact select { width: 310px; }
+#form-contact textarea { width: 500px; height: 200px; }
+
+.submit {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	border: none;
+	background: #6D8309 url(../images/navmenu.png) -750px 0 no-repeat;
+	padding: 5px 20px;
+	margin-top: 15px;
+	-moz-border-radius:15px; 
+	-webkit-border-radius:15px; 
+	-khtml-border-radius:15px; 
+}
+.submit:active { background: url(../images/navmenu.png) -750px -76px no-repeat; }
 /***  NAVIGATION ***/
 #cd-navigation {
 	margin-top: 5px;
@@ -96,7 +157,7 @@ h6 { font-size: 10px; }
 #advertise-sel{ background: url(../images/navmenu.png) -480px -114px no-repeat; }
 #contact-sel  { background: url(../images/navmenu.png) -600px -114px no-repeat; }
 
-#categories {
+#categories, #ads {
 	border-top:2px solid #dcdcdc; 
 	border-left:1px solid #dcdcdc; 
 	border-right:1px solid #dcdcdc; 
@@ -110,10 +171,9 @@ h6 { font-size: 10px; }
 	margin-bottom: 10px;
 	background: #FFF; 
 }
-#categories ul 	  { margin: 0px; padding: 0px; }
-#categories ul li { padding: 5px 10px; border-bottom: 1px solid #CCC; display: block; }
-#categories ul li:hover { 
-	background: #b5cb51 url(../images/bg-title.png) 0px -57px no-repeat; 
+#ads ul 	  { margin: 0px; padding: 0px; }
+#ads ul li { padding: 5px 10px; border-bottom: 1px solid #CCC; display: block; }
+#ads ul li:hover { 
 	font-weight: bold; 
 	color: #5b720a; 
 }
