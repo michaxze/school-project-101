@@ -1,5 +1,5 @@
 <?php defined('SYSPATH') OR die('No direct access allowed.'); ?>
-<?php require_once('header.php'); ?>
+<?php require_once('header.php'); ?>    
 
     <div id="cd-content">
     	<div id="cd-categories">

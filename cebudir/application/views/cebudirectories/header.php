@@ -13,31 +13,28 @@
 	<link rel="stylesheet" href="<?php echo url::base(FALSE) ?>css/main.css" type="text/css" media="screen"/>
     <link rel="shortcut icon" href="<?php echo url::base(FALSE) ?>cebudirectories.png">
 
-	<title><?php echo $title; ?></title>
-	
 	<link rel="stylesheet" href="<?php echo url::base(FALSE) ?>css/demo.css" />
 	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.js"></script>
-	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/chili-1.7.pack.js"></script>
 	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.easing.js"></script>
-	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.dimensions.js"></script>
 	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.accordion.js"></script>
+
+	<title><?php echo $title; ?></title>
 
 	<script type="text/javascript">
 	jQuery().ready(function(){
 		
 		// second simple accordion with special markup
-		jQuery('#navigation').accordion({
-			active: false,
+		jQuery('#categorymenu').accordion({
+			active: true,
 			header: '.head',
 			navigation: true,
 			event: 'mouseover',
-			fillSpace: true,
-			animated: 'easeslide'
+			autoheight: false,
+			animated: 'bounceslide'
 		});
 		
 	});
 	</script>
-
 
 </head>
 <body id="cd-body">
@@ -49,12 +46,12 @@
     
         <div id="cd-navigation">
         	<ul>
-            	<li id="listing"><a href=""></a></li>
-                <li id="event"><a href=""></a></li>
-                <li id="blog"><a href=""></a></li>
-                <li id="services"><a href=""></a></li>
-                <li id="advertise"><a href="advertise"></a></li>
-                <li id="contact"><a href=""></a></li>
+            	<li id="listing<?php echo (isset($menu) && $menu == 'listing') ? "-sel" : ""; ?>"><a href="<?php echo url::base(); ?>listings"></a></li>
+                <li id="event"<?php echo (isset($menu) && $menu == 'event') ? "-sel" : ""; ?>><a href="<?php echo url::base(); ?>events"></a></li>
+                <li id="blog"><a href="<?php echo url::base(); ?>blog"></a></li>
+                <li id="services<?php echo (isset($menu) && $menu == 'services') ? "-sel" : ""; ?>"><a href="<?php echo url::base(); ?>services"></a></li>
+                <li id="advertise<?php echo (isset($menu) && $menu == 'advertise') ? "-sel" : ""; ?>"><a href="<?php echo url::base(); ?>advertise"></a></li>
+                <li id="contact<?php echo (isset($menu) && $menu == 'contact') ? "-sel" : ""; ?>"><a href="<?php echo url::base(); ?>contactus"></a></li>
             </ul>
         </div>
         

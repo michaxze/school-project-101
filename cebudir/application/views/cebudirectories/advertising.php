@@ -1,34 +1,34 @@
 <?php defined('SYSPATH') OR die('No direct access allowed.'); ?>
 
-<div id="categories">
-	<div class="header-top center title">Advertisement</div>
+<div id="ads">
+	<div class="header-top center title">Advertisement #1</div>
 	<ul>
-    	<li>Accomodation</li>
-        <li>Bars and Restos</li>
-        <li>Business</li>
-        <li>Education</li>
+    	<li>Link Ad 1</li>
+        <li>Link Ad 2</li>
+        <li>Link Ad 3</li>
+        <li>Link Ad 4</li>
     </ul>
 	<div class="header-bottom"></div>
 </div>
 
-<div id="categories">
-	<div class="header-top center title">Advertisement</div>
+<div id="ads">
+	<div class="header-top center title">Advertisement #2</div>
 	<ul>
-    	<li>Accomodation</li>
-        <li>Bars and Restos</li>
-        <li>Business</li>
-        <li>Education</li>
+    	<li>Link Ad 1</li>
+        <li>Link Ad 2</li>
+        <li>Link Ad 3</li>
+        <li>Link Ad 4</li>
     </ul>
 	<div class="header-bottom"></div>
 </div>
 
-<div id="categories">
-	<div class="header-top center title">Advertisement</div>
+<div id="ads">
+	<div class="header-top center title">Advertisement #2</div>
 	<ul>
-    	<li>Accomodation</li>
-        <li>Bars and Restos</li>
-        <li>Business</li>
-        <li>Education</li>
+    	<li>Link Ad 1</li>
+        <li>Link Ad 2</li>
+        <li>Link Ad 3</li>
+        <li>Link Ad 4</li>
     </ul>
 	<div class="header-bottom"></div>
 </div>
