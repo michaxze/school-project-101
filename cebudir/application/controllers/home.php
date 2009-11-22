@@ -9,18 +9,14 @@
 class Home_Controller extends Controller {
 	
 	function index()
-	{
-	    //$this->template->title = 'Cebu Directories Online Cebu Directory of Cebu City';
-	
+	{	
 	    // Fetching of Categories
 	    $cat = new Categories_Core;
 	    $categories = $cat->get_categories();
-	    //$this->template->categories = $categories;
 	
 	    // Fetching of Latest Listing
 	    $list = new Listings_Core;
 	    $listings = $list->get_listings(5);
-	    //$this->template->listings = $listings;
 	
 		$page = new View('cebudirectories/home');
 		$page->title = 'Cebu Directories Online Cebu Directory of Cebu City';
@@ -66,6 +62,14 @@ class Home_Controller extends Controller {
 							  'Advertising Inquiry',
 							  'Feedbacks and Comments - Thank us',
 							  'Other concerns');
+		$page->render(true);
+	}
+	
+	function aboutus()
+	{
+		$page = new View('cebudirectories/page_about');
+		$page->title = 'About Us - Cebu Directories Online Cebu Directory of Cebu City';
+		
 		$page->render(true);
 	}
 	
