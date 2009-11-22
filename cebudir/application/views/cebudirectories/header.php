@@ -13,7 +13,6 @@
 	<link rel="stylesheet" href="<?php echo url::base(FALSE) ?>css/main.css" type="text/css" media="screen"/>
     <link rel="shortcut icon" href="<?php echo url::base(FALSE) ?>cebudirectories.png">
 
-	<link rel="stylesheet" href="<?php echo url::base(FALSE) ?>css/demo.css" />
 	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.js"></script>
 	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.easing.js"></script>
 	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.accordion.js"></script>
