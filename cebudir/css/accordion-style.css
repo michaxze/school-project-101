@@ -1,52 +1,38 @@
 /**********************************************************
 ** Theme Name:  Cebu Next Generation v2.0
 ** Author:      Michael Gimena
-** Author: 	Paul Villacorta
 ** Version:     2.0
 ** Website:     http://www.cebudirectories.com
 ** Email:       michael@cebudirectories.com
-** Email:	pwvillacorta@cebudirectories.com
 ** 
 **********************************************************/
-
-ul#accordionmenu, ul#accordionmenu ul {
+ul#categorymenu, ul#categorymenu ul {
   list-style-type:none;
-  margin: 0;
-  padding: 0;
-  width: 15em;
+  margin: 0; padding: 0;
 }
-
-ul#accordionmenu {
-  margin-top: 10px;
-}
-
-ul#accordionmenu a {
+ul#categorymenu a {
   display: block;
+  border-bottom: 1px solid #CCC;
 }
-
-ul#accordionmenu li a {
-  background: #DEF2B5;
-  color: #6d8c17;
-  font-weight: bold;	
-  padding: 0.5em;
-  padding-left: 10px;
-  margin-top: 1px;
+ul#categorymenu li a {
+	display: block;
+	padding: 5px 10px;
+	color: #5b720a;
 }
-
-ul#accordionmenu li a:hover {
-  background: #FFF;
+ul#categorymenu li a:hover {
+ 	background: #b5cb51 url(../images/bg-title.png) 0px -57px no-repeat; 
+	font-weight: bold; 
+	color: #5b720a; 
 }
-
-ul#accordionmenu li ul li a {
-  background: #F0F0F0;
+ul#categorymenu li ul {
+	padding-left: 30px;	
+}
+ul#categorymenu li ul li a {
+  background: #FFFFFF;
   color: #000;
-  padding-left: 20px;
+  padding-left: 5px;
   font-weight: normal;
 }
-
-ul#accordionmenu li ul li a:hover {
+ul#categorymenu li ul li a:hover {
   background: #FFFFFF;
-  border-left: 5px #6d8c17 solid;
-  padding-left: 15px;
 }
-
