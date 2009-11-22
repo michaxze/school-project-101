@@ -14,16 +14,16 @@
     			//echo '<p>' . substr(strip_tags($list['bus_description']), 0, 200) . '</p>';
 			}
 			if(strlen(trim($list['bus_address'])) > 0) {
-				echo '<div class="details_container"><div class="details"> ADDRESS:</div> <span class="details_text">' . $list['bus_address'] . '</span></div>';	
+				echo '<div class="details_container"><div class="details address"> ADDRESS:</div> <span class="details_text">' . $list['bus_address'] . '</span></div>';	
 			}
 			if(strlen(trim($list['bus_telno'])) > 0) {
-				echo '<div class="details_container"><div class="details"> TEL. NO: </div><span class="details_text">' . $list['bus_telno'] . '</span></div>';	
+				echo '<div class="details_container"><div class="details telno"> TEL. NO: </div><span class="details_text">' . $list['bus_telno'] . '</span></div>';	
 			}
 			if(strlen(trim($list['bus_website'])) > 0) {
-				echo '<div class="details_container"><div class="details"> WEBSITE: </div><span class="details_text">' . $list['bus_website'] . '</span></div>';	
+				echo '<div class="details_container"><div class="details website"> WEBSITE: </div><span class="details_text">' . $list['bus_website'] . '</span></div>';	
 			}
 			if(strlen(trim($list['bus_email'])) > 0) {
-				echo '<div class="details_container"><div class="details"> EMAIL: </div><span class="details_text">' . $list['bus_email'] . '</span>	</div>';	
+				echo '<div class="details_container"><div class="details email"> EMAIL: </div><span class="details_text">' . $list['bus_email'] . '</span>	</div>';	
 			}
     		echo '</div>';
 			/*echo '<pre>';
