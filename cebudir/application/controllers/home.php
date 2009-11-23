@@ -7,7 +7,7 @@
  * @copyright  (c) 2006-2009 Cebu Directories
  */
 class Home_Controller extends Controller {
-	
+  	
 	function index()
 	{	
 	    // Fetching of Categories

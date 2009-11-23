@@ -1,5 +1,5 @@
 <?php defined('SYSPATH') OR die('No direct access allowed.');
-/**
+/**   
  * Contains examples of various Kohana library examples. You can access these
  * samples in your own installation of Kohana by going to ROOT_URL/examples.
  * This controller should NOT be used in production. It is for demonstration

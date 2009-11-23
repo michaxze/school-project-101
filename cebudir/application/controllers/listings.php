@@ -1,5 +1,5 @@
 <?php defined('SYSPATH') OR die('No direct access allowed.');
-/**
+/**   
  * This is listings Controller for Cebu Directories. This is the listings.
  *
  * @package    Listings
