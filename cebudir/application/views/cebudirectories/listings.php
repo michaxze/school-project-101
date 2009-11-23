@@ -13,7 +13,7 @@
     <?php
     	foreach($listings as $list) {
 			$bus_name = strtolower($list['bus_name']);
-			$tmp_url  = str_replace(" ", "-", $bus_name);
+			$tmp_url  = base::url() . str_replace(" ", "-", $bus_name);
     		echo '<div class="listing">';
     		echo '<h5><a href="' . $tmp_url . '" title="' . $bus_name . '">' . ucwords($bus_name) . '</a></h5>';
 			if(strlen(trim($list['bus_description'])) > 0) {
