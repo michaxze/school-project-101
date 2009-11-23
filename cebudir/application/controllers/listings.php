@@ -66,6 +66,8 @@ class Listings_Controller extends Controller {
 	
 	function category($category)
 	{
+		// replace "-" to space " "
+		$category = str_replace("-", " ", $category);
 		$cat_var = $this->cat->get_category_by_name($category);
 		
 		if(!empty($cat_var)) {
