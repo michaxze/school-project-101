@@ -41,7 +41,7 @@
 <div id="cd-wrapper">
 
 	<div id="cd-header">
-    	<div id="logo"></div>
+    	<div id="logo" style="cursor:pointer" onclick="location.href='index.php'"></div>
     
         <div id="cd-navigation">
         	<ul>

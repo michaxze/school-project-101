@@ -84,6 +84,12 @@ class Home_Controller extends Controller {
                                                     'report_email' => $_POST['femail'],
                                                     'report_datesent' => $date ));
 
+        $to = Kohana::config('cebudirectories.email_to');
+        $from = Kohana::config('cebudirectories.email_from');
+        $subject = Kohana::config('cebudirectories.email_subject_contactus');
+        $message = Kohana::config('cebudirectories.email_message_contactus');
+        email::send($to, $from, $subject, $message);
+
 	    $page = new View('cebudirectories/page_contactus');
 	    $page->title = 'Contact Us - Cebu Directories Online Cebu Directory of Cebu City';
 		$page->menu  = 'contact';
