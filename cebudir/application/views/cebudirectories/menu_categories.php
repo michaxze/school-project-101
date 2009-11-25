@@ -10,7 +10,7 @@
 		$curl = str_replace(" ","-",strtolower($c['cat_name']));
 
 		echo "<li>\n";
-		echo "<a class=\"head\" href=\"" . url::base() . "category/" . strtolower($c['cat_name']) ."\">" . $c['cat_name'] . "</a>\n";
+		echo "<a class=\"head\" href=\"" . url::base() . "category/" . strtolower($curl) ."\">" . $c['cat_name'] . "</a>\n";
 			
 		if ( count($categories[$i]['child']) > 0 ) {
 			echo "<ul>";

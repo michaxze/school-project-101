@@ -8,6 +8,8 @@ $config['advertise'] = 'home/advertise';
 $config['contactus'] = 'home/contactus';
 $config['services']  = 'home/services';
 $config['aboutus']   = 'home/aboutus';
+$config['terms-of-use'] = 'home/termsofuse';
+$config['privacy-policy'] = 'home/privacypolicy';
 $config['listings']  = 'listings/index';
 
 /**
