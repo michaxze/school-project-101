@@ -9,7 +9,7 @@
             <p>
             Cebu Directories would be glad to hear any messages, comments, suggestions
             from our valued clients that may help improve our services. You may contact
-            us by sending us an email to  info@cebudirectories.com
+            us by sending us an email to  michael@cebudirectories.com
             </p>
 		<?php } else { ?>
         
@@ -17,7 +17,7 @@
     	<p>
     	Cebu Directories would be glad to hear any messages, comments, suggestions
         from our valued clients that may help improve our services. You may contact
-        us by sending us an email to  info@cebudirectories.com
+        us by sending us an email to  michael@cebudirectories.com
         </p>
 
 		<p>We will get back to you about your concern within 48-hours.</p>
