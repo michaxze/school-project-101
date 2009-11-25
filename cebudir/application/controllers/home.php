@@ -44,11 +44,11 @@ class Home_Controller extends Controller {
 	    $page = new View('cebudirectories/page_contactus');
 	    $page->title = 'Contact Us - Cebu Directories Online Cebu Directory of Cebu City';
 		$page->menu  = 'contact';
-		$page->ctypes = array('Listing Inquiry',
-							  'Event Inquiry',
-							  'Advertising Inquiry',
-							  'Feedbacks and Comments - Thank us',
-							  'Other concerns');
+		$page->ctypes = array('listing' => 'Listing Inquiry',
+							  'events' => 'Event Inquiry',
+							  'advertising' => 'Advertising Inquiry',
+							  'feedback' => 'Feedbacks and Comments - Thank us',
+							  'others' => 'Other concerns');
 		$page->render(true);
 	}
 	
@@ -72,5 +72,28 @@ class Home_Controller extends Controller {
 		
 		$page->render(true);
 	}
+
+    function contact_send()
+    {
+      $date = date("Y-m-d H:i:s");
+      $db = new Database;
+      $result = $db->insert("cebu_contactus", array('name'=> $_POST['fname'], 
+                                                    'address' => $_POST['faddress'], 
+                                                    'report_type' => $_POST['ftype'], 
+                                                    'report_message' => $_POST['fmessage'],
+                                                    'report_email' => $_POST['femail'],
+                                                    'report_datesent' => $date ));
+
+	    $page = new View('cebudirectories/page_contactus');
+	    $page->title = 'Contact Us - Cebu Directories Online Cebu Directory of Cebu City';
+		$page->menu  = 'contact';
+		$page->ctypes = array('listing' => 'Listing Inquiry',
+							  'events' => 'Event Inquiry',
+							  'advertising' => 'Advertising Inquiry',
+							  'feedback' => 'Feedbacks and Comments - Thank us',
+							  'others' => 'Other concerns');
+		$page->render(true);
+
+    }
 	
 } // End Home Controller
