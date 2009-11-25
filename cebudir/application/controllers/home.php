@@ -73,4 +73,20 @@ class Home_Controller extends Controller {
 		$page->render(true);
 	}
 	
+	function termsofuse()
+	{
+		$page = new View('cebudirectories/page_terms_of_use');
+		$page->title = 'Terms of Use - Cebu Directories Online Cebu Directory of Cebu City';
+		
+		$page->render(true);
+	}
+	
+	function privacypolicy()
+	{
+		$page = new View('cebudirectories/page_privacy_policy');
+		$page->title = 'Privacy Policy - Cebu Directories Online Cebu Directory of Cebu City';
+		
+		$page->render(true);
+	}
+	
 } // End Home Controller
