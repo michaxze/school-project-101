@@ -1,0 +1,13 @@
+
+    
+    <div id="footer">
+        <div id="copyright">Junior Chambers International Philippines Mandaue &copy; 2009.  All rights Reserved.</div>
+        <div id="createdby">Created by: <a href="http://paulvillacorta.me" title="Paul Villacorta">Paul Villacorta</a> - Hosted by: <a href="http://hostfortes.com" title="HostFortes - Your Hosting Buddy!">HostFortes</a></div>
+        <div class="clear"></div>
+    </div>
+    
+</div>
+<div class="clear"> </div>
+<?php wp_footer(); ?>
+</body>
+</html>
