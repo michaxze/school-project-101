@@ -39,19 +39,6 @@ class Home_Controller extends Controller {
 		$page->render(true);
 	}
 	
-	function contactus()
-	{
-	    $page = new View('cebudirectories/page_contactus');
-	    $page->title = 'Contact Us - Cebu Directories Online Cebu Directory of Cebu City';
-		$page->menu  = 'contact';
-		$page->ctypes = array('listing' => 'Listing Inquiry',
-							  'events' => 'Event Inquiry',
-							  'advertising' => 'Advertising Inquiry',
-							  'feedback' => 'Feedbacks and Comments - Thank us',
-							  'others' => 'Other concerns');
-		$page->render(true);
-	}
-	
 	function services()
 	{
 		$page = new View('cebudirectories/page_services');
@@ -101,5 +88,21 @@ class Home_Controller extends Controller {
 		$page->render(true);
 
     }
+	
+	function termsofuse()
+	{
+		$page = new View('cebudirectories/page_terms_of_use');
+		$page->title = 'Terms of Use - Cebu Directories Online Cebu Directory of Cebu City';
+		
+		$page->render(true);
+	}
+	
+	function privacypolicy()
+	{
+		$page = new View('cebudirectories/page_privacy_policy');
+		$page->title = 'Privacy Policy - Cebu Directories Online Cebu Directory of Cebu City';
+		
+		$page->render(true);
+	}
 	
 } // End Home Controller

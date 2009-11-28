@@ -1,0 +1,184 @@
+/*   
+Theme Name: Cebu Directories Blog Theme v2.0
+Theme URI: http://blogs.cebudirectories.com
+Description: This is the new design layout for Cebu Directories
+Author: Paul Winston S. Villacorta
+Author URI: http://www.paulvillacorta.me/
+Version: v2.0
+*/
+
+@charset "utf-8";
+@import url("css/reset-min.css");
+@import url("css/default.css");
+/* CSS Document */
+
+* { margin:0; padding:0; }
+
+html, body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+a { 
+	text-decoration: none;
+	color: #5b720a;
+}
+#wrap {
+	margin: 0 auto;
+	width: 960px;
+}
+#banner {
+	background: url(images/bg-banner.png) center top no-repeat;
+	width: 900px; height: 139px;
+	margin-top: 10px;
+}
+#banner h1 { text-indent: -99999px; }
+
+#content {
+	background: #FFFFFF;
+}
+#sidebar {
+	width: 25%;
+	float: left;
+	margin-top: 10px;
+	margin-right: 5px;
+	padding-bottom: 10px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+#footer {
+	background: #333333;
+	text-align:center;
+	padding: 10px 20px;
+	font-size: 14px;
+	margin-bottom: 20px;
+	clear: both;
+}
+#copyright { float: left; }
+#createdby { float: right; }
+#copyright, #createdby, #createdby a {
+	font-size: 10px;
+	color: #FFFFFF;
+}
+#createdby a { color: #5accfc; }
+#logo-footer {
+	width:100%; height: 50px;
+	background: url(images/bg-footer.gif) left top no-repeat;
+}
+.copyright { margin-top: -20px; }
+/* ----------- Posts --------------- */
+.posts {
+	font-family: "Lucida Sans", "Lucida Grande", "sans-serif";
+	text-align: left;
+	padding: 10px 10px;
+	padding-top: 0px;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	margin-top: 15px;
+	float: right;
+	width: 72%;
+}
+
+.posts p { margin-bottom: 10px; }
+.posts p.meta { font-size: 13px; color: #666;}
+.posts p.meta a {
+	font-weight: bold;
+	border-bottom: 1px dotted #000;
+}
+
+.posts-content {
+	margin-top: 15px;
+	padding: 10px 15px;
+	line-height:20px;
+	font-size: 12px;
+}
+.posts-content a { font-weight: bold; }
+.posts-content img {
+	margin: 5px;
+	padding: 5px;
+	background: #FFF;
+}
+
+.posts-content ul, .posts-content ol { 	
+	margin: 10px 0px 10px 10px; 
+	padding: 0;
+}
+.posts-content ul li, .posts-content ol li {
+	margin-left: 35px; }
+
+.posts-content h2 {
+        margin: 20px 0px;
+        color: #666;
+}
+
+.posts-content h3 { margin: 15px 0px; }
+.posts-title {
+	border-bottom: 1px dotted #F2F2F2;
+	padding-left: 10px;
+	color: #5b720a;
+	font-weight: lighter;
+	font-size: 22px;
+}
+.date { 
+	font-size: 9px; 
+	color: #999;
+	text-transform: uppercase;
+	padding-left: 10px;
+}
+
+.more { 
+	background: #ba0303; 
+	font-size: 11px;
+	color: #FFF;
+	padding: 1px 5px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+#footer ul {
+	list-style-type: none;
+}
+#footer ul li{
+	float: left;
+	padding: 2px 10px;
+	text-align: center;
+}
+
+.cont {
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 1px;
+}
+.tag-line {
+	color: #999999;
+}
+.clear {
+	clear: both;
+}
+
+/*** WordPress Classes ****/
+.current_page_item {
+	background: #333333;
+	-moz-border-radius-topleft: 8px;
+	-webkit-border-top-left-radius: 8px;
+	-moz-border-radius-topright: 8px;
+	-webkit-border-top-right-radius: 8px;
+}
+.current_page_item a { color: #FFFFFF; }
+.widget { padding: 5px 10px; }
+.widget ul li { padding: 5px 10px; border-bottom: 1px solid #CCC; display: block; font-size: 11px; }
+.widget ul li a { color: #333333; }
+.widget ul li a:hover { color: #5b720a; }
+.sidebartitle, .widgettitle { 
+	background: url(images/bg-listing.png) -5px 0px no-repeat; 
+	padding: 5px 0px; 
+	height: 16px; 
+	text-indent: 10px;
+	text-align: center;
+	font-size: 13px; 
+	font-weight: bold; 
+	color: #333; 
+	text-shadow: 1px 1px #CCC;
+	-moz-border-radius-topleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-right-radius: 5px
+}
