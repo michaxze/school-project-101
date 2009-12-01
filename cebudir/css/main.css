@@ -94,6 +94,10 @@ h6 { font-size: 10px; }
 }
 /***  CD-CONTENT ***/
 #cd-content h1, #cd-content h2 { color: #6D8309; }
+#cd-content h3, #cd-content h4,
+#cd-content h5, #cd-content h6 { 
+	color: #333; padding-left: 10px; 
+}
 #cd-content p { padding: 5px 10px; }
 
 /***  LISTINGS  ***/
@@ -232,3 +236,7 @@ h6 { font-size: 10px; }
 .center { text-align: center; }
 .shadow { background: url(../images/shadow.png) top center no-repeat; height: 15px; margin-top: -2px; }
 .clear  { clear: both; }
+
+.small  { font-size: 14px; }
+.medium { font-size: 16px; }
+.large  { font-size: 18px; }
