@@ -3,7 +3,7 @@
 
     <div id="cd-content">
     	<h1>Privacy Policy</h1>
-    	<p>
+    	<p class="medium">
     	Cebu Directories takes your privacy seriously.  This policy covers how 
         Cebu Directories treats personal and business information that is collected 
         via Cebu Directories.  This personal information includes name, address, 
@@ -14,13 +14,13 @@
         are treated as well.
     	</p>
     	
-        <p>
+        <p class="medium">
     	Cebu Directories automatically receives and records information on our server logs 
         from your browser, including your IP address.  Cebu Directories does not rent, sell, 
         or share personal information about you with other people, company or organizations.
     	</p>
         
-        <p>
+        <p class="medium">
     	Cebu Directories reserves the right to send you certain communications relating to 
         Cebu Directories, such as service announcements and administrative messages.
 		We will notify you about significant changes in the way we treat personal and business 

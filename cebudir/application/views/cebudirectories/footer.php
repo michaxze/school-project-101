@@ -1,4 +1,5 @@
 <?php defined('SYSPATH') OR die('No direct access allowed.'); ?>
+	
 <?php
 	$urls = array(array('label' => 'Contact Us', 'url' => url::base() . 'contactus'),
 				  array('label' => 'Advertise', 'url' => url::base() . 'advertise'),
@@ -11,6 +12,44 @@
 						
 ?>
 	<div id="cd-footer">
+   	  <div id="cd-sitemap">
+   		<ul id="sitemaps">
+            	<li>
+                	<span class="stitle">Home</span><br />
+                    About Us<br />
+                    Events<br /><br />
+                    <span class="stitle">Services</span><br />
+                    Listings<br />
+                    Advertising<br />
+                    Web Design & Development<br />
+                    Domain & Web Hosting<br />
+                </li>
+                <li>
+                	<span class="stitle">Categories</span><br />
+                    <?php
+					for($i=0; $i<count($categories); $i++) {
+						echo $categories[$i]['cat_name'] . "<br />\n";
+					}
+					?>
+                </li>
+                <li>
+                	<span class="stitle">Blogs</span><br />
+                    Cebu Events<br />
+                    Our Updates<br />
+                    Featured Products<br />
+					Featured Company<br />
+					Seminars<br />
+					Sports Events<br />
+                </li>
+                <li>
+                	<span class="stitle">Connect with us!</span><br style="margin-bottom: 5px;"/>
+                    <a href="#"><img src="<?php echo url::base(); ?>images/twitter.png" title="Follow Cebu Directories on Twitter!" alt="Follow us on Twitter!" /></a><br />
+                    <a href="#"<img src="<?php echo url::base(); ?>images/facebook.png" title="Add Cebu Directories on Facebook!" alt="Add us on Facebook!" /></a><br />
+                </li>
+     			<div class="clear"></div>
+          </ul>
+    	</div>
+        
     	<div id="logo-footer">
         	<ul id="footer-urls">
             	<?php
