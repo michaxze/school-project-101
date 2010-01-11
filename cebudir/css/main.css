@@ -55,6 +55,10 @@ h6 { font-size: 10px; }
 	padding-top: 10px;
 	border-top: 1px dotted #CCCCCC;
 }
+#cd-sitemap {
+	background: #EDEDED;
+	margin-bottom: 15px;
+}
 #cd-header, #cd-banner { margin-bottom: 5px; }
 
 #logo {
@@ -91,6 +95,10 @@ h6 { font-size: 10px; }
 #home:hover {
 	background: url(../images/home-sel.gif) top center no-repeat;
 	border: 1px solid #97ab40;
+}
+ul#sitemaps { padding: 10px 0px; }
+ul#sitemaps li { 
+	width: 18%; float: left; float: left; padding-left: 10px; 
 }
 /***  CD-CONTENT ***/
 #cd-content h1, #cd-content h2 { color: #6D8309; }
@@ -231,6 +239,7 @@ h6 { font-size: 10px; }
 /*** MISCS ***/
 .title  { font-size: 13px; font-weight: bold; color: #333; text-shadow: 1px 1px #CCC; }
 .normal { font-weight: normal; color: #000000; }
+.stitle { color: #333; font-weight: bold; }
 
 .right  { float: right; }
 .center { text-align: center; }
