@@ -3,14 +3,14 @@
 
     <div id="cd-content">
     	<h1>Terms of Use</h1>
-    	<p>
+    	<p class="medium">
     	Cebu Directories welcomes and values your listing contributions to Cebu 
         Directories Listings.  We encourage you to communicate freely and if you 
         would like to send feedback directly, please use our forms on Contact Us 
         page or email us at info@cebudirectories.com.
     	</p>
     	
-        <p>
+        <p class="medium">
     	To make sure that the information posted upon registration is informative, 
         useful and correct, we ask everyone who registers to review and agree to 
         the basic rules set out in this policy.  You will be receiving a system 
