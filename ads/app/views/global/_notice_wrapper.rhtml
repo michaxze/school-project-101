@@ -1,0 +1,12 @@
+<div id="notice_wrapper">
+  <% if flash[:notice] -%>
+  <div class="systemFlashContainer">
+    <p class="systemFlash">
+      <% [:notice].each do |x| %>
+        <%= flash[x] unless flash[x].nil? %>
+        <% flash.discard(x) %>
+      <% end %></p>
+  </div>
+  <% end -%>
+</div>
+

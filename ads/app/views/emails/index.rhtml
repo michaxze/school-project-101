@@ -1,0 +1,9 @@
+<%= render :partial => 'new'%>
+<table>
+  <tr>
+    <td>Email Address</td>
+    <td>Date sent </td>
+    <td>Created at </td>
+  </tr>
+  <%= render :partial => 'email_row', :collection => @emails %>
+</table>  
