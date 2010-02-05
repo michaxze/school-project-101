@@ -1,9 +1,9 @@
 <?php defined('SYSPATH') OR die('No direct access allowed.'); ?>
-<div class="listing-top title">Featured Listing</div>
+<div class="title">Featured Listing</div>
 
 <!-- Featured Listing -->
 <div class="listing-feature">
-
+	<img src="images/banners/hopeforhaitinow.jpg" alt="Hope For Haiti Now!" title="Hope For Haiti Now!" width="520"/>
 </div>
 
 <!-- Latest Listings -->
