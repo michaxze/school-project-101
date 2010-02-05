@@ -53,6 +53,7 @@ h6 { font-size: 10px; }
 	width: 100%; height: 100px;
 	margin-top: 25px;
 	padding-top: 10px;
+	padding-bottom: 25px;
 	border-top: 1px dotted #CCCCCC;
 }
 #cd-sitemap {
@@ -233,7 +234,7 @@ ul#sitemaps li {
 .listing-top, .listing-bottom { width: 530px; }
 .listing-top    { background: url(../images/bg-listing.png) 0px 0px no-repeat; padding: 5px 0px; height: 16px; text-indent: 10px; }
 .listing-bottom { background: url(../images/bg-listing.png) 0px -53px no-repeat; height: 10px;}
-.listing-feature{ border-bottom: 1px solid #CCC; width: 98%; margin: 0px auto; margin-bottom: 10px; height: 200px; }
+.listing-feature{ border-bottom: 1px solid #CCC; width: 98%; margin: 0px auto; margin-bottom: 10px; height: 320px; }
 .listing-latest { width: 98%; margin: 0px auto; margin-bottom: 10px; color: #6D8309; }
 
 /*** MISCS ***/
