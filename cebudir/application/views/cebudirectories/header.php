@@ -54,6 +54,6 @@
             </ul>
         </div>
         
-        <div id="cd-banner"><img src="<?php echo url::base(); ?>images/banners/banner2.jpg" /></div>
+        <div id="cd-banner"><img src="<?php echo url::base(); ?>images/banners/banner3.jpg" /></div>
         <div class="shadow"></div>
     </div>
