@@ -73,7 +73,7 @@ h6 { font-size: 10px; }
 }
 #logo-footer {
 	width:100%; height: 30px;
-	background: url(../images/bg-foot.gif) left top no-repeat;
+	background: url(../images/logo-foot.png) left top no-repeat;
 }
 #footer-urls {
 	float: right;
@@ -108,7 +108,26 @@ ul#sitemaps li {
 	color: #333; padding-left: 10px; 
 }
 #cd-content p { padding: 5px 10px; }
-
+/***   SERVICES    ***/
+.services_block {
+	width: 320px;
+	display: block;
+}
+.services_block a img.icenter {
+	display: block;
+	margin: 0 auto;
+}
+.services_block a:hover img { opacity:.8;  
+    filter:alpha(opacity=80);  
+    -moz-opacity:.80; 
+	visibility: hidden;
+	}
+.services_listing, .services_advertising, .services_webdev {
+	margin: 20px 0px;
+}
+.services_listing 	  { background: url(../images/services/business-directory-listing.jpg) top center no-repeat; }
+.services_advertising { background: url(../images/services/advertising.jpg) top center no-repeat; }
+.services_webdev 	  { background: url(../images/services/web-development.jpg) top center no-repeat; }
 /***  LISTINGS  ***/
 .details_container { height: 17px; }
 .details {
@@ -130,6 +149,22 @@ ul#sitemaps li {
 .telno   { background: url(../images/contacticons.gif) 0px -33px no-repeat; }
 .website { background: url(../images/contacticons.gif) 0px -50px no-repeat; }
 .email	 { background: url(../images/contacticons.gif) 0px -18px no-repeat; }
+/*** ADVERTISING SECTION ***/
+#ads {
+	width: 202px;
+	margin-bottom: 10px;
+	background: #FFF; 	
+}
+#ads h5 {
+	text-align:left; 
+	padding: 0px; 
+	margin-bottom: 3px;	
+}
+#ads h5 a { border-bottom: 1px dotted #CCCCCC; }
+.divider {
+	background: url(../images/line.png) bottom repeat-x; 
+	height:5px; margin-bottom: 10px;
+}
 /*** FORM-CONTACT ***/
 #form-contact {
 	margin: 5px 15px;
@@ -201,7 +236,7 @@ ul#sitemaps li {
 #advertise-sel{ background: url(../images/navmenu.png) -480px -114px no-repeat; }
 #contact-sel  { background: url(../images/navmenu.png) -600px -114px no-repeat; }
 
-#categories, #ads {
+#categories {
 	border-top:2px solid #dcdcdc; 
 	border-left:1px solid #dcdcdc; 
 	border-right:1px solid #dcdcdc; 
@@ -242,8 +277,9 @@ ul#sitemaps li {
 .normal { font-weight: normal; color: #000000; }
 .stitle { color: #333; font-weight: bold; }
 
+.left	{ float: left; }
 .right  { float: right; }
-.center { text-align: center; }
+.center { text-align: }
 .shadow { background: url(../images/shadow.png) top center no-repeat; height: 15px; margin-top: -2px; }
 .clear  { clear: both; }
 
