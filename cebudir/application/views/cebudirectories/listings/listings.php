@@ -1,5 +1,8 @@
 <?php defined('SYSPATH') OR die('No direct access allowed.'); ?>
-<div class="listing-top title">Latest Listing</div>
+<div style="background: #b0c061; padding: 5px 0px;">
+	<span class="small" style="font-weight: bold; padding-left: 15px; color: #FFF;">Latest Listings</span>
+    <div class="clear"></div>
+</div>
 
 <!-- Latest Listings -->
 <div class="listing-latest">
