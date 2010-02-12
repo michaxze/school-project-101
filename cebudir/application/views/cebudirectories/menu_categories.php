@@ -1,7 +1,7 @@
 <?php defined('SYSPATH') OR die('No direct access allowed.'); ?>
 
 <div id="categories">
-	<div class="header-top center title">Categories</div>
+	<div class="header-top center title">Browse our Categories</div>
 	<ul id="categorymenu">
 	<?php
 //    print_r($categories[4]['child']);
@@ -28,3 +28,5 @@
     </ul>
 	<div class="header-bottom"></div>
 </div>
+
+<?php require_once(APPPATH . '/views/cebudirectories/advertising_left.php'); ?>

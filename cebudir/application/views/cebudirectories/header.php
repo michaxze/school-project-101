@@ -54,6 +54,9 @@
             </ul>
         </div>
         
-        <div id="cd-banner"><img src="<?php echo url::base(); ?>images/banners/banner3.jpg" /></div>
-        <div class="shadow"></div>
+        <?php
+		if($has_banner) {
+			require_once(APPPATH . '/views/cebudirectories/advertising_prime.php');
+		}
+		?>
     </div>
