@@ -5,7 +5,7 @@
 <div class="listing-latest">
     <h1 style="font-weight:lighter; margin-bottom: 10px; "><?php echo ucwords(strtolower($business_name)); ?></h1>
     
-    <?php
+    <?php	
 	if(strlen(trim($address)) > 0) {
 		echo '<div class="details_container"><div class="details address"> ADDRESS:</div> <span class="details_text">' . $address . '</span></div>';	
 	}
@@ -21,6 +21,13 @@
 	if(strlen(trim($description)) > 0) {
 		echo '<div>' . $description . '</div>';
 	}
+	$pattern = "/(src=[\\\"']?([^\\\"']?.*(png|jpg|gif))[\\\"']?)/i";
+	preg_match_all($pattern, htmlentities($description), $m);
+
+	echo '<pre>';
+	print_r($m);
+	echo '</pre>';
+
     ?>
     
 </div>

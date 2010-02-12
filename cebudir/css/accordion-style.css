@@ -28,10 +28,11 @@ ul#categorymenu li ul {
 	padding-left: 30px;	
 }
 ul#categorymenu li ul li a {
-  background: #FFFFFF;
-  color: #000;
-  padding-left: 5px;
-  font-weight: normal;
+	display: block;
+  	background: #FFFFFF;
+	color: #000;
+  	padding-left: 5px;
+  	font-weight: normal;
 }
 ul#categorymenu li ul li a:hover {
   background: #FFFFFF;
