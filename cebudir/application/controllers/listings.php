@@ -30,6 +30,7 @@ class Listings_Controller extends Controller {
 		$page = new View('cebudirectories/listings/index');
 		$page->title = 'Listings - Cebu Directories Online Cebu Directory of Cebu City';
 		$page->menu  = 'listing';
+		$page->has_banner = TRUE;
 		
 		$page->categories = $categories;
 		$page->listings   = $listings;
@@ -48,6 +49,7 @@ class Listings_Controller extends Controller {
 		$page = new View('cebudirectories/listings/index');
 		$page->title = ucwords(strtolower($listing['bus_name'])) . ' - Cebu Directories';
 		$page->menu  = 'listing';
+		$page->has_banner = TRUE;
 		
 		$page->categories = $categories;
 		
@@ -84,6 +86,7 @@ class Listings_Controller extends Controller {
 			$page = new View('cebudirectories/listings/index');
 			$page->title = $cat_var[0]['cat_name'] . ' - Cebu Directories Online Cebu Directory of Cebu City';
 			$page->menu  = 'listing';
+			$page->has_banner = TRUE;
 			
 			$page->categories = $categories;
 			$page->listings   = $listing;
