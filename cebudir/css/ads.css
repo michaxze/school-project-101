@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */	
+
+table#pricing, #adspecs {
+	width: 98%;
+	border-collapse: collapse;
+}
+
+table#pricing thead, #adspecs thead {
+	background: #333;
+	color: #FFF;
+}
+table#pricing thead tr td,
+#adspecs thead tr td { 
+	padding: 5px 10px;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #C2C2C2;
+}
+
+table#pricing tbody tr td,
+#adspecs tbody tr td{
+	padding: 15px 10px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	border: 1px solid #C2C2C2;
+	background: #99ab19;
+	vertical-align: top;
+}
+
+table#pricing tbody tr td.type {
+	text-align: left;
+	background: #fff;
+}
+
+table#pricing tbody tr td.monthly 	{ background:#a7b739; color: #f2fcbe; font-size: 15px; }
+table#pricing tbody tr td.quarterly	{ background:#99ab19; color: #f2fcbe; font-size: 15px; }
+table#pricing tbody tr td.semi  	{ background:#7f9f02; color: #ffffff; font-size: 15px; }
+table#pricing tbody tr td.yearly  	{ background:#526700; color: #ffffff; font-size: 15px; }
+
+#adspecs { margin: 15px auto; }
+#adspecs tbody tr td { background: #FFFFFF; text-align: left; font-weight: normal; }
+#adspecs tbody tr>td:first-of-type { font-weight: bold; }
