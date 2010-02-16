@@ -11,14 +11,30 @@
 	<meta name="Keywords" content="cebu directory, cebu directories, cebu business directory, directory" />
 
 	<link rel="stylesheet" href="<?php echo url::base(FALSE) ?>css/main.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="<?php echo url::base(FALSE) ?>css/ads.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="<?php echo url::base(FALSE) ?>css/thickbox.css" type="text/css" media="screen"/>
+    
     <link rel="shortcut icon" href="<?php echo url::base(FALSE) ?>cebudirectories.png">
+
+	<?php
+	## Append Dynamic Javascripts
+	$js_texts = '';
+	if(isset($scripts)) {
+		foreach($scripts as $js) {
+			$js_texts .= "\t" . '<script type="text/javascript" src="' . $js . '"></script>' . "\n";
+		}
+	}
+	?>
 
 	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.js"></script>
 	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.easing.js"></script>
 	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.accordion.js"></script>
+    <?php echo $js_texts; ?>
 
 	<title><?php echo $title; ?></title>
 
+	<?php echo (isset($active_script)) ? $active_script : ''; ?>
+    
 	<script type="text/javascript">
 	jQuery().ready(function(){
 		
