@@ -45,7 +45,20 @@ class Home_Controller extends Controller {
 	    $page = new View('cebudirectories/page_advertise');
 	    $page->title = 'Advertise - Cebu Directories Online Cebu Directory of Cebu City';
 		$page->menu  = 'advertise';
+		$page->scripts = array(url::base(FALSE) . "javascript/jquery.flow.1.2.js",
+							   url::base(FALSE) . "javascript/thickbox-min.js");
 		$page->has_banner = FALSE;
+		
+		$page->active_script = <<<ACTIVESCRIPT
+<script type="text/javascript">
+	$(function() {
+		$("div#controller").jFlow({
+			slides: "#slides"
+		});
+	});
+	</script>
+
+ACTIVESCRIPT;
 		
 		$page->categories = $this->categories;
 		$page->listings   = $this->listings;
