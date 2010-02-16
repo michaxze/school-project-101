@@ -20,16 +20,16 @@
         
         <div class="left center services_block">
         	<h3>Advertising</h3>
-            <div class="services_advertising"><a href="">
+            <div class="services_advertising"><a href="<?php echo url::base(); ?>advertise">
 	            <img class="icenter" src="<?php echo url::base(); ?>images/services/advertising-off.jpg" />
             </a></div>
             
             <p class="medium">
-    	Business directories benefit small, local companies 
-        as well as large, international companies. The important thing is that you get your name 
-        out there so customers know they can turn to your business. Online business directories 
-        are an inexpensive, effective way to maintain your business's standing
-    	</p>
+            By advertising on Cebu Directories, we help you create more awareness 
+            for your company by improving your Business popularity.  Unlocking the 
+            potential to reach more consumers and engage your target audience on a 
+            variety of levels in a cost-effective way.
+    		</p>
         </div>
         
         <div class="left center services_block">
