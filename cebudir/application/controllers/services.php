@@ -30,34 +30,36 @@ class Services_Controller extends Controller {
 	    $page->title = 'Services - Cebu Directories Online Cebu Directory of Cebu City';
 		$page->menu  = 'services';
 		$page->has_banner = TRUE;
-		$page->ctypes = array('Listing Inquiry',
-							  'Event Inquiry',
-							  'Advertising Inquiry',
-							  'Feedbacks and Comments - Thank us',
-							  'Other concerns');
 		
 		$page->categories = $this->categories;
-		$page->listings   = $this->listings;
+		//$page->listings   = $this->listings;
 		
 		$page->render(true);
 	}
 	
 	function listings()
 	{
-		echo "Hello";
-		/*$page = new View('cebudirectories/page_services');
-	    $page->title = 'Services - Cebu Directories Online Cebu Directory of Cebu City';
+		$page = new View('cebudirectories/services/page_listing');
+	    $page->title = 'Listings - Cebu Directories Online Cebu Directory of Cebu City';
 		$page->menu  = 'services';
-		$page->ctypes = array('Listing Inquiry',
-							  'Event Inquiry',
-							  'Advertising Inquiry',
-							  'Feedbacks and Comments - Thank us',
-							  'Other concerns');
+		$page->has_banner = FALSE;
 		
+		$page->scripts = array(url::base(FALSE) . "javascript/jquery.flow.1.2.js",
+							   url::base(FALSE) . "javascript/thickbox-min.js");
+		$page->active_script = <<<ACTIVESCRIPT
+<script type="text/javascript">
+	$(function() {
+		$("div#controller").jFlow({
+			slides: "#slides"
+		});
+	});
+	</script>
+
+ACTIVESCRIPT;
+
 		$page->categories = $this->categories;
-		$page->listings   = $this->listings;
 		
-		$page->render(true);*/
+		$page->render(true);
 	}
 	
 	function webdevelopment()
