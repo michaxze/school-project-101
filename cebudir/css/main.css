@@ -292,12 +292,26 @@ ul#sitemaps li {
 .header-top     { padding: 5px 0px; height: 18px; text-align: center; }
 .header-bottom  { background-position: 0px -49px; height: 10px; }
 
+#listing-head	{ background: #b0c061; padding: 5px 0px; }
+#listing-head span { font-weight: bold; padding-left: 15px; color: #FFF; }
+
 .listing		{ margin-bottom: 10px; border-bottom: 1px solid #DDD; padding-bottom: 5px; }
 .listing-top, .listing-bottom { width: 530px; }
 .listing-top    { background: url(../images/bg-listing.png) 0px 0px no-repeat; padding: 5px 0px; height: 16px; text-indent: 10px; }
 .listing-bottom { background: url(../images/bg-listing.png) 0px -53px no-repeat; height: 10px;}
 .listing-feature{ border-bottom: 1px solid #CCC; width: 98%; margin: 0px auto; margin-bottom: 10px; min-height: 320px; }
 .listing-latest { width: 98%; margin: 0px auto; margin-bottom: 10px; color: #6D8309; }
+.listing-category { background: #F2F2F2; padding: 0px; }
+.listing-category:hover { background: #b0c061; }
+.listing-category a { 
+	text-transform:uppercase; 
+	font-size: 8px; 
+	font-weight: bold; 
+	font-family: Arial, Helvetica, sans-serif; 
+	padding: 2px 5px;
+	letter-spacing: .5px;
+}
+.listing-category a:hover { color: #FFFFFF; }
 
 /*** MISCS ***/
 .title  { font-size: 13px; font-weight: bold; color: #333; text-shadow: 1px 1px #CCC; }

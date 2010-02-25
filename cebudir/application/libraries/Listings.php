@@ -26,7 +26,7 @@ class Listings_Core {
      */
     public function get_listings($limit = null, $cat_id = null)
     {
-        $this->db->from($this->table_name);
+		$this->db->from('cebu_business as cb', 'cebu_categories as cc');
         
 		if(isset($cat_id)) {
 			if(is_array($cat_id)) {
@@ -40,6 +40,7 @@ class Listings_Core {
         	$this->db->limit($limit);
         }
         
+		$this->db->where('cc.cat_id = cb.bus_cat_id');
         $this->db->orderby('bus_date_added','DESC');
         $result = $this->db->get();
 

@@ -12,21 +12,15 @@
 	if(strlen(trim($telno)) > 0) {
 		echo '<div class="details_container"><div class="details telno"> TEL. NO: </div><span class="details_text">' . $telno . '</span></div>';	
 	}
-	if(strlen(trim($website)) > 0) {
+	if(strlen(trim($website)) > 0 && $is_premium) {
 		echo '<div class="details_container"><div class="details website"> WEBSITE: </div><span class="details_text">' . $website . '</span></div>';	
 	}
-	if(strlen(trim($email)) > 0) {
+	if(strlen(trim($email)) > 0 && $is_premium) {
 		echo '<div class="details_container"><div class="details email"> EMAIL: </div><span class="details_text">' . $email . '</span></div>';	
 	}
-	if(strlen(trim($description)) > 0) {
+	if(strlen(trim($description) && $is_premium) > 0) {
 		echo '<div>' . $description . '</div>';
 	}
-	$pattern = "/(src=[\\\"']?([^\\\"']?.*(png|jpg|gif))[\\\"']?)/i";
-	preg_match_all($pattern, htmlentities($description), $m);
-
-	echo '<pre>';
-	print_r($m);
-	echo '</pre>';
 
     ?>
     
