@@ -25,7 +25,7 @@ class Listings_Controller extends Controller {
 		$categories = $this->cat->get_categories();
 	
 	    // Fetching of Latest Listing
-	    $listings = $this->lists->get_listings(15);
+	    $listings = $this->lists->get_listings(10);
 		
 		$page = new View('cebudirectories/listings/index');
 		$page->title = 'Listings - Cebu Directories Online Cebu Directory of Cebu City';
@@ -62,6 +62,7 @@ class Listings_Controller extends Controller {
 		$page->telno		 = $listing['bus_telno'];
 		$page->mobile		 = $listing['bus_mobile_no'];
 		$page->description	 = $listing['bus_description'];
+		$page->is_premium	 = $listing['is_pro_account'];
 		
 		$page->render(true);
 	}

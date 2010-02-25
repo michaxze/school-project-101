@@ -31,7 +31,7 @@
 </div>
 
 <div id="ads">
-	<img src="<?php echo url::base(); ?>images/advertising/ads-200-by-100.png" class="banner100" />
+	<img src="<?php echo url::base(); ?>images/advertising/hostfortes_100.png" class="banner100" />
 
 	<img src="<?php echo url::base(); ?>images/advertising/ads-200-by-200.png" class="banner200" />
 </div>

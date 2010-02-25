@@ -9,6 +9,7 @@
                 <ul>
                     <li><a href="#" class="jFlowControl">About</a></li>
                     <li><a href="#" class="jFlowControl">Benefits</a></li>
+                    <li><a href="#" class="jFlowControl">We Rank in Seach Engines</a></li>
                     <li><a href="#" class="jFlowControl">Listing Specifications</a></li>
                     <li><a href="#" class="jFlowControl">Pricing</a></li>
                     <li><a href="#" class="jFlowControl">Inquiry</a></li>
@@ -82,6 +83,39 @@
                 get these links. The more business directories your 
                 business is submitted to, the more inbound links it has. 
                 This increases page rankings.
+                </p>
+                
+            </div>
+            
+            <div>
+
+                <h2>We Rank Top in Search Engines</h2>
+                
+                <h3>Google</h3>
+                <p class="medium" style="height: 160px; ">
+                <a href="<?php echo url::base(); ?>images/services/cebudirectories-seo-google.png" class="thickbox" rel="searchengines" ></a>
+                <a href="<?php echo url::base(); ?>images/services/cebudirectories-seo-google2.png" class="thickbox" rel="searchengines" >
+                	<img src="<?php echo url::base(); ?>images/services/cebudirectories-seo-google2-thumb.png" align="left" />
+                </a>
+                We ranked #1 in Google Search using the keyword "cebu directories"
+                </p>
+                
+                <h3>Yahoo</h3>
+                <p class="medium" style="height: 160px; ">
+                <a href="<?php echo url::base(); ?>images/services/cebudirectories-seo-yahoo.png" class="thickbox" rel="searchengines" >
+                	<img src="<?php echo url::base(); ?>images/services/cebudirectories-seo-yahoo-thumb.png" align="left" />
+                </a>
+                <a href="<?php echo url::base(); ?>images/services/cebudirectories-seo-yahoo2.png" class="thickbox" rel="searchengines" ></a>
+                We ranked #1 in Google Search using the keyword "cebu directories"
+                </p>
+                
+                <h3>Bing</h3>
+                <p class="medium" style="height: 160px; ">
+                <a href="<?php echo url::base(); ?>images/services/cebudirectories-seo-bing.png" class="thickbox" rel="searchengines" >
+                	<img src="<?php echo url::base(); ?>images/services/cebudirectories-seo-bing-thumb.png" align="left" />
+                </a>
+                <a href="<?php echo url::base(); ?>images/services/cebudirectories-seo-bing2.png" class="thickbox" rel="searchengines" ></a>
+                We ranked #1 in Google Search using the keyword "cebu directories"
                 </p>
                 
             </div>
