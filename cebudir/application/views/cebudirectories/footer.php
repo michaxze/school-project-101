@@ -24,6 +24,7 @@
                     Web Design & Development<br />
                     Domain & Web Hosting<br />
                 </li>
+                <?php /* 
                 <li>
                 	<span class="stitle">Categories</span><br />
                     <?php
@@ -32,6 +33,7 @@
 					}
 					?>
                 </li>
+				*/ ?>
                 <li>
                 	<span class="stitle">Blogs</span><br />
                     Cebu Events<br />

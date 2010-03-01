@@ -28,6 +28,7 @@ class Home_Controller extends Controller {
 	{	
 		$page = new View('cebudirectories/home');
 		$page->title = 'Cebu Directories Online Cebu Directory of Cebu City';
+		$page->has_banner = TRUE;
 		
 		$page->categories = $this->categories;
 		$page->listings   = $this->listings;
@@ -44,6 +45,20 @@ class Home_Controller extends Controller {
 	    $page = new View('cebudirectories/page_advertise');
 	    $page->title = 'Advertise - Cebu Directories Online Cebu Directory of Cebu City';
 		$page->menu  = 'advertise';
+		$page->scripts = array(url::base(FALSE) . "javascript/jquery.flow.1.2.js",
+							   url::base(FALSE) . "javascript/thickbox-min.js");
+		$page->has_banner = FALSE;
+		
+		$page->active_script = <<<ACTIVESCRIPT
+<script type="text/javascript">
+	$(function() {
+		$("div#controller").jFlow({
+			slides: "#slides"
+		});
+	});
+	</script>
+
+ACTIVESCRIPT;
 		
 		$page->categories = $this->categories;
 		$page->listings   = $this->listings;
@@ -56,6 +71,7 @@ class Home_Controller extends Controller {
 		$page = new View('cebudirectories/page_contactus');
 		$page->title = 'Contact Us - Cebu Directories Online Cebu Directory of Cebu City';
 		$page->menu  = 'contact';
+		$page->has_banner = TRUE;
 		
 		// Fetching of Categories
 	    $cat = new Categories_Core;
@@ -171,27 +187,11 @@ class Home_Controller extends Controller {
 
     }
 	
-	function services()
-	{
-		$page = new View('cebudirectories/page_services');
-	    $page->title = 'Services - Cebu Directories Online Cebu Directory of Cebu City';
-		$page->menu  = 'services';
-		$page->ctypes = array('Listing Inquiry',
-							  'Event Inquiry',
-							  'Advertising Inquiry',
-							  'Feedbacks and Comments - Thank us',
-							  'Other concerns');
-		
-		$page->categories = $this->categories;
-		$page->listings   = $this->listings;
-		
-		$page->render(true);
-	}
-	
 	function aboutus()
 	{
 		$page = new View('cebudirectories/page_about');
 		$page->title = 'About Us - Cebu Directories Online Cebu Directory of Cebu City';
+		$page->has_banner = TRUE;
 		
 		$page->categories = $this->categories;
 		$page->listings   = $this->listings;
@@ -203,6 +203,7 @@ class Home_Controller extends Controller {
 	{
 		$page = new View('cebudirectories/page_terms_of_use');
 		$page->title = 'Terms of Use - Cebu Directories Online Cebu Directory of Cebu City';
+		$page->has_banner = TRUE;
 		
 		$page->categories = $this->categories;
 		$page->listings   = $this->listings;
@@ -214,6 +215,7 @@ class Home_Controller extends Controller {
 	{
 		$page = new View('cebudirectories/page_privacy_policy');
 		$page->title = 'Privacy Policy - Cebu Directories Online Cebu Directory of Cebu City';
+		$page->has_banner = TRUE;
 		
 		$page->categories = $this->categories;
 		$page->listings   = $this->listings;

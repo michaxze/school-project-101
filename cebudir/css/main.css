@@ -33,15 +33,15 @@ h6 { font-size: 10px; }
 #cd-categories { float: left; padding: 0px 0px; }
 #cd-listing    { float: left; margin-left: 10px; width: 530px; background: #FFF; }
 #cd-listing {
-	border-top:2px solid #dcdcdc; 
+	/*border-top:2px solid #dcdcdc; */
 	border-left:1px solid #dcdcdc; 
 	border-right:1px solid #dcdcdc; 
-	border-bottom:1px solid #dcdcdc; 
+	/*border-bottom:1px solid #dcdcdc; 
 	border-radius:5px; 
 	-moz-border-radius:5px; 
 	-webkit-border-radius:5px; 
 	-khtml-border-radius:5px; 
-	-o-border-radius:5px;
+	-o-border-radius:5px;*/
 }
 #cd-advertise {
 	float: left;
@@ -50,9 +50,10 @@ h6 { font-size: 10px; }
 }
 #cd-footer { 
 	background: #FFF;
-	width: 100%; height: 100px;
+	width: 100%; 
 	margin-top: 25px;
 	padding-top: 10px;
+	padding-bottom: 25px;
 	border-top: 1px dotted #CCCCCC;
 }
 #cd-sitemap {
@@ -72,7 +73,7 @@ h6 { font-size: 10px; }
 }
 #logo-footer {
 	width:100%; height: 30px;
-	background: url(../images/bg-foot.gif) left top no-repeat;
+	background: url(../images/logo-foot.png) left top no-repeat;
 }
 #footer-urls {
 	float: right;
@@ -107,7 +108,37 @@ ul#sitemaps li {
 	color: #333; padding-left: 10px; 
 }
 #cd-content p { padding: 5px 10px; }
-
+/***   SERVICES    ***/
+#cd-menus {
+	border-top:2px solid #dcdcdc; 
+	border-left:1px solid #dcdcdc; 
+	border-right:1px solid #dcdcdc; 
+	border-bottom:1px solid #dcdcdc; 
+	border-radius:5px; 
+	-moz-border-radius:5px; 
+	-webkit-border-radius:5px; 
+	-khtml-border-radius:5px; 
+	-o-border-radius:5px;	
+}
+.services_block {
+	width: 320px;
+	display: block;
+}
+.services_block a img.icenter {
+	display: block;
+	margin: 0 auto;
+}
+.services_block a:hover img { opacity:.8;  
+    filter:alpha(opacity=80);  
+    -moz-opacity:.80; 
+	visibility: hidden;
+	}
+.services_listing, .services_advertising, .services_webdev {
+	margin: 20px 0px;
+}
+.services_listing 	  { background: url(../images/services/business-directory-listing.jpg) top center no-repeat; }
+.services_advertising { background: url(../images/services/advertising.jpg) top center no-repeat; }
+.services_webdev 	  { background: url(../images/services/web-development.jpg) top center no-repeat; }
 /***  LISTINGS  ***/
 .details_container { height: 17px; }
 .details {
@@ -129,6 +160,38 @@ ul#sitemaps li {
 .telno   { background: url(../images/contacticons.gif) 0px -33px no-repeat; }
 .website { background: url(../images/contacticons.gif) 0px -50px no-repeat; }
 .email	 { background: url(../images/contacticons.gif) 0px -18px no-repeat; }
+/*** ADVERTISING SECTION ***/
+#ads, #cd-menus {
+	width: 202px;
+	margin-bottom: 10px;
+	background: #FFF;
+}
+#ads h5 {
+	text-align:left; 
+	padding: 0px; 
+	margin-bottom: 3px;	
+}
+#ads h5 a { border-bottom: 1px dotted #CCCCCC; }
+#ads span { font-size: 11px; }
+.divider {
+	background: url(../images/line.png) bottom repeat-x; 
+	height:5px; margin-bottom: 10px;
+}
+
+.banner100 {
+	width: 200px; height: 100px;
+	background: url(../images/ads-200-by-100.png) top;
+	border: none;
+}
+.banner200 {
+	width: 200px; height: 200px;
+	background: url(../images/ads-200-by-200.png) top;
+}
+.banner400 {
+	width: 200px; height: 400px;
+	background: url(../images/ads-200-by-400.png) top;
+}
+
 /*** FORM-CONTACT ***/
 #form-contact {
 	margin: 5px 15px;
@@ -200,7 +263,7 @@ ul#sitemaps li {
 #advertise-sel{ background: url(../images/navmenu.png) -480px -114px no-repeat; }
 #contact-sel  { background: url(../images/navmenu.png) -600px -114px no-repeat; }
 
-#categories, #ads {
+#categories {
 	border-top:2px solid #dcdcdc; 
 	border-left:1px solid #dcdcdc; 
 	border-right:1px solid #dcdcdc; 
@@ -214,9 +277,9 @@ ul#sitemaps li {
 	margin-bottom: 10px;
 	background: #FFF; 
 }
-#ads ul 	  { margin: 0px; padding: 0px; }
-#ads ul li { padding: 5px 10px; border-bottom: 1px solid #CCC; display: block; }
-#ads ul li:hover { 
+#ads ul, #cd-menus ul 	  	  { margin: 0px; padding: 0px; }
+#ads ul li, #cd-menus ul li a { padding: 5px 10px; border: 1px solid #CCC; display: block; border-top: none; }
+#ads ul li:hover, #cd-menus ul li a:hover { 
 	font-weight: bold; 
 	color: #5b720a; 
 }
@@ -226,25 +289,42 @@ ul#sitemaps li {
 	border-right:1px solid #dcdcdc; 
 	width: 200px;
 }
-.header-top     { padding: 5px 0px; height: 18px; }
+.header-top     { padding: 5px 0px; height: 18px; text-align: center; }
 .header-bottom  { background-position: 0px -49px; height: 10px; }
+
+#listing-head	{ background: #b0c061; padding: 5px 0px; }
+#listing-head span { font-weight: bold; padding-left: 15px; color: #FFF; }
 
 .listing		{ margin-bottom: 10px; border-bottom: 1px solid #DDD; padding-bottom: 5px; }
 .listing-top, .listing-bottom { width: 530px; }
 .listing-top    { background: url(../images/bg-listing.png) 0px 0px no-repeat; padding: 5px 0px; height: 16px; text-indent: 10px; }
 .listing-bottom { background: url(../images/bg-listing.png) 0px -53px no-repeat; height: 10px;}
-.listing-feature{ border-bottom: 1px solid #CCC; width: 98%; margin: 0px auto; margin-bottom: 10px; height: 200px; }
+.listing-feature{ border-bottom: 1px solid #CCC; width: 98%; margin: 0px auto; margin-bottom: 10px; min-height: 320px; }
 .listing-latest { width: 98%; margin: 0px auto; margin-bottom: 10px; color: #6D8309; }
+.listing-category { background: #F2F2F2; padding: 0px; }
+.listing-category:hover { background: #b0c061; }
+.listing-category a { 
+	text-transform:uppercase; 
+	font-size: 8px; 
+	font-weight: bold; 
+	font-family: Arial, Helvetica, sans-serif; 
+	padding: 2px 5px;
+	letter-spacing: .5px;
+}
+.listing-category a:hover { color: #FFFFFF; }
 
 /*** MISCS ***/
 .title  { font-size: 13px; font-weight: bold; color: #333; text-shadow: 1px 1px #CCC; }
 .normal { font-weight: normal; color: #000000; }
 .stitle { color: #333; font-weight: bold; }
 
+.borderized { border: 1px solid #999; padding: 10px; margin: 0px 15px 15px 0px; }
+
+.left	{ float: left; }
 .right  { float: right; }
-.center { text-align: center; }
 .shadow { background: url(../images/shadow.png) top center no-repeat; height: 15px; margin-top: -2px; }
 .clear  { clear: both; }
+.green  { color: #6D8309; }
 
 .small  { font-size: 14px; }
 .medium { font-size: 16px; }
