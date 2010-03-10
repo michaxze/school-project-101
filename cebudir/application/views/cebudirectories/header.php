@@ -57,10 +57,14 @@
 <div id="cd-wrapper">
 
 	<div id="cd-header">
-    	<div id="logo" style="cursor:pointer" onclick="location.href='<?php echo url::base(); ?>'"><a href="<?php echo url::base(); ?>" title="Home"><div id="home"></div></a></div>
-    
+       	 
+        <div style="margin-top: 10px;">
+        	<img src="<?php echo url::base(); ?>images/logo.png" alt="Cebu Directories Home Page" title="Cebu Directories" />
+        </div>
+        
         <div id="cd-navigation">
         	<ul>
+            	<li id="home"><a href="<?php echo url::base(); ?>" title="Cebu Directories Home"></a></li>
             	<li id="listing<?php echo (isset($menu) && $menu == 'listing') ? "-sel" : ""; ?>"><a href="<?php echo url::base(); ?>listings"></a></li>
                 <li id="event"<?php echo (isset($menu) && $menu == 'event') ? "-sel" : ""; ?>><a href="<?php echo url::base(); ?>events"></a></li>
                 <li id="blog"><a href="<?php echo url::base(); ?>blog"></a></li>
@@ -76,3 +80,5 @@
 		}
 		?>
     </div>
+
+	<?php //require_once(APPPATH . '/views/cebudirectories/search.php'); ?>
