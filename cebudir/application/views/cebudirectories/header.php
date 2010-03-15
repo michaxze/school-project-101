@@ -66,7 +66,7 @@
         	<ul>
             	<li id="home"><a href="<?php echo url::base(); ?>" title="Cebu Directories Home"></a></li>
             	<li id="listing<?php echo (isset($menu) && $menu == 'listing') ? "-sel" : ""; ?>"><a href="<?php echo url::base(); ?>listings"></a></li>
-                <li id="event"<?php echo (isset($menu) && $menu == 'event') ? "-sel" : ""; ?>><a href="<?php echo url::base(); ?>events"></a></li>
+                <li id="event"<?php echo (isset($menu) && $menu == 'event') ? "-sel" : ""; ?>><a href="http://blogs.cebudirectories.com/category/cebu-events/"></a></li>
                 <li id="blog"><a href="<?php echo url::base(); ?>blog"></a></li>
                 <li id="services<?php echo (isset($menu) && $menu == 'services') ? "-sel" : ""; ?>"><a href="<?php echo url::base(); ?>services"></a></li>
                 <li id="advertise<?php echo (isset($menu) && $menu == 'advertise') ? "-sel" : ""; ?>"><a href="<?php echo url::base(); ?>advertise"></a></li>

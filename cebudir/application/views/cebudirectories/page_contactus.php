@@ -9,7 +9,7 @@
             <p class="medium">
             Cebu Directories would be glad to hear any messages, comments, suggestions
             from our valued clients that may help improve our services. You may contact
-            us by sending us an email to  michael@cebudirectories.com
+            us by sending us an email to  info@cebudirectories.com
             </p>
 		<?php } else { ?>
         

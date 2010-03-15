@@ -13,6 +13,7 @@ $config['listings']  = 'listings/index';
 
 $config['services']  = 'services/index';
 $config['services/web-development'] = 'services/webdevelopment';
+$config['signup']  = 'home/signup';
 
 /**
  * This will retain the url before of the Business Listings

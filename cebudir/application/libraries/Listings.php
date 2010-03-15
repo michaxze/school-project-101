@@ -55,4 +55,18 @@ class Listings_Core {
 		
 		return $result->result_array(FALSE);
 	}
+
+  public function get_provinces()
+  {
+    $this->db->from("cebu_location");
+    $this->db->orderby('loc_name', 'ASC');
+    $result = $this->db->get();
+    $rows = $result->result_array(FALSE);
+    $newrows = array();
+    for($i=0; $i<count($rows); $i++){
+      $newrows[$rows[$i]['loc_id']] = $rows[$i]['loc_name'];
+    }
+    return $newrows;
+  }
+
 } // End of Listings Core
