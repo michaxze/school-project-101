@@ -72,7 +72,7 @@ h6 { font-size: 10px; }
 	background: url(../images/logo.png) bottom no-repeat;
 }
 #logo-footer {
-	width:100%; height: 30px;
+	width:100%; height: 35px;
 	background: url(../images/logo-foot.png) left top no-repeat;
 }
 #footer-urls {
@@ -354,43 +354,3 @@ ul#sitemaps li {
 .small  { font-size: 14px; }
 .medium { font-size: 16px; }
 .large  { font-size: 18px; }
-
-/*** SIGN UP FORM ****/
-
-#form-signup {
-	margin: 5px 15px;
-	padding: 5px 0px;
-}
-#form-signup input[type="text"], #form-contact textarea
-{
-	border: 1px solid #999;
-	width: 440px;
-	font-size: 16px;
-	height: 20px;
-	padding: 5px;
-	margin: 3px 0px 10px 0px;
-}
-#form-signup table select {
-  width:450px;
-  font-size:16px;
-  margin-bottom:5px;
-  margin-top:5px;
-}
-#form-signup label { font-size: 12px; }
-#form-signup textarea { width: 450px; height: 125px; }
-.submit {
-	font-size: 14px;
-	font-weight: bold;
-	color: #FFFFFF;
-	border: none;
-	background: #6D8309 url(../images/navmenu.png) -750px 0 no-repeat;
-	padding: 5px 20px;
-	margin-top: 15px;
-	-moz-border-radius:15px;
-	-webkit-border-radius:15px;
-	-khtml-border-radius:15px;
-}
-#errors {
-  margin-left:50px;
-  color: red;
-}
