@@ -28,6 +28,19 @@ class Categories_Core {
                                   'is_shown');
     }    
 
+    public function get_categories_name()
+    {
+        $this->db->from($this->table_name);
+        $this->db->orderby('cat_name','ASC');
+        $result     = $this->db->get();
+        $categories = $result->result_array(FALSE);
+        $newlist = array();
+        for($i=0; $i<count($categories); $i++) {
+            $newlist[$categories[$i]['cat_id']] = $categories[$i]['cat_name'];
+        }
+        return $newlist;
+    }
+
     /**
      * Retrieves All Categories
      *
@@ -51,7 +64,7 @@ class Categories_Core {
         }
         
         $result     = $this->db->get();
-		$categories = $result->result_array(FALSE);
+        $categories = $result->result_array(FALSE);
 
 	if($parent_only == true) {
 	    return $categories;
