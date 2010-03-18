@@ -31,7 +31,7 @@
 </div>
 
 <div id="ads">
-	<img src="<?php echo url::base(); ?>images/advertising/hostfortes_100.png" class="banner100" />
+	<a href="http://hostfortes.com/packages/" alt="Cheap, fast and reliable web hosting" title="Cheap, fast and reliable web hosting"><img src="<?php echo url::base(); ?>images/advertising/hostfortes_100.png" class="banner100" /></a>
 
 	<img src="<?php echo url::base(); ?>images/advertising/ads-200-by-200.png" class="banner200" />
 </div>

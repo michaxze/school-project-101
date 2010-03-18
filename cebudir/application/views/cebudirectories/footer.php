@@ -45,8 +45,8 @@
                 </li>
                 <li>
                 	<span class="stitle">Connect with us!</span><br style="margin-bottom: 5px;"/>
-                    <a href="#"><img src="<?php echo url::base(); ?>images/twitter.png" title="Follow Cebu Directories on Twitter!" alt="Follow us on Twitter!" /></a><br />
-                    <a href="#"<img src="<?php echo url::base(); ?>images/facebook.png" title="Add Cebu Directories on Facebook!" alt="Add us on Facebook!" /></a><br />
+                    <a href="http://twitter.com/cebudirectories"><img src="<?php echo url::base(); ?>images/twitter.png" title="Follow Cebu Directories on Twitter!" alt="Follow us on Twitter!" /></a><br />
+                    <a href="http://www.facebook.com/pages/Cebu-Directories/281222139431"><img src="<?php echo url::base(); ?>images/facebook.png" title="Add Cebu Directories on Facebook!" alt="Add us on Facebook!" /></a><br />
                 </li>
      			<div class="clear"></div>
           </ul>
