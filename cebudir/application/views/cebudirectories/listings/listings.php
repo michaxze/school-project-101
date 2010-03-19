@@ -8,6 +8,7 @@
 <div class="listing-latest">
     
     <?php
+		echo $pagination;
     	foreach($listings as $list) {
 			$bus_name = strtolower($list['bus_name']);
 			$is_premium = $list['is_pro_account'];

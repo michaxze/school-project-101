@@ -20,4 +20,5 @@ $config['signup']  = 'home/signup';
  * e.g: http://cebudirectories.com/name-of-business
  */
 $config['category/([0-9a-zA-z-]+)'] = 'listings/category/$1';
+$config['category/([0-9a-zA-z-]+)/([0-9]+)'] = 'listings/category/$1/$2';
 $config['([0-9a-zA-z-]+)'] = 'listings/show/$1';

@@ -44,10 +44,7 @@
 			
 			echo '<div class="listing">';
     		echo '<h5>' . $turl_html . '<span class="listing-category" style="float: right;">' . $curl_html . '</span></h5>';
-				 
-			if(strlen(trim($list['bus_description'])) > 0 && $is_premium) {
-    			//echo '<p>' . substr(strip_tags($list['bus_description']), 0, 200) . '</p>';
-			}
+
 			if(strlen(trim($list['bus_address'])) > 0) {
 				echo '<div class="details_container"><div class="details address"> ADDRESS:</div> <span class="details_text">' . $list['bus_address'] . '</span></div>';	
 			}
@@ -61,9 +58,6 @@
 				echo '<div class="details_container"><div class="details email"> EMAIL: </div><span class="details_text">' . $list['bus_email'] . '</span>	</div>';	
 			}
     		echo '</div>';
-			/*echo '<pre>';
-			print_r($list);
-			echo '</pre>';*/
     	}
     ?>
     

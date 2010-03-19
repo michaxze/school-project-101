@@ -24,7 +24,7 @@ class Listings_Core {
 	 *
      * @author	Paul Villacorta		<pwvillacorta@cebudirectories.com>
      */
-    public function get_listings($limit = null, $cat_id = null)
+    public function get_listings($limit = null, $cat_id = null, $offset = 0)
     {
 		$this->db->from('cebu_business as cb', 'cebu_categories as cc');
         
@@ -40,6 +40,7 @@ class Listings_Core {
         	$this->db->limit($limit);
         }
         
+		$this->db->offset($offset);
 		$this->db->where('cc.cat_id = cb.bus_cat_id');
         $this->db->orderby('bus_date_added','DESC');
         $result = $this->db->get();
@@ -55,18 +56,54 @@ class Listings_Core {
 		
 		return $result->result_array(FALSE);
 	}
+	
+	public function get_listings_total($cat_id=NULL)
+	{
+		$this->db->from('cebu_business');
+		
+		if(isset($cat_id)) {
+			if(is_array($cat_id)) {
+				$this->db->in('bus_cat_id', $cat_id);
+			} else {
+				$this->db->where('bus_cat_id', $cat_id);	
+			}
+		}
+		
+		$result = $this->db->get();
+		
+		return $result->count();
+	}
 
-  public function get_provinces()
-  {
-    $this->db->from("cebu_location");
-    $this->db->orderby('loc_name', 'ASC');
-    $result = $this->db->get();
-    $rows = $result->result_array(FALSE);
-    $newrows = array();
-    for($i=0; $i<count($rows); $i++){
-      $newrows[$rows[$i]['loc_id']] = $rows[$i]['loc_name'];
-    }
-    return $newrows;
-  }
+	public function get_provinces()
+	{
+		$this->db->from("cebu_location");
+		$this->db->orderby('loc_name', 'ASC');
+		$result = $this->db->get();
+		$rows = $result->result_array(FALSE);
+		$newrows = array();
+		for($i=0; $i<count($rows); $i++){
+		  $newrows[$rows[$i]['loc_id']] = $rows[$i]['loc_name'];
+		}
+		return $newrows;
+	}
+	
+	public function get_query($q, $limit=NULL)
+	{
+		$q = strtolower(trim($q));
+		$this->db->from('cebu_business');
+		
+		if(isset($limit)) {
+        	$this->db->limit($limit);
+        }
+		
+		$this->db->like('bus_name', $q);
+		$this->db->orlike('bus_description', $q);
+		
+		$this->db->groupby('bus_id');
+		//$this->db->orderby('cb.bus_no_of_views');
+		$result = $this->db->get();
+		
+		return $result->result_array(FALSE);
+	}
 
 } // End of Listings Core

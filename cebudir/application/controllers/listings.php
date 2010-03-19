@@ -10,22 +10,32 @@ class Listings_Controller extends Controller {
 	
 	var $lists;
 	var $cat;
+	var $paging;
 	
 	function __construct()
 	{
 		$this->lists = new Listings_Core;
 		$this->cat   = new Categories_Core;
+		$this->paging= new Pagination(array('base_url'		 => '/listings/page/',
+											'uri_segment'	 => 3,
+											'total_items'	 => $this->lists->get_listings_total(),
+											'items_per_page' => 10,
+											'style'			 => 'digg',
+											'sql_limit'		 => 10));
 		
 		parent::__construct();
 	}
 	
 	function index()
 	{	
+		// Construct Pagination
+		$this->paging->initialize();
+
 	    // Fetching of Categories
 		$categories = $this->cat->get_categories();
 	
 	    // Fetching of Latest Listing
-	    $listings = $this->lists->get_listings(10);
+	    $listings = $this->lists->get_listings($this->paging->items_per_page);
 		
 		$page = new View('cebudirectories/listings/index');
 		$page->title = 'Listings - Cebu Directories Online Cebu Directory of Cebu City';
@@ -34,6 +44,31 @@ class Listings_Controller extends Controller {
 		
 		$page->categories = $categories;
 		$page->listings   = $listings;
+		$page->pagination = $this->paging->render();
+		
+		$page->render(true);
+	}
+	
+	function page($page)
+	{
+		// Construct Pagination
+		$this->paging->initialize();
+
+	    // Fetching of Categories
+		$categories = $this->cat->get_categories();
+	
+	    // Fetching of Latest Listing
+		$offset   = ($this->paging->items_per_page * $page);
+	    $listings = $this->lists->get_listings($this->paging->items_per_page, NULL, $offset);
+		
+		$page = new View('cebudirectories/listings/index');
+		$page->title = 'Listings - Cebu Directories Online Cebu Directory of Cebu City';
+		$page->menu  = 'listing';
+		$page->has_banner = TRUE;
+		
+		$page->categories = $categories;
+		$page->listings   = $listings;
+		$page->pagination = $this->paging->render();
 		
 		$page->render(true);
 	}
@@ -67,7 +102,7 @@ class Listings_Controller extends Controller {
 		$page->render(true);
 	}
 	
-	function category($category)
+	function category($category, $page=NULL)
 	{
 		// replace "-" to space " "
 		$category = str_replace("-", " ", $category);
@@ -78,11 +113,21 @@ class Listings_Controller extends Controller {
 				$cids[] = $cat['cat_id'];	
 			}
 			
+			// Construct Pagination
+			$this->paging= new Pagination(array('base_url'		 => '/category/' . $category,
+												'uri_segment'	 => 3,
+												'total_items'	 => $this->lists->get_listings_total($cids),
+												'items_per_page' => 10,
+												'auto_hide'		 => true,
+												'style'			 => 'classic'));
+			$this->paging->initialize();
+			
 			// Fetching of Categories
 			$categories = $this->cat->get_categories();
 			
 			// Fetching of Listings by Category
-			$listing = $this->lists->get_listings(15, $cids);
+			$offset  = isset($page) ? ($page*$this->paging->items_per_page) : 0;
+			$listing = $this->lists->get_listings($this->paging->items_per_page, $cids, $offset);
 			
 			$page = new View('cebudirectories/listings/index');
 			$page->title = $cat_var[0]['cat_name'] . ' - Cebu Directories Online Cebu Directory of Cebu City';
@@ -91,6 +136,7 @@ class Listings_Controller extends Controller {
 			
 			$page->categories = $categories;
 			$page->listings   = $listing;
+			$page->pagination = $this->paging->render();
 			
 			$page->render(true);
 		}

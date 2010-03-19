@@ -174,7 +174,7 @@ ACTIVESCRIPT;
 		$page = new View('cebudirectories/page_contactus');
 		$page->title = 'Contact Us - Cebu Directories Online Cebu Directory of Cebu City';
 		$page->menu  = 'contact';
-    $page->has_banner = TRUE;
+    	$page->has_banner = TRUE;
 		$page->ctypes = array('listing' => 'Listing Inquiry',
 							  'events' => 'Event Inquiry',
 							  'advertising' => 'Advertising Inquiry',
