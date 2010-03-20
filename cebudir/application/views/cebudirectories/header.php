@@ -57,16 +57,27 @@
 <div id="cd-wrapper">
 
 	<div id="cd-header">
-       	 
         <div style="margin-top: 10px;">
-        	<img src="<?php echo url::base(); ?>images/logo.png" alt="Cebu Directories Home Page" title="Cebu Directories" />
+          <h1>Cebu Directory</h1>
+          <img src="<?php echo url::base(); ?>images/logo.png" alt="Cebu Directories Home Page" title="Cebu Directories" />
+          <div id="search_bar">
+            <?php
+            echo form::open("listings/search", array('method' => 'post'));
+            echo form::label("Search a business : &nbsp;") ;
+            echo form::input('search','') . "&nbsp;";
+            echo form::button(array('type' => 'submit',
+                                    'value' => 'Search'));
+
+            ?>
+            </form>
+          </div>
         </div>
         
         <div id="cd-navigation">
         	<ul>
             	<li id="home"><a href="<?php echo url::base(); ?>" title="Cebu Directories Home"></a></li>
             	<li id="listing<?php echo (isset($menu) && $menu == 'listing') ? "-sel" : ""; ?>"><a href="<?php echo url::base(); ?>listings"></a></li>
-                <li id="event"<?php echo (isset($menu) && $menu == 'event') ? "-sel" : ""; ?>><a href="<?php echo url::base(); ?>events"></a></li>
+                <li id="event"<?php echo (isset($menu) && $menu == 'event') ? "-sel" : ""; ?>><a href="http://blogs.cebudirectories.com/category/cebu-events/"></a></li>
                 <li id="blog"><a href="http://blogs.cebudirectories.com/"></a></li>
                 <li id="services<?php echo (isset($menu) && $menu == 'services') ? "-sel" : ""; ?>"><a href="<?php echo url::base(); ?>services"></a></li>
                 <li id="advertise<?php echo (isset($menu) && $menu == 'advertise') ? "-sel" : ""; ?>"><a href="<?php echo url::base(); ?>advertise"></a></li>

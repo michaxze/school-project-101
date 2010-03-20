@@ -49,6 +49,23 @@ class Listings_Controller extends Controller {
 		$page->render(true);
 	}
 	
+  function search()
+  {
+    $this->paging->initialize();
+    $categories = $this->cat->get_categories();
+    $listings = $this->lists->search_listing($this->paging->items_per_page, $this->input->post('search'));
+
+    $page = new View('cebudirectories/listings/index');
+    $page->title = 'Listings - Cebu Directories Online Cebu Directory of Cebu City';
+    $page->menu  = 'listing';
+    $page->has_banner = TRUE;
+
+    $page->categories = $categories;
+    $page->listings   = $listings;
+    $page->pagination = $this->paging->render();
+    $page->render(true);
+  }
+
 	function page($page)
 	{
 		// Construct Pagination

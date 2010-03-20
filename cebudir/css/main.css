@@ -28,7 +28,20 @@ h6 { font-size: 10px; }
 #cd-body 	   { height: 100%; background: #FFFFFF; margin-top: -10px; padding-top: 10px; }
 #cd-wrapper    { width: 960px; margin: 0px auto; background: #FFFFFF; padding: 5px; }
 #cd-header 	   { }
+#cd-header h1 {
+  margin-left:-99999px;
+  position:absolute;
+}
 #cd-banner 	   { height: 250px; width: 960px; background: #300; }
+#cd-header, #cd-banner { margin-bottom: 5px; }
+#cd-header #search_bar {
+  float:right;
+  position:relative;
+}
+#cd-header #search_bar input {
+  font-size:10px;
+  width:200px;
+}
 #cd-content    { width: 100%; }
 #cd-categories { float: left; padding: 0px 0px; }
 #cd-listing    { float: left; margin-left: 10px; width: 530px; background: #FFF; }
@@ -59,7 +72,7 @@ h6 { font-size: 10px; }
 	background: #EDEDED;
 	margin-bottom: 15px;
 }
-#cd-header, #cd-banner { margin-bottom: 5px; }
+
 
 #logo {
 	height: 358px; 
@@ -243,6 +256,31 @@ ul#sitemaps li {
 	-khtml-border-radius:15px; 
 }
 .submit:active { background: url(../images/navmenu.png) -750px -76px no-repeat; }
+
+/*** SIGN UP FORM ****/
+#form-signup {
+	margin: 5px 15px;
+	padding: 5px 0px;
+}
+#form-signup input[type="text"], #form-contact textarea
+{
+	border: 1px solid #999;
+	width: 440px;
+	font-size: 16px;
+	height: 20px;
+	padding: 5px;
+	margin: 3px 0px 10px 0px;
+}
+#form-signup table select {
+  width:450px;
+  font-size:16px;
+  margin-bottom:5px;
+  margin-top:5px;
+}
+#form-signup label { font-size: 12px; }
+#form-signup textarea { width: 450px; height: 125px; }
+
+
 /***  NAVIGATION ***/
 #cd-navigation {
 	margin-top: 5px;

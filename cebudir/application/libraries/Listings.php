@@ -19,35 +19,50 @@ class Listings_Core {
      * Retrieves All Listings
      *
      * @param	int			$limit		set result limit (optional)
-	 * @param	int/array 	$cat_id		get listing by category
+     * @param	int/array 	$cat_id		get listing by category
      * @return  array		$result		listings
-	 *
+     *
      * @author	Paul Villacorta		<pwvillacorta@cebudirectories.com>
      */
     public function get_listings($limit = null, $cat_id = null, $offset = 0)
     {
-		$this->db->from('cebu_business as cb', 'cebu_categories as cc');
-        
-		if(isset($cat_id)) {
-			if(is_array($cat_id)) {
-				$this->db->in('bus_cat_id', $cat_id);
-			} else {
-				$this->db->where('bus_cat_id', $cat_id);	
-			}
-		}
-		
-        if(isset($limit)) {
-        	$this->db->limit($limit);
-        }
-        
-		$this->db->offset($offset);
-		$this->db->where('cc.cat_id = cb.bus_cat_id');
-        $this->db->orderby('bus_date_added','DESC');
-        $result = $this->db->get();
+      $this->db->from('cebu_business as cb', 'cebu_categories as cc');
 
-        return $result->result_array(FALSE);
+      if(isset($cat_id)) {
+        if(is_array($cat_id)) {
+          $this->db->in('bus_cat_id', $cat_id);
+        } else {
+          $this->db->where('bus_cat_id', $cat_id);
+        }
+      }
+
+      if(isset($limit)) {
+        $this->db->limit($limit);
+      }
+
+      $this->db->offset($offset);
+
+      $this->db->orderby('bus_date_added','DESC');
+      $result = $this->db->get();
+
+      return $result->result_array(FALSE);
     }
-	
+
+    public function search_listing($limit = null, $search_string, $cat_id = null, $offset = 0)
+    {
+      $this->db->from('cebu_business as cb', 'cebu_categories as cc');
+      $this->db->like('bus_name', "%$search_string%", FALSE);
+      $this->db->offset($offset);
+      $this->db->orderby('bus_date_added','DESC');
+      $this->db->where('cc.cat_id = cb.bus_cat_id');
+      if(isset($limit)) {
+        $this->db->limit($limit);
+      }
+
+      $result = $this->db->get();
+      return $result->result_array(FALSE);
+    }
+
 	public function get_listing($name)
 	{
 		$this->db->from($this->table_name);
