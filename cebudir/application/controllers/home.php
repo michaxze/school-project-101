@@ -17,7 +17,7 @@ class Home_Controller extends Controller {
 	{
 		$this->lists = new Listings_Core;
 		$this->cat   = new Categories_Core;
-		
+				
 		$this->categories = $this->cat->get_categories();
 		$this->listings   = $this->lists->get_listings(5);
 		
@@ -32,7 +32,7 @@ class Home_Controller extends Controller {
 		
 		$page->categories = $this->categories;
 		$page->listings   = $this->listings;
-		
+			
 		$page->render(true);
 	    // Fetching of Advertisers
 	    // Fetching of Featured Listing
@@ -225,70 +225,102 @@ ACTIVESCRIPT;
 		$page->render(true);
 	}
 
-  function signup()
-  {
-    $page = new View('cebudirectories/page_signup');
-    $page->title = 'Signup - Cebu Directories Online Cebu Directory of Cebu City';
-    $page->has_banner = FALSE;
-    $page->categories = $this->cat->get_categories_name();
-    $page->provinces = $this->lists->get_provinces();
-    $page->submitted = FALSE;
-    $page->errors = array();
-
-    $posts = $this->input->post();
-
-    if(!empty($posts)) {
-      $post = new Validation($_POST);
-      $db = new Database;
-
-      $name           = $this->input->post('business_name');
-      $description    = $this->input->post('business_desc');
-      $address        = $this->input->post('business_street');
-      $location_id    = $this->input->post('area');
-      $category_id    = $this->input->post('category');
-      $telno          = $this->input->post('telno_areacode') . "-" . $this->input->post('telno');
-      $mobileno       = $this->input->post('mobileno_network') . "-" . $this->input->post('mobileno');
-      $faxno          = $this->input->post('faxno');
-      $email          = $this->input->post('email');
-      $website        = $this->input->post('website');
-      $twitter_link   = $this->input->post('twitter_link');
-      $facebook_link  = $this->input->post('facebook_link');
-      $yahoo_id       = $this->input->post('yahoo_id');
-      $skype_id       = $this->input->post('skype_id');
-
-      // Adding rules to form fields
-      $post->add_rules('business_name', 'required', 'standard_text');
-      $post->add_rules('business_desc', 'required', 'standard_text');
-      $post->add_rules('email','required', 'valid::email');
-
-      if ($post->validate()) {
-        $date = date("Y-m-d H:i:s");
-        $result = $db->insert("submitted_businesses",
-                array('name'=> $name,
-                    'description' => $description,
-                    'address' => $address,
-                    'location_id' => $location_id,
-                    'category_id' => $category_id,
-                    'telno' => $telno,
-                    'mobileno' => $mobileno,
-                    'faxno' => $faxno,
-                    'email_address' => $email,
-                    'website' => $website,
-                    'twitter_link' => $twitter_link,
-                    'facebook_link' => $facebook_link,
-                    'yahoo_id' => $yahoo_id,
-                    'skype_id' => $skype_id,
-                    'status' => 'pending',
-                    'created_at' => $date,
-                    'updated_at' => $date ));
-        $page->submitted = TRUE;
-      }else{
-        $page->errors = $post->errors();
-      }
-
+    function signup()
+    {
+        $page = new View('cebudirectories/page_signup');
+        $page->title = 'Signup - Cebu Directories Online Cebu Directory of Cebu City';
+        $page->has_banner = FALSE;
+        $page->categories = $this->cat->get_categories_name();
+        $page->provinces = $this->lists->get_provinces();
+        $page->submitted = FALSE;
+        $page->errors = array();
+        
+        $posts = $this->input->post();
+        
+        if(!empty($posts)) {
+            $post = new Validation($_POST);
+            $db = new Database;
+            
+            $name           = $this->input->post('business_name');
+            $description    = $this->input->post('business_desc');
+            $address        = $this->input->post('business_street');
+            $location_id    = $this->input->post('area');
+            $category_id    = $this->input->post('category');
+            $telno          = $this->input->post('telno_areacode') . "-" . $this->input->post('telno');
+            $mobileno       = $this->input->post('mobileno_network') . "-" . $this->input->post('mobileno');
+            $faxno          = $this->input->post('faxno');
+            $email          = $this->input->post('email');
+            $website        = $this->input->post('website');
+            $twitter_link   = $this->input->post('twitter_link');
+            $facebook_link  = $this->input->post('facebook_link');
+            $yahoo_id       = $this->input->post('yahoo_id');
+            $skype_id       = $this->input->post('skype_id');
+            
+            // Adding rules to form fields
+            $post->add_rules('business_name', 'required', 'standard_text');
+            $post->add_rules('business_desc', 'required', 'standard_text');
+            $post->add_rules('email','required', 'valid::email');
+            
+            if ($post->validate()) {
+                $date = date("Y-m-d H:i:s");
+                $result = $db->insert("submitted_businesses",
+                        array('name'=> $name,
+                            'description' => $description,
+                            'address' => $address,
+                            'location_id' => $location_id,
+                            'category_id' => $category_id,
+                            'telno' => $telno,
+                            'mobileno' => $mobileno,
+                            'faxno' => $faxno,
+                            'email_address' => $email,
+                            'website' => $website,
+                            'twitter_link' => $twitter_link,
+                            'facebook_link' => $facebook_link,
+                            'yahoo_id' => $yahoo_id,
+                            'skype_id' => $skype_id,
+                            'status' => 'pending',
+                            'created_at' => $date,
+                            'updated_at' => $date ));
+                $page->submitted = TRUE;
+            }else{
+            	$page->errors = $post->errors();
+            }
+        
+        }
+        
+        $page->render(true);
+    
     }
 
-    $page->render(true);
+	function test()
+    {
+    	$limit  = 15;
+        $offset = 0;
+    	$business = ORM::factory('cebu_business');
+        $members  = ORM::factory('cebu_members');
 
-  }
+		
+		list($usec, $sec) = explode(' ', microtime());
+		$script_start = (float) $sec + (float) $usec;
+		
+        //echo $business->join_table('cebu_members');
+        $bus = $business->find_all($limit, $offset);
+  		foreach($bus as $b) {
+        	//echo '<pre>'; print_r($b); echo '</pre>';
+        	echo $b->bus_name . "<br />";
+            //echo $b->
+        }
+        
+        $mem = $members->find_all($limit, $offset);
+        foreach($mem as $m) {
+        	echo $m->mem_name . "<br />";
+        }
+        
+        list($usec, $sec) = explode(' ', microtime());
+   		$script_end = (float) $sec + (float) $usec;
+        
+        echo round($script_end - $script_start, 3);
+        
+        echo $business->count_all();
+    }
 } // End Home Controller

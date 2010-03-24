@@ -72,7 +72,10 @@ h6 { font-size: 10px; }
 	background: #EDEDED;
 	margin-bottom: 15px;
 }
-
+#cd-search {
+	float: left;
+	width: 745px;
+}
 
 #logo {
 	height: 358px; 
@@ -381,6 +384,7 @@ ul#sitemaps li {
 .stitle { color: #333; font-weight: bold; }
 
 .borderized { border: 1px solid #999; padding: 10px; margin: 0px 15px 15px 0px; }
+.noborder	{ border: 0px; }
 
 .left	{ float: left; }
 .right  { float: right; }

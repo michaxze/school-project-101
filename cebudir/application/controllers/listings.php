@@ -49,22 +49,35 @@ class Listings_Controller extends Controller {
 		$page->render(true);
 	}
 	
-  function search()
-  {
-    $this->paging->initialize();
-    $categories = $this->cat->get_categories();
-    $listings = $this->lists->search_listing($this->paging->items_per_page, $this->input->post('search'));
-
-    $page = new View('cebudirectories/listings/index');
-    $page->title = 'Listings - Cebu Directories Online Cebu Directory of Cebu City';
-    $page->menu  = 'listing';
-    $page->has_banner = TRUE;
-
-    $page->categories = $categories;
-    $page->listings   = $listings;
-    $page->pagination = $this->paging->render();
-    $page->render(true);
-  }
+	function search()
+	{
+		$this->paging->initialize();
+		
+		$query = $this->input->get('q');
+		
+		// Start timer for Elapsed Time
+		list($usec, $sec) = explode(' ', microtime());
+		$script_start = (float) $sec + (float) $usec;
+		
+		$listings = $this->lists->search_listing($query, $this->paging->items_per_page);
+		$total    = count($this->lists->search_listing($query));
+		
+		// End timer for Elapsed Time
+		list($usec, $sec) = explode(' ', microtime());
+   		$script_end = (float) $sec + (float) $usec;
+		
+		$page = new View('cebudirectories/listings/page_search');
+		$page->title = 'Listings - Cebu Directories Online Cebu Directory of Cebu City';
+		$page->menu  = 'listing';
+		$page->has_banner = TRUE;
+		
+		$page->listings   = $listings;
+		$page->query 	  = $query;
+		$page->total	  = $total;
+		$page->elapsed_time = round($script_end - $script_start, 3);
+		$page->pagination = $this->paging->render();
+		$page->render(true);
+	}
 
 	function page($page)
 	{

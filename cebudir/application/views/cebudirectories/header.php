@@ -60,17 +60,9 @@
         <div style="margin-top: 10px;">
           <h1>Cebu Directory</h1>
           <img src="<?php echo url::base(); ?>images/logo.png" alt="Cebu Directories Home Page" title="Cebu Directories" />
-          <div id="search_bar">
-            <?php
-            echo form::open("listings/search", array('method' => 'post'));
-            echo form::label("Search a business : &nbsp;") ;
-            echo form::input('search','') . "&nbsp;";
-            echo form::button(array('type' => 'submit',
-                                    'value' => 'Search'));
-
-            ?>
-            </form>
-          </div>
+          
+		  <?php require_once(APPPATH . '/views/cebudirectories/search.php'); ?>
+        
         </div>
         
         <div id="cd-navigation">

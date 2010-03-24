@@ -11,6 +11,8 @@ $config['terms-of-use'] = 'home/termsofuse';
 $config['privacy-policy'] = 'home/privacypolicy';
 $config['listings']  = 'listings/index';
 
+$config['search']	 = 'listings/search';
+
 $config['services']  = 'services/index';
 $config['services/web-development'] = 'services/webdevelopment';
 $config['signup']  = 'home/signup';
