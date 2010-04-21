@@ -8,9 +8,9 @@
 	print form::close();
 	*/
 	echo form::open(url::base() . 'search', array('method' => 'get'));
-	echo form::label("Search a business : &nbsp;") ;
-	echo form::input('q','') . "&nbsp;";
-	print form::submit('submit', 'Search');
-	print form::close();
+	echo form::label("Find a business : &nbsp;") ;
+	echo form::input('q','',' class="searchF" style="width: 300px; font-size: 14px; padding: 3px;"') . "&nbsp;";
+	echo form::submit('submit', 'search',' class="searchB" style="width: 80px; font-size: 13px; padding: 3px;"');
+	echo form::close();
 ?>
 </div>
