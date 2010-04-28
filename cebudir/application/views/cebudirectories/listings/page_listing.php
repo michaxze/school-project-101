@@ -19,7 +19,7 @@
 		echo '<div class="details_container"><div class="details email"> EMAIL: </div><span class="details_text">' . $email . '</span></div>';	
 	}
 	if(strlen(trim($description) && $is_premium) > 0) {
-		echo '<div>' . $description . '</div>';
+		echo '<div id="content_container">' . $description . '</div>';
 	}
 
     ?>

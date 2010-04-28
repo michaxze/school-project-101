@@ -156,6 +156,7 @@ ul#sitemaps li {
 .services_advertising { background: url(../images/services/advertising.jpg) top center no-repeat; }
 .services_webdev 	  { background: url(../images/services/web-development.jpg) top center no-repeat; }
 /***  LISTINGS  ***/
+#content_container img { max-width: 500px; !important }
 .details_container { height: 17px; }
 .details {
 	float: left;
@@ -225,6 +226,15 @@ ul#sitemaps li {
 #form-contact select { width: 310px; }
 #form-contact textarea { width: 500px; height: 200px; }
 
+.create-account {
+	border: none;
+	background: url(../images/create-account.png) top center no-repeat;
+	width: 200px;
+	height: 90px;
+}
+.create-account:active {
+	background: url(../images/create-account-hover.png) top center no-repeat;
+}
 .submit {
 	font-size: 14px;
 	font-weight: bold;
