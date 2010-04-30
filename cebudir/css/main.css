@@ -254,23 +254,33 @@ ul#sitemaps li {
 	margin: 5px 15px;
 	padding: 5px 0px;
 }
-#form-signup input[type="text"], #form-contact textarea
+#form-signup input[type="text"]
 {
 	border: 1px solid #999;
-	width: 440px;
+	width: 400px;
 	font-size: 16px;
 	height: 20px;
 	padding: 5px;
 	margin: 3px 0px 10px 0px;
 }
 #form-signup table select {
-  width:450px;
+  width:410px;
   font-size:16px;
   margin-bottom:5px;
   margin-top:5px;
+  padding: 5px 0px;
 }
+#form-signup table tr td:first-of-type { text-align: right; }
+#form-signup table tr td:nth-child(2) { text-indent: 20px; }
+#form-signup table tr td:only-child { text-align: left; }
 #form-signup label { font-size: 12px; }
-#form-signup textarea { width: 450px; height: 125px; }
+#form-signup textarea { 
+	width: 400px; height: 125px; 
+	margin: 3px 0px 10px 0px; 
+	border: 1px solid #999; 
+	padding: 5px;
+	font-size: 16px;
+}
 
 
 /***  NAVIGATION ***/
