@@ -27,6 +27,9 @@
             	<td colspan="2"><h3 style="border-bottom: 2px solid #999999;">You're just 60 seconds away from your Cebu Directories account.</h3><br/></td>
             </tr>
             <tr>
+              <td colspan="2"><h3 style="color: #6D8309;"><img src="<?php echo url::base(); ?>images/signup-one.png" align="absmiddle"/> Business Details</h3></td>
+            </tr>
+            <tr>
               <td width="100"><?php print form::label('business_name', 'Business Name' );?> </td>
               <td ><?php print form::input('business_name') . $req;?></td>
             </tr>
@@ -70,8 +73,30 @@
               <td><?php print form::input('website') ;?></td>
             </tr>
             <tr>
+              <td colspan="2"><h3 style="color: #6D8309;"><img src="<?php echo url::base(); ?>images/signup-two.png" align="absmiddle"/> Social Media Links</h3></td>
+            </tr>
+            <tr>
               <td><?php print form::label('twitter_link', 'Twitter Link' );?></td>
               <td><?php print form::input('twitter_link') ;?></td>
+            </tr>
+            <tr>
+              <td><?php print form::label('facebook_link', 'Facebook Link' );?></td>
+              <td><?php print form::input('facebook_link') ;?></td>
+            </tr>
+            <tr>
+              <td><?php print form::label('yahoo_id', 'Yahoo ID' );?></td>
+              <td><?php print form::input('yahoo_id') ;?></td>
+            </tr>
+            <tr>
+              <td><?php print form::label('skype_id', 'Skype ID' );?></td>
+              <td><?php print form::input('skype_id') ;?></td>
+            </tr>
+            <tr>
+              <td colspan="2"><h3 style="color: #6D8309;"><img src="<?php echo url::base(); ?>images/signup-three.png" align="absmiddle"/> Billing Information</h3></td>
+            </tr>
+            <tr>
+              <td><?php print form::label('billing_type', 'Payment Option' );?></td>
+              <td><?php print form::dropdown('area',$provinces, 'standard');?></td>
             </tr>
             <tr>
               <td><?php print form::label('facebook_link', 'Facebook Link' );?></td>
@@ -90,7 +115,8 @@
               <td><?php print form::button(array('type' => 'submit', 'value' => ' ', 'class' => 'create-account')); ?></td>
             </tr>
           </table>
-          <div class="left" style="width: 320px;">
+          <div class="left" style="width: 320px; margin-left: 10px;">
+          		<img src="<?php echo url::base(); ?>images/signup-premium-account.png"/>
           		<img src="<?php echo url::base(); ?>images/signup-benefits.png"/>
           </div>
           <div class="clear"></div>
