@@ -271,6 +271,7 @@ ul#sitemaps li {
   padding: 5px 0px;
 }
 #form-signup table tr td:first-of-type { text-align: right; }
+#form-signup table tr { vertical-align: top; }
 #form-signup table tr td:nth-child(2) { text-indent: 20px; }
 #form-signup table tr td:only-child { text-align: left; }
 #form-signup label { font-size: 12px; }
@@ -280,6 +281,19 @@ ul#sitemaps li {
 	border: 1px solid #999; 
 	padding: 5px;
 	font-size: 16px;
+}
+#form-signup .help-tooltip {
+	background: #e3fdaa; color: #666666;
+	font-style:italic;
+	border: 1px solid #CCCCCC; 
+	width: 300px;
+	margin: -10px 0px 0px 20px;
+	padding: 5px 10px;
+	text-indent: 0px;  
+	position: absolute; 
+	display:none; 
+	margin-left: 450px;
+	margin-top: -42px;
 }
 
 
