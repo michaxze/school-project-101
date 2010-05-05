@@ -25,7 +25,9 @@
     </script>
     <div id="cd-content">
       <?php if ($submitted) { ?>
-        <h1>You have successfully signed up. Thank you for signing up.</h1>
+        <h1>Congratulations! </h1>
+        <h3>You are one step away to be listed on our prestigious business directory listing.  Our team will contact you through email or call with 2 business days. Thank you!
+        </h3>
       <?php } else { ?>
       
       <?php
@@ -141,7 +143,7 @@
             </tr>
             <tr>
               <td><?php print form::label('billing_type', 'Payment Option' );?></td>
-              <td><?php print form::dropdown('area',$payment_options, 'standard');?></td>
+              <td><?php print form::dropdown('billing_type',$payment_options, 'standard');?></td>
             </tr>
             <tr>
               <td></td>

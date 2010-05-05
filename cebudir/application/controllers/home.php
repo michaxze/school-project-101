@@ -254,14 +254,17 @@ ACTIVESCRIPT;
             $category_id    = $this->input->post('category');
             $telno          = $this->input->post('telno_areacode') . "-" . $this->input->post('telno');
             $mobileno       = $this->input->post('mobileno_network') . "-" . $this->input->post('mobileno');
-            $faxno          = $this->input->post('faxno');
+            $faxno          = $this->input->post('faxno_areacode') . "-" . $this->input->post('faxno');
             $email          = $this->input->post('email');
             $website        = $this->input->post('website');
             $twitter_link   = $this->input->post('twitter_link');
             $facebook_link  = $this->input->post('facebook_link');
             $yahoo_id       = $this->input->post('yahoo_id');
             $skype_id       = $this->input->post('skype_id');
-            
+            $billing_type   = $this->input->post('billing_type');
+            $billing_name   = $this->input->post('billing_name');
+            $billing_address = $this->input->post('billing_address');
+
             // Adding rules to form fields
             $post->add_rules('business_name', 'required', 'standard_text');
             $post->add_rules('business_desc', 'required', 'standard_text');
@@ -285,6 +288,9 @@ ACTIVESCRIPT;
                             'yahoo_id' => $yahoo_id,
                             'skype_id' => $skype_id,
                             'status' => 'pending',
+                            'billing_type' => $billing_type,
+                            'billing_name' => $billing_name,
+                            'billing_address' => $billing_address,
                             'created_at' => $date,
                             'updated_at' => $date ));
                 $page->submitted = TRUE;
