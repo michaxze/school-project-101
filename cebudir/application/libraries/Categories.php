@@ -28,16 +28,31 @@ class Categories_Core {
                                   'is_shown');
     }    
 
-    public function get_categories_name()
+    public function get_categories_name($group = false)
     {
         $this->db->from($this->table_name);
-        $this->db->orderby('cat_name','ASC');
-        $result     = $this->db->get();
-        $categories = $result->result_array(FALSE);
-        $newlist = array();
-        for($i=0; $i<count($categories); $i++) {
-            $newlist[$categories[$i]['cat_id']] = $categories[$i]['cat_name'];
-        }
+		
+		if($group == true) {
+			$this->db->orderby('cat_parent_id','ASC');
+			$result     = $this->db->get();
+			$categories = $result->result_array(FALSE);
+			//$newlist = $result->count();
+			for($i=0; $i<$result->count(); $i++) {
+				
+				if($categories[$i]['cat_id'] == $categories[$i]['cat_parent_id']) {
+					$group_cat_name = $categories[$i]['cat_name'];	
+				}
+				$newlist[$group_cat_name][$categories[$i]['cat_id']] = $categories[$i]['cat_name'];
+			}
+		} else {
+			$this->db->orderby('cat_name','ASC');
+			$result     = $this->db->get();
+			$categories = $result->result_array(FALSE);
+			$newlist = array();
+			for($i=0; $i<count($categories); $i++) {
+				$newlist[$categories[$i]['cat_id']] = $categories[$i]['cat_name'];
+			}
+		}
         return $newlist;
     }
 
