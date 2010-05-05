@@ -45,7 +45,7 @@
 				echo '<h4 style="padding: 0px; margin-bottom: 10px;">Errors Found!</h4>';
 				echo '<ul>';
 				foreach ($errors as $key => $val) {
-					echo "<li>" . $key.' failed rule '.$val.'</li>';
+					echo "<li>" . $val . '</li>';
 				}
 				echo '</ul></td></tr>';
 			}
