@@ -1,0 +1,769 @@
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:22:02) [GET]
+Rendering index/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:23:13) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:23:33) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:23:34) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:24:42) [GET]
+Rendering index/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:24:43) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:36:32) [GET]
+Rendering index/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:36:47) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:38:53) [GET]
+Rendering index/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:38:59) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://cebudirectories.com/ads]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:39:15) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:39:18) [GET]
+Rendering index/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:39:30) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:42:22) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:42:47) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:42:50) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:42:51) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:43:44) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:44:22) [GET]
+Rendering index/index
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:46:31) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:53:17) [GET]
+Rendering index/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:53:18) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:56:01) [GET]
+Rendering index/index
+Completed in 2ms (View: 1, DB: 7) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:56:02) [GET]
+Rendering index/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:56:17) [GET]
+Rendering index/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:57:03) [GET]
+Rendering index/index
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:57:08) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:58:49) [GET]
+Rendering index/index
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:58:50) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:58:50) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:59:41) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 10:59:45) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 112.206.128.80 at 2010-02-04 11:00:28) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 11:15:33) [GET]
+Rendering index/index
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing IndexController#index (for 203.177.74.142 at 2010-02-04 11:16:15) [GET]
+Rendering index/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing EmailsController#index (for 203.177.74.142 at 2010-02-04 11:16:18) [GET]
+Redirected to http://ads.cebudirectories.com/logins
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 22ms (DB: 0) | 302 Found [http://ads.cebudirectories.com/emails]
+
+
+Processing LoginsController#index (for 203.177.74.142 at 2010-02-04 11:16:18) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 68ms (View: 66, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#create (for 203.177.74.142 at 2010-02-04 11:16:24) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"ELPO0b2UqTV7P3sfNF+D22sCXReuf4CU3wmDG8dq1Fk=", "username"=>"mike", "password"=>""}
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 34ms (View: 2, DB: 15) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing IndexController#index (for 203.177.74.138 at 2010-02-04 11:51:33) [GET]
+Rendering index/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing LoginsController#index (for 203.177.74.138 at 2010-02-04 11:51:37) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#create (for 203.177.74.138 at 2010-02-04 11:51:39) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"rgEFKkAo/arGRB+iIvDiShMHi6iOKItvYQevOVJTbvw=", "username"=>"mike", "password"=>""}
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#create (for 203.177.74.138 at 2010-02-04 11:51:43) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"rgEFKkAo/arGRB+iIvDiShMHi6iOKItvYQevOVJTbvw=", "username"=>"mike", "password"=>"mike*101"}
+Redirected to http://ads.cebudirectories.com/emails
+Completed in 7ms (DB: 4) | 302 Found [http://ads.cebudirectories.com/logins]
+
+
+Processing EmailsController#index (for 203.177.74.138 at 2010-02-04 11:51:43) [GET]
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 203.177.74.138 at 2010-02-04 11:51:55) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rgEFKkAo/arGRB+iIvDiShMHi6iOKItvYQevOVJTbvw=", "email"=>"michaxze@gmail.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 103ms (View: 92, DB: 7) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 203.177.74.138 at 2010-02-04 11:52:08) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rgEFKkAo/arGRB+iIvDiShMHi6iOKItvYQevOVJTbvw=", "email"=>"michael@cebudirectories.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 13ms (View: 3, DB: 7) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 203.177.74.138 at 2010-02-04 11:52:18) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rgEFKkAo/arGRB+iIvDiShMHi6iOKItvYQevOVJTbvw=", "email"=>"pwvillacorta@cebudirectories.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 64ms (View: 3, DB: 57) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing LoginsController#logout (for 203.177.74.138 at 2010-02-04 11:52:25) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins/logout]
+
+
+Processing LoginsController#index (for 112.206.128.80 at 2010-02-04 17:47:15) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 52ms (View: 51, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#create (for 112.206.128.80 at 2010-02-04 17:47:28) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"FvKTg8F2jwb7bBggvLCQOOBsMg1OgO0vBm1sLt7xFRE=", "username"=>"paul", "password"=>":))paul"}
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 50ms (View: 2, DB: 36) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing IndexController#index (for 112.206.128.80 at 2010-02-04 17:47:41) [GET]
+Rendering index/index
+Completed in 113ms (View: 19, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing LoginsController#index (for 112.206.128.80 at 2010-02-04 17:48:16) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#create (for 112.206.128.80 at 2010-02-04 17:48:25) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"FvKTg8F2jwb7bBggvLCQOOBsMg1OgO0vBm1sLt7xFRE=", "username"=>"paul", "password"=>"paul*101"}
+Redirected to http://ads.cebudirectories.com/emails
+Completed in 5ms (DB: 3) | 302 Found [http://ads.cebudirectories.com/logins]
+
+
+Processing EmailsController#index (for 112.206.128.80 at 2010-02-04 17:48:26) [GET]
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 235ms (View: 171, DB: 62) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing LoginsController#index (for 116.50.211.46 at 2010-02-04 21:01:58) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 82ms (View: 80, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#index (for 116.50.211.46 at 2010-02-04 21:01:59) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#create (for 116.50.211.46 at 2010-02-04 21:02:03) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"ELPO0b2UqTV7P3sfNF+D22sCXReuf4CU3wmDG8dq1Fk=", "username"=>"mike", "password"=>"mike*101"}
+Redirected to http://ads.cebudirectories.com/emails
+Completed in 47ms (DB: 35) | 302 Found [http://ads.cebudirectories.com/logins]
+
+
+Processing EmailsController#index (for 116.50.211.46 at 2010-02-04 21:02:04) [GET]
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 283ms (View: 247, DB: 33) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing LoginsController#logout (for 116.50.211.46 at 2010-02-04 21:02:19) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins/logout]
+
+
+Processing EmailsController#index (for 112.206.128.80 at 2010-02-04 21:40:27) [GET]
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 66ms (View: 50, DB: 14) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing IndexController#index (for 116.50.211.46 at 2010-02-04 21:56:15) [GET]
+Rendering index/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing LoginsController#index (for 116.50.211.46 at 2010-02-04 21:56:23) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 36ms (View: 34, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#index (for 116.50.211.46 at 2010-02-07 23:49:47) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 74ms (View: 72, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#create (for 116.50.211.46 at 2010-02-07 23:49:53) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"ELPO0b2UqTV7P3sfNF+D22sCXReuf4CU3wmDG8dq1Fk=", "username"=>"mike", "password"=>"mike*101"}
+Redirected to http://ads.cebudirectories.com/emails
+Completed in 56ms (DB: 43) | 302 Found [http://ads.cebudirectories.com/logins]
+
+
+Processing EmailsController#index (for 116.50.211.46 at 2010-02-07 23:49:54) [GET]
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 790ms (View: 760, DB: 28) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing LoginsController#logout (for 116.50.211.46 at 2010-02-07 23:50:00) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins/logout]
+
+
+Processing LoginsController#index (for 112.206.128.80 at 2010-02-10 19:57:56) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 143ms (View: 141, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#create (for 112.206.128.80 at 2010-02-10 19:58:04) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"AHPFjCenVILvR6TPpJXUjeufvC1bgklwXsfV7L49m84=", "username"=>"paul", "password"=>"paul*101"}
+Redirected to http://ads.cebudirectories.com/emails
+Completed in 371ms (DB: 311) | 302 Found [http://ads.cebudirectories.com/logins]
+
+
+Processing EmailsController#index (for 112.206.128.80 at 2010-02-10 19:58:05) [GET]
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 381ms (View: 318, DB: 60) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 112.206.128.80 at 2010-02-10 19:58:21) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"AHPFjCenVILvR6TPpJXUjeufvC1bgklwXsfV7L49m84=", "email"=>"maribago@bluewater.com.ph"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 15ms (View: 4, DB: 8) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing LoginsController#logout (for 112.206.128.80 at 2010-02-10 20:02:48) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins/logout]
+
+
+Processing LoginsController#index (for 58.71.34.137 at 2010-02-15 21:52:42) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 55ms (View: 53, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#create (for 58.71.34.137 at 2010-02-15 21:52:48) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "username"=>"paul", "password"=>"paul*101"}
+Redirected to http://ads.cebudirectories.com/emails
+Completed in 350ms (DB: 319) | 302 Found [http://ads.cebudirectories.com/logins]
+
+
+Processing EmailsController#index (for 58.71.34.137 at 2010-02-15 21:52:50) [GET]
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 168ms (View: 143, DB: 23) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-15 21:53:05) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"cs_cebu@jobsdb.com.ph"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 31ms (View: 4, DB: 24) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-15 21:53:43) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"nauticatours@yahoo.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 102ms (View: 4, DB: 95) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-15 21:53:56) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"dialaspacorporation@gmail.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 11ms (View: 4, DB: 4) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-15 21:54:04) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"pra_cebu@yahoo.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 317ms (View: 4, DB: 310) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-15 21:54:21) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"maribago@bluewater.com.ph"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 8ms (View: 4, DB: 2) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing IndexController#index (for 116.50.211.46 at 2010-02-15 21:54:34) [GET]
+Rendering index/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing EmailsController#index (for 116.50.211.46 at 2010-02-15 21:54:42) [GET]
+Redirected to http://ads.cebudirectories.com/logins
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://ads.cebudirectories.com/emails]
+
+
+Processing LoginsController#index (for 116.50.211.46 at 2010-02-15 21:54:42) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#create (for 116.50.211.46 at 2010-02-15 21:54:49) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"Z/yYHtra7JU8uYu5lmdLa2UWXf446V/QUV1MFI40t10=", "username"=>"mike", "password"=>"mike*101"}
+Redirected to http://ads.cebudirectories.com/emails
+Completed in 2ms (DB: 1) | 302 Found [http://ads.cebudirectories.com/logins]
+
+
+Processing EmailsController#index (for 116.50.211.46 at 2010-02-15 21:54:50) [GET]
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#index (for 174.129.95.55 at 2010-02-15 21:55:36) [GET]
+  Parameters: {"tinyChatSite"=>"1"}
+Redirected to http://ads.cebudirectories.com/logins
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://ads.cebudirectories.com/emails?tinyChatSite=1]
+
+
+Processing LoginsController#index (for 174.129.95.55 at 2010-02-15 21:55:36) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#logout (for 116.50.211.46 at 2010-02-15 21:56:40) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins/logout]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-15 23:35:55) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"kahupaan@yahoo.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 483ms (View: 374, DB: 37) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-15 23:36:23) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"kimasales@gmail.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 18ms (View: 5, DB: 10) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-15 23:36:30) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"boysen_cebu@yahoo.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 23ms (View: 6, DB: 14) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-15 23:36:43) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"showroom@filmonhardware.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 19ms (View: 5, DB: 11) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-15 23:36:59) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"sales@profoodcorp.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 33ms (View: 5, DB: 26) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-15 23:37:08) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"ideal_builders@yahoo.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 43ms (View: 6, DB: 34) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-15 23:37:21) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"northsouthinc@yahoo.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 18ms (View: 6, DB: 9) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-15 23:37:35) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"hyundai.cebu@gmail.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 16ms (View: 6, DB: 8) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-15 23:37:44) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"info.worldbex@gmail.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 15ms (View: 6, DB: 6) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-15 23:37:54) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"mac@shangri-la.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 18ms (View: 6, DB: 9) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing LoginsController#index (for 58.71.34.137 at 2010-02-16 23:43:36) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 65ms (View: 63, DB: 1) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#create (for 58.71.34.137 at 2010-02-16 23:58:06) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "username"=>"paul", "password"=>"paul*1001"}
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 52ms (View: 14, DB: 24) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#create (for 58.71.34.137 at 2010-02-16 23:58:13) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "username"=>"paul", "password"=>"paul*101"}
+Redirected to http://ads.cebudirectories.com/emails
+Completed in 6ms (DB: 4) | 302 Found [http://ads.cebudirectories.com/logins]
+
+
+Processing EmailsController#index (for 58.71.34.137 at 2010-02-16 23:58:13) [GET]
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 181ms (View: 140, DB: 39) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-16 23:58:25) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"parkmall@parkmallph.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 38ms (View: 7, DB: 28) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-16 23:58:45) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"montessorimactan@yahoo.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 16ms (View: 7, DB: 6) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-16 23:58:56) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"cignalcare@mediascape.com.ph"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 13ms (View: 7, DB: 3) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-17 23:17:07) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"info@millerhospital.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 673ms (View: 434, DB: 181) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-17 23:17:16) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"rPWZNhkWcRgx3A/Cxw1I+V6RBEaiIDP7dzgp7mvNO/w=", "email"=>"info@cebueducation.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 43ms (View: 8, DB: 32) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#index (for 174.129.228.67 at 2010-02-19 02:03:35) [GET]
+Redirected to http://ads.cebudirectories.com/logins
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 19ms (DB: 0) | 302 Found [http://ads.cebudirectories.com/emails]
+
+
+Processing LoginsController#index (for 174.129.228.67 at 2010-02-19 02:03:35) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 106ms (View: 104, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#index (for 58.71.34.137 at 2010-02-25 23:12:51) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 54ms (View: 53, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#create (for 58.71.34.137 at 2010-02-25 23:13:40) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"6rNox9241bef/MrC2VqXsnbZWfgkleDPeMHgwJm1C5s=", "username"=>"paul", "password"=>"paul*101"}
+Redirected to http://ads.cebudirectories.com/emails
+Completed in 90ms (DB: 82) | 302 Found [http://ads.cebudirectories.com/logins]
+
+
+Processing EmailsController#index (for 58.71.34.137 at 2010-02-25 23:13:41) [GET]
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 341ms (View: 222, DB: 41) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-25 23:14:09) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"6rNox9241bef/MrC2VqXsnbZWfgkleDPeMHgwJm1C5s=", "email"=>"rainbowfamily_ktv@yahoo.com.ph"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 20ms (View: 7, DB: 9) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-25 23:15:32) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"6rNox9241bef/MrC2VqXsnbZWfgkleDPeMHgwJm1C5s=", "email"=>"d5stainlessworks@yahoo.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 19ms (View: 8, DB: 9) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 58.71.34.137 at 2010-02-25 23:18:29) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"6rNox9241bef/MrC2VqXsnbZWfgkleDPeMHgwJm1C5s=", "email"=>"events@parkmallph.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 30ms (View: 8, DB: 20) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing IndexController#index (for 120.28.199.97 at 2010-03-06 10:26:09) [GET]
+Rendering index/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing EmailsController#index (for 120.28.199.97 at 2010-03-06 10:26:13) [GET]
+Redirected to http://ads.cebudirectories.com/logins
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 19ms (DB: 0) | 302 Found [http://ads.cebudirectories.com/emails]
+
+
+Processing LoginsController#index (for 120.28.199.97 at 2010-03-06 10:26:14) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 81ms (View: 80, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#create (for 120.28.199.97 at 2010-03-06 10:26:36) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"GeLEMWW/DTAwOGJypUgyC0Vph63SoC72rVq0z1OSnRI=", "username"=>"mike", "password"=>"mike*101"}
+Redirected to http://ads.cebudirectories.com/emails
+Completed in 189ms (DB: 174) | 302 Found [http://ads.cebudirectories.com/logins]
+
+
+Processing EmailsController#index (for 120.28.199.97 at 2010-03-06 10:26:36) [GET]
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 190ms (View: 108, DB: 79) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 120.28.199.97 at 2010-03-06 10:29:52) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"GeLEMWW/DTAwOGJypUgyC0Vph63SoC72rVq0z1OSnRI=", "email"=>"yesteryearphil@yahoo.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 91ms (View: 8, DB: 73) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 120.28.199.97 at 2010-03-06 10:30:10) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"GeLEMWW/DTAwOGJypUgyC0Vph63SoC72rVq0z1OSnRI=", "email"=>"grandryl_vil@yahoo.com, southwingsband@yahoo.com"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 25ms (View: 9, DB: 13) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 120.28.199.97 at 2010-03-06 10:30:59) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"GeLEMWW/DTAwOGJypUgyC0Vph63SoC72rVq0z1OSnRI=", "email"=>"franchise@everythingonline.ph"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 25ms (View: 9, DB: 14) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 120.28.199.97 at 2010-03-06 10:31:08) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"GeLEMWW/DTAwOGJypUgyC0Vph63SoC72rVq0z1OSnRI=", "email"=>"franchise@everythingonline.ph"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 13ms (View: 9, DB: 2) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing EmailsController#create (for 120.28.199.97 at 2010-03-06 10:31:09) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"GeLEMWW/DTAwOGJypUgyC0Vph63SoC72rVq0z1OSnRI=", "email"=>"franchise@everythingonline.ph"}
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 14ms (View: 9, DB: 2) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing IndexController#index (for 122.53.73.19 at 2010-03-08 06:10:55) [GET]
+Rendering index/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://ads.cebudirectories.com/]
+
+
+Processing EmailsController#index (for 122.53.73.19 at 2010-03-08 06:11:01) [GET]
+Redirected to http://ads.cebudirectories.com/logins
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 20ms (DB: 0) | 302 Found [http://ads.cebudirectories.com/emails]
+
+
+Processing LoginsController#index (for 122.53.73.19 at 2010-03-08 06:11:01) [GET]
+Rendering template within layouts/global
+Rendering logins/index
+Completed in 61ms (View: 59, DB: 0) | 200 OK [http://ads.cebudirectories.com/logins]
+
+
+Processing LoginsController#create (for 122.53.73.19 at 2010-03-08 06:11:12) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"AOI9RrC+BVj3Mht5tP10H39WYpxn/Jmgi55tmofsgkE=", "username"=>"mike", "password"=>"mike*101"}
+Redirected to http://ads.cebudirectories.com/emails
+Completed in 125ms (DB: 31) | 302 Found [http://ads.cebudirectories.com/logins]
+
+
+Processing EmailsController#index (for 122.53.73.19 at 2010-03-08 06:11:13) [GET]
+Rendering template within layouts/global
+Rendering emails/index
+Completed in 386ms (View: 345, DB: 39) | 200 OK [http://ads.cebudirectories.com/emails]
+
+
+Processing IndexController#index (for 122.53.73.19 at 2010-03-08 06:17:50) [GET]
+Rendering index/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://ads.cebudirectories.com/]

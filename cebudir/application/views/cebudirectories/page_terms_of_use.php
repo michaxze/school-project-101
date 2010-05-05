@@ -6,8 +6,8 @@
     	<p class="medium">
     	Cebu Directories welcomes and values your listing contributions to Cebu 
         Directories Listings.  We encourage you to communicate freely and if you 
-        would like to send feedback directly, please use our forms on Contact Us 
-        page or email us at info@cebudirectories.com.
+        would like to send feedback directly, please use our forms on the Contact Us 
+        page or e-mail us at <a href="mailto:info@cebudirectories.com">info@cebudirectories.com</a>.
     	</p>
     	
         <p class="medium">
