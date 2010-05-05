@@ -230,8 +230,14 @@ ACTIVESCRIPT;
         $page = new View('cebudirectories/page_signup');
         $page->title = 'Signup - Cebu Directories Online Cebu Directory of Cebu City';
         $page->has_banner = FALSE;
-        $page->categories = $this->cat->get_categories_name();
+        $page->categories = $this->cat->get_categories_name(true);
         $page->provinces = $this->lists->get_provinces();
+        $page->payment_options = array("westernunion" => "Western Union",
+        							   "paypal"       => "PayPal",
+                                       "2go"		  => "2GO",
+                                       "unionbank"	  => "UNIONBANK",
+                                       "lbc"		  => "LBC",
+                                       "cash"		  => "Cash Payment");
         $page->submitted = FALSE;
         $page->errors = array();
         
