@@ -12,44 +12,11 @@
 						
 ?>
 	<div id="cd-footer">
-   	  <div id="cd-sitemap">
-   		<ul id="sitemaps">
-            	<li>
-                	<span class="stitle">Home</span><br />
-                    About Us<br />
-                    Events<br /><br />
-                    <span class="stitle">Services</span><br />
-                    Listings<br />
-                    Advertising<br />
-                    Web Design & Development<br />
-                    Domain & Web Hosting<br />
-                </li>
-                <?php /* 
-                <li>
-                	<span class="stitle">Categories</span><br />
-                    <?php
-					for($i=0; $i<count($categories); $i++) {
-						echo $categories[$i]['cat_name'] . "<br />\n";
-					}
-					?>
-                </li>
-				*/ ?>
-                <li>
-                	<span class="stitle">Blogs</span><br />
-                    Cebu Events<br />
-                    Our Updates<br />
-                    Featured Products<br />
-					Featured Company<br />
-					Seminars<br />
-					Sports Events<br />
-                </li>
-                <li>
+   	  <div id="cd-sitemap" style="padding:5px">
                 	<span class="stitle">Connect with us!</span><br style="margin-bottom: 5px;"/>
-                    <a href="http://twitter.com/cebudirectories"><img src="<?php echo url::base(); ?>images/twitter.png" title="Follow Cebu Directories on Twitter!" alt="Follow us on Twitter!" /></a><br />
-                    <a href="http://www.facebook.com/pages/Cebu-Directories/281222139431"><img src="<?php echo url::base(); ?>images/facebook.png" title="Add Cebu Directories on Facebook!" alt="Add us on Facebook!" /></a><br />
-                </li>
+                    <a href="http://twitter.com/cebudirectories"><img src="<?php echo url::base(); ?>images/twitter.png" title="Follow Cebu Directories on Twitter!" alt="Follow us on Twitter!" /></a>
+                    <a href="http://www.facebook.com/pages/Cebu-Directories/281222139431"><img src="<?php echo url::base(); ?>images/facebook.png" title="Add Cebu Directories on Facebook!" alt="Add us on Facebook!" /></a>
      			<div class="clear"></div>
-          </ul>
     	</div>
         
     	<div id="logo-footer">
