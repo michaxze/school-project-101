@@ -295,7 +295,7 @@ ACTIVESCRIPT;
                             'updated_at' => $date ));
                 $page->submitted = TRUE;
             }else{
-            	$page->errors = $post->errors();
+            	$page->errors = $post->errors('signup_errors');
             }
         
         }
