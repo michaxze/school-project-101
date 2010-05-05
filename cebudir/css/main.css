@@ -295,8 +295,14 @@ ul#sitemaps li {
 	margin-left: 450px;
 	margin-top: -42px;
 }
-
-
+#form-signup select optgroup { font-weight: bold; color: #6D8309; }
+#form-signup select optgroup option { font-weight: normal; text-indent: 30px; color: #333; }
+.error {
+	border: 2px dotted red;
+	padding: 5px 10px;
+	background: #FFBFC1;
+	color: red;
+}
 /***  NAVIGATION ***/
 #cd-navigation {
 	margin-top: 5px;
