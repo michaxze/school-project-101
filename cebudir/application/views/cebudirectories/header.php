@@ -13,8 +13,13 @@
 	<link rel="stylesheet" href="<?php echo url::base(FALSE) ?>css/main.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="<?php echo url::base(FALSE) ?>css/ads.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="<?php echo url::base(FALSE) ?>css/thickbox.css" type="text/css" media="screen"/>
-    
+
     <link rel="shortcut icon" href="<?php echo url::base(FALSE) ?>cebudirectories.png">
+
+  	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.min.js"></script>
+  	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.easing.js"></script>
+  	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.accordion.js"></script>
+  	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.cycle.all.2.72.js"></script>
 
 	<?php
 	## Append Dynamic Javascripts
@@ -26,14 +31,15 @@
 	}
 	?>
 
-	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.js"></script>
-	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.easing.js"></script>
-	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.accordion.js"></script>
+
+	
     <?php echo $js_texts; ?>
 
 	<title><?php echo $title; ?></title>
 
 	<?php echo (isset($active_script)) ? $active_script : ''; ?>
+
+
     
 	<script type="text/javascript">
 	jQuery().ready(function(){
@@ -49,7 +55,16 @@
 		});
 		
 	});
+	
+  $(document).ready(function() {
+      $('.slideshow').cycle({
+  		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+  	});
+  });
+	
 	</script>
+
+
 
 </head>
 <body id="cd-body">

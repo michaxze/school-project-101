@@ -8515,3 +8515,332 @@ ActionController::RoutingError (No route matches "/stylesheets/style.css" with {
   
 
 Rendering rescues/layout (not_found)
+/!\ FAILSAFE /!\  Thu May 06 10:04:22 +0800 2010
+  Status: 500 Internal Server Error
+  Unknown database 'michael_cebudir'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:101:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:27:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /usr/bin/mongrel_rails:19:in `load'
+    /usr/bin/mongrel_rails:19
+/!\ FAILSAFE /!\  Thu May 06 10:04:51 +0800 2010
+  Status: 500 Internal Server Error
+  Unknown database 'michael_cebudir'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:101:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:27:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /usr/bin/mongrel_rails:19:in `load'
+    /usr/bin/mongrel_rails:19
+  [4;36;1mSQL (35.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdvertisementsController#view (for 127.0.0.1 at 2010-05-06 10:05:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAd Columns (0.0ms)[0m   [0mMysql::Error: Table 'cebudir.ads' doesn't exist: SHOW FIELDS FROM `ads`[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'cebudir.ads' doesn't exist: SHOW FIELDS FROM `ads`):
+  app/controllers/advertisements_controller.rb:4:in `new'
+  app/controllers/advertisements_controller.rb:4:in `view'
+
+Rendered rescues/_trace (55.0ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (38.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsersTable (1)
+Migrating to CreateEmailAddressTable (2)
+Migrating to CreateAdsTable (3)
+  [4;35;1mSQL (536.4ms)[0m   [0mCREATE TABLE `ads` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `image` varchar(255), `redirect_to` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsersTable (1)
+Migrating to CreateEmailAddressTable (2)
+Migrating to CreateAdsTable (3)
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: Table 'ads' already exists: CREATE TABLE `ads` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `image` varchar(255), `redirect_to` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsersTable (1)
+Migrating to CreateEmailAddressTable (2)
+Migrating to CreateAdsTable (3)
+  [4;35;1mSQL (1213.5ms)[0m   [0mCREATE TABLE `ads` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `image` varchar(255), `redirect_to` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (433.0ms)[0m   [0;1mCREATE TABLE `ads_views` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `ad_id` int(11), `ipaddress` varchar(255), `hostname` varchar(255), `created_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('3')[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW FIELDS FROM `ads`[0m
+  [4;36;1mSQL (16.4ms)[0m   [0;1mdescribe `ads`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `ads`[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mSHOW FIELDS FROM `ads_views`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `ads_views`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `ads_views`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `cebu_administrator`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `cebu_administrator`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `cebu_administrator`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `cebu_ads`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `cebu_ads`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `cebu_ads`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `cebu_ads_types`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `cebu_ads_types`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `cebu_ads_types`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW FIELDS FROM `cebu_business`[0m
+  [4;35;1mSQL (24.7ms)[0m   [0mdescribe `cebu_business`[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mSHOW KEYS FROM `cebu_business`[0m
+  [4;35;1mSQL (24.2ms)[0m   [0mSHOW FIELDS FROM `cebu_business_comments`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `cebu_business_comments`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW KEYS FROM `cebu_business_comments`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `cebu_categories`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `cebu_categories`[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mSHOW KEYS FROM `cebu_categories`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `cebu_contactus`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mdescribe `cebu_contactus`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW KEYS FROM `cebu_contactus`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `cebu_events`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `cebu_events`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW KEYS FROM `cebu_events`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `cebu_events_comments`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mdescribe `cebu_events_comments`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW KEYS FROM `cebu_events_comments`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `cebu_events_type`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `cebu_events_type`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `cebu_events_type`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `cebu_images`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mdescribe `cebu_images`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW KEYS FROM `cebu_images`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW FIELDS FROM `cebu_location`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `cebu_location`[0m
+  [4;36;1mSQL (5.5ms)[0m   [0;1mSHOW KEYS FROM `cebu_location`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `cebu_member_type`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `cebu_member_type`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `cebu_member_type`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW FIELDS FROM `cebu_members`[0m
+  [4;35;1mSQL (4.4ms)[0m   [0mdescribe `cebu_members`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW KEYS FROM `cebu_members`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `cebu_posts`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `cebu_posts`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW KEYS FROM `cebu_posts`[0m
+  [4;36;1mSQL (23.2ms)[0m   [0;1mSHOW FIELDS FROM `cebu_stats`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `cebu_stats`[0m
+  [4;36;1mSQL (149.6ms)[0m   [0;1mSHOW KEYS FROM `cebu_stats`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `cebu_templates`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `cebu_templates`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `cebu_templates`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `cebu_verification`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `cebu_verification`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `cebu_verification`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW FIELDS FROM `email_addresses`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `email_addresses`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW KEYS FROM `email_addresses`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `products`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `products`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM `submitted_businesses`[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mdescribe `submitted_businesses`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW KEYS FROM `submitted_businesses`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdvertisementsController#view (for 127.0.0.1 at 2010-05-06 10:07:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAd Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `ads`[0m
+
+NoMethodError (undefined method `stringify_keys!' for "1":String):
+  app/controllers/advertisements_controller.rb:4:in `new'
+  app/controllers/advertisements_controller.rb:4:in `view'
+
+Rendered rescues/_trace (70.6ms)
+Rendered rescues/_request_and_response (24.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdvertisementsController#view (for 127.0.0.1 at 2010-05-06 10:08:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAd Columns (36.9ms)[0m   [0mSHOW FIELDS FROM `ads`[0m
+  [4;36;1mAd Load (10.1ms)[0m   [0;1mSELECT * FROM `ads` WHERE (`ads`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Ad with ID=1):
+  app/controllers/advertisements_controller.rb:4:in `view'
+
+Rendered rescues/_trace (40.5ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdvertisementsController#view (for 127.0.0.1 at 2010-05-06 10:09:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAd Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `ads`[0m
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM `ads` WHERE (`ads`.`id` = 1) [0m
+  [4;36;1mAdView Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'cebudir.ad_views' doesn't exist: SHOW FIELDS FROM `ad_views`[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'cebudir.ad_views' doesn't exist: SHOW FIELDS FROM `ad_views`):
+  app/controllers/advertisements_controller.rb:5:in `new'
+  app/controllers/advertisements_controller.rb:5:in `view'
+
+Rendered rescues/_trace (41.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdvertisementsController#view (for 127.0.0.1 at 2010-05-06 10:10:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAd Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `ads`[0m
+  [4;36;1mAd Load (0.4ms)[0m   [0;1mSELECT * FROM `ads` WHERE (`ads`.`id` = 1) [0m
+
+NameError (uninitialized constant AdvertisementsController::AdView):
+  app/controllers/advertisements_controller.rb:5:in `view'
+
+Rendered rescues/_trace (38.3ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdvertisementsController#view (for 127.0.0.1 at 2010-05-06 10:10:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAd Columns (17.8ms)[0m   [0mSHOW FIELDS FROM `ads`[0m
+  [4;36;1mAd Load (12.2ms)[0m   [0;1mSELECT * FROM `ads` WHERE (`ads`.`id` = 1) [0m
+  [4;35;1mAdsView Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `ads_views`[0m
+
+NoMethodError (undefined method `ad=' for #<AdsView:0x101e4b1d0>):
+  app/controllers/advertisements_controller.rb:6:in `view'
+
+Rendered rescues/_trace (39.3ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdvertisementsController#view (for 127.0.0.1 at 2010-05-06 10:11:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAd Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `ads`[0m
+  [4;36;1mAd Load (1.4ms)[0m   [0;1mSELECT * FROM `ads` WHERE (`ads`.`id` = 1) [0m
+  [4;35;1mAdsView Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `ads_views`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAdsView Create (0.4ms)[0m   [0mINSERT INTO `ads_views` (`ad_id`, `created_at`, `ipaddress`, `hostname`) VALUES(1, '2010-05-06 02:11:26', '127.0.0.1', 'localhost')[0m
+  [4;36;1mSQL (63.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://www.google.com
+Completed in 258ms (DB: 68) | 302 Found [http://localhost/advertisements/view/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdvertisementsController#view (for 127.0.0.1 at 2010-05-06 10:50:46) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mAd Columns (40.7ms)[0m   [0;1mSHOW FIELDS FROM `ads`[0m
+  [4;35;1mAd Load (20.8ms)[0m   [0mSELECT * FROM `ads` WHERE (`ads`.`id` = 2) [0m
+  [4;36;1mAdsView Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `ads_views`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mAdsView Create (0.5ms)[0m   [0;1mINSERT INTO `ads_views` (`ad_id`, `created_at`, `ipaddress`, `hostname`) VALUES(2, '2010-05-06 02:50:47', '127.0.0.1', 'localhost')[0m
+  [4;35;1mSQL (36.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://www.yahoo.com
+Completed in 613ms (DB: 106) | 302 Found [http://localhost/advertisements/view/2]
