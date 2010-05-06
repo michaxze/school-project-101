@@ -4,6 +4,8 @@
     <div id="cd-content">
     	<div id="cd-categories">
     		<?php require_once('menu_categories.php'); ?>
+            <?php require_once(APPPATH . '/views/cebudirectories/advertising_left.php'); ?>
+            <?php require_once(APPPATH . '/views/cebudirectories/facebook_likebox.php'); ?>
         </div>
         
         <div id="cd-listing">
