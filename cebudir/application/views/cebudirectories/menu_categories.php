@@ -28,5 +28,3 @@
     </ul>
 	<div class="header-bottom"></div>
 </div>
-
-<?php require_once(APPPATH . '/views/cebudirectories/advertising_left.php'); ?>
