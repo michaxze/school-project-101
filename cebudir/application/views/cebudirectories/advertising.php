@@ -31,7 +31,9 @@
 </div>
 
 <div id="ads">
-	<a href="http://hostfortes.com/packages/" alt="Cheap, fast and reliable web hosting" title="Cheap, fast and reliable web hosting"><img src="<?php echo url::base(); ?>images/advertising/hostfortes_100.png" class="banner100" /></a>
-
+	<a href="http://ads.cebudirectories.com/advertisements/view/1" alt="Cheap, fast and reliable web hosting" title="Cheap, fast and reliable web hosting"><img src="<?php echo url::base(); ?>images/advertising/hostfortes_100.png" class="banner100" /></a>
+	
+    <a href="http://www.yummy-cebu.com/"><img src="http://www.yummy-cebu.com/images/Yummy-cebuAD.jpg" class="banner100" width="200" /></a>
+    
 	<img src="<?php echo url::base(); ?>images/advertising/ads-200-by-200.png" class="banner200" />
 </div>
