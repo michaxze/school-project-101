@@ -53,6 +53,7 @@
 		</div>
         
         <div id="cd-advertise">
+        	<?php require_once(APPPATH . '/views/cebudirectories/facebook_likebox.php'); ?>
         	<?php require_once(APPPATH . '/views/cebudirectories/advertising.php'); ?>
         </div>
         
