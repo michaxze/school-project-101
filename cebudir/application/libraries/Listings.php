@@ -26,6 +26,7 @@ class Listings_Core {
      */
     public function get_listings($limit = null, $cat_id = null, $offset = 0)
     {
+
       $this->db->from('cebu_business as cb', 'cebu_categories as cc');
 
 		if(isset($cat_id)) {
@@ -42,6 +43,7 @@ class Listings_Core {
 
 		$this->db->offset($offset);
 		$this->db->where('cc.cat_id = cb.bus_cat_id');
+		$this->db->where('cb.status = 1');
 		$this->db->orderby('bus_date_added','DESC');
 		$result = $this->db->get();
 		
@@ -56,6 +58,7 @@ class Listings_Core {
       $this->db->offset($offset);
       $this->db->orderby('bus_date_added','DESC');
       $this->db->where('cc.cat_id = cb.bus_cat_id');
+      $this->db->where('cb.status = 1');
       if(isset($limit)) {
         $this->db->limit($limit);
       }
@@ -82,7 +85,8 @@ class Listings_Core {
 			if(is_array($cat_id)) {
 				$this->db->in('bus_cat_id', $cat_id);
 			} else {
-				$this->db->where('bus_cat_id', $cat_id);	
+				$this->db->where('bus_cat_id', $cat_id);
+				$this->db->where('status', 1);
 			}
 		}
 		

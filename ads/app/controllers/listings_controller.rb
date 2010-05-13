@@ -15,5 +15,14 @@ class ListingsController < ApplicationController
     end
   end
   
+  def www
+    businesses = CebuBusiness.find(:all)
+    businesses.each do |bus|
+      www = bus.bus_website.gsub("http://", "")
+      new_url = "http://" + www
+      bus.connection.execute("Update cebu_business set bus_website='#{new_url}' where bus_id = #{bus.bus_id}")
+    end
+  end
+  
 
 end
