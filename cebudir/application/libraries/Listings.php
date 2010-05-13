@@ -66,8 +66,9 @@ class Listings_Core {
 
 	public function get_listing($name)
 	{
+		$cond = sprintf("REPLACE(bus_name,\"%s\",'') = '%s'", "'", $name);
 		$this->db->from($this->table_name);
-		$this->db->where(array('bus_name' => $name));
+		$this->db->where($cond);
 		$result = $this->db->get();
 		
 		return $result->result_array(FALSE);

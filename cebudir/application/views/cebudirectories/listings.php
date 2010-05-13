@@ -38,7 +38,8 @@
     		$curl_html  = '<a href="' . $curl . '" title="' . $curl_title . '" >' . $list['cat_name'] . '</a>';
 			
 			// Title link
-			$turl 		= url::base() . str_replace(" ", "-", $bus_name);
+			$clean      = str_replace(array("'"), "", $bus_name);
+			$turl 		= url::base() . str_replace(array('-','- ',' '), "-", $clean);
 			$turl_title = "{$list['cat_name']}: " . ucwords($list['bus_name']);
 			$turl_html  = '<a href="' . $turl . '" title="' . $turl_title . '">' . ucwords($bus_name) . '</a>';
 			
