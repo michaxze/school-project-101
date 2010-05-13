@@ -7,7 +7,11 @@ if ($_SERVER['DOCUMENT_ROOT'] == "/Users/michaxze/Sites") {
 $ads = array();
 $ads[] = array("2", "wheatgrass-easy.jpg");
 $ads[] = array("1", "hostfortes-web-hosting.jpg");
+$ads[] = array("3", "numbers-emergency.jpg");
+$ads[] = array("4", "banner.jpg");
+$ads[] = array("5", "banner3.jpg");
 
+shuffle($ads);
 ?>
 
 <div id="cd-banner">
