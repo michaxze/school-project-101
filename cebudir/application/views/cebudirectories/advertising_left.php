@@ -3,6 +3,6 @@
 <h5 style="padding-left: 0px;">Sponsored</h5>
 
 <div id="ads">
-	<img src="<?php echo url::base(); ?>images/advertising/ads-200-by-400.png" class="banner400" />
+  <a href="advertise"><img src="<?php echo url::base(); ?>images/advertising/ads-200-by-400.png" class="banner400" /></a>
 
 </div>
