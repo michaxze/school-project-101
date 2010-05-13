@@ -12,7 +12,6 @@
         </div>
         
         <div id="cd-advertise">
-        	<?php require_once('facebook_likebox.php'); ?>
         	<?php require_once('advertising.php'); ?>
         </div>
         
