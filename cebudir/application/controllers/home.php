@@ -267,7 +267,7 @@ ACTIVESCRIPT;
 
             // Adding rules to form fields
             $post->add_rules('business_name', 'required', 'standard_text');
-            $post->add_rules('business_desc', 'required', 'standard_text');
+ //           $post->add_rules('business_desc', 'required', 'standard_text');
             $post->add_rules('email','required', 'valid::email');
             
             if ($post->validate()) {
