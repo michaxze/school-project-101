@@ -294,6 +294,7 @@ ACTIVESCRIPT;
                             'created_at' => $date,
                             'updated_at' => $date ));
                 $page->submitted = TRUE;
+                email::send("info@cebudirectories.com", "info@cebudirectories.com", "New Signup", "Go go go", TRUE);
             }else{
             	$page->errors = $post->errors('signup_errors');
             }
