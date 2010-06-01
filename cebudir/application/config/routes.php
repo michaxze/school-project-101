@@ -11,7 +11,12 @@ $config['terms-of-use'] = 'home/termsofuse';
 $config['privacy-policy'] = 'home/privacypolicy';
 $config['listings']  = 'listings/index';
 
+$config['posts']	 = 'posts/index';
+$config['travel']	 = 'home/travel';
+
 $config['search']	 = 'listings/search';
+#$config['test']		 = 'home/test';
+#$config['setup'] 	 = 'setup/index';
 
 $config['services']  = 'services/index';
 $config['services/web-development'] = 'services/webdevelopment';
