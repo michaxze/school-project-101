@@ -26,5 +26,7 @@
     
 </div>
 
-.....  
+
+<fb:comments xid="http://cebudirectories.com/ipars-restaurante-y-bar-de-tapas" numposts="15" width="520"></fb:comments>
+
 <div class="listing-bottom title"></div>
