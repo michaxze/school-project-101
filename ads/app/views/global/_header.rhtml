@@ -1,5 +1,12 @@
-<div style="padding: 10px">
+<h3>CEBUDIRECTORIES</h3>
+<div style="padding: 10px; float:left;">
 <% if logged_in? %>
-  <%= link_to "Logout", {:controller => 'logins', :action => 'logout'}%>
+<ul style="list-style-type:none; margin:0px; padding:0px">
+  <li style="list-style:none;display: list-item; margin:0px; padding: 0px"><%= link_to "Logout", logout_logins_path%></li>
+  <li>&nbsp;</li>
+  <li style="list-style:none;display: list-item; margin:0px; padding: 0px" ><%= link_to "Email Addresses", emails_path %> </li>
+  <li style="list-style:none;display: list-item; margin:0px; padding: 0px"><%= link_to "Ads", advertisements_path %></li>
+  <li style="list-style:none;display: list-item; margin:0px; padding: 0px"><%= link_to "Views", views_advertisements_path%></li>
+</ul>
 <% end %>
 </div>

@@ -9,10 +9,12 @@
 <body>
 
   <%= render :partial => 'global/header' %>
-  <%= render :partial => 'global/error_wrapper' %>
-  <%= render :partial => 'global/notice_wrapper' %>
+  <%= render :partial => 'global/error_wrapper' if flash[:error] %>
+  <%= render :partial => 'global/notice_wrapper' if flash[:notice]%>
 
   <div id="content_wrapper" >
+    <div id="sidebar">
+    </div>
     <%= yield %>
     <div style="clear: both !important"></div>
   </div>

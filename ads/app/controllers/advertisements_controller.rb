@@ -1,5 +1,5 @@
 class AdvertisementsController < ApplicationController
-  
+  layout 'global'  
   def view
     ads = Ad.find(params[:id])
     views = AdsView.new
@@ -10,4 +10,17 @@ class AdvertisementsController < ApplicationController
     redirect_to ads.redirect_to
   end
 
+  def index
+    @ads = Ad.find(:all)
+  end
+
+  def create
+    puts params.inspect
+    ads = Ad.new
+    ads.name = params[:name]
+    ads.image = params[:ad][:image]
+    ads.save
+    redirect_to advertisements_path
+  end
+  
 end

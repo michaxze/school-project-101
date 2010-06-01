@@ -26,4 +26,5 @@
     
 </div>
 
+.....
 <div class="listing-bottom title"></div>

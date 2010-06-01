@@ -8,3 +8,16 @@ body {
 input {
 	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
 }
+
+#login_form {
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+#error_wrapper {
+  color: red;
+  width: 100%;
+  background-color: #FFDBE4;
+  padding: 2px;
+}
