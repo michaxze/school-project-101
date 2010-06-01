@@ -305,6 +305,15 @@ ACTIVESCRIPT;
     
     }
 
+	function travel()
+	{
+		$page = new View('cebudirectories/pages/index');
+		$page->has_banner = TRUE;
+		
+		$page->title = 'Travel in Cebu Directories';
+		$page->render(true);
+	}
+
 	function test()
     {
     	$limit  = 15;
