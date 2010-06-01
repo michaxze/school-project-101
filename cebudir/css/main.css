@@ -2,12 +2,14 @@
 @import url(reset-min.css);
 @import url(accordion-style.css);
 
+
 *, body { 
 	padding: 0; 
 	margin: 0;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 11px;
 }
+
 a { 
 	text-decoration: none; 
 	color: #6D8309;
@@ -25,17 +27,26 @@ h5 { font-size: 12px; }
 h6 { font-size: 10px; }
 
 /*** CEBU DIRECTORIES MAIN DIVS ***/
-#cd-body 	   { height: 100%; background: #FFFFFF; margin-top: -10px; padding-top: 10px; }
+#cd-body 	   { height: 100%; background: #FFF; margin-top: -10px; padding-top: 10px; }
 #cd-wrapper    { width: 960px; margin: 0px auto; background: #FFFFFF; padding: 5px; }
-#cd-header 	   { }
+
+#cd-header 	   { background: none; }
 #cd-header h1 {
   margin-left:-99999px;
   position:absolute;
 }
-#cd-banner 	   { height: 250px; width: 960px; background: #300; }
-#cd-header, #cd-banner { margin-bottom: 5px; }
+#cd-banner 	   { height: 250px; width: 960px; background: #300; margin-top: 40px; }
+#cd-bannerbg   { width: 1009px; height: 298px; 
+				 background: url(../images/bg.jpg) top center no-repeat; 
+				 margin-left: -25px; margin-top: -277px; }
+#cd-bannerfg   { background: url(../images/fg-banner.png) top center no-repeat; 
+				 width: 959px; height: 288px;
+				 margin-top: -295px;
+			   }
+#cd-banner .slideshow a img { }
+#cd-header, #cd-banner { margin-bottom: 15px; }
 #cd-header #search_bar {
-  float:right;
+  float: right;
   position:relative;
 }
 #cd-header #search_bar input {
@@ -397,6 +408,28 @@ ul#sitemaps li {
 }
 .listing-category a:hover { color: #FFFFFF; }
 
+/*** POSTS ***/
+#posts img { 
+	padding: 10px; 
+	background: #EAF2D9; 
+	margin: 10px; 
+}
+#posts .ptitle { 
+	font-size: 28px;
+	color: #6D8309;
+}
+#posts p { 
+	margin-bottom: 15px; 
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: .02em;
+}
+#posts b { 
+	font-size: 14px; 
+	color: #333; 
+}
+#source { padding: 10px; }
+
 /*** MISCS ***/
 .title  { font-size: 13px; font-weight: bold; color: #333; text-shadow: 1px 1px #CCC; }
 .normal { font-weight: normal; color: #000000; }
@@ -411,11 +444,17 @@ ul#sitemaps li {
 .clear  { clear: both; }
 .green  { color: #6D8309; }
 
-.small  { font-size: 14px; }
-.medium { font-size: 16px; }
+.small  { font-size: 14px; line-height: 22px; letter-spacing: .3px; }
+.medium { font-size: 16px; line-height: 23px; word-spacing: .08em; }
 .large  { font-size: 18px; }
 
 /*** SEARCH ***/
+#search_bar2 { height: 80px; background: url(../images/bg-search.jpg) top left no-repeat; }
+#search_bar2 ul { list-style-type: none; padding: 0px; margin: 0px; color: #FFFFFF; padding-top: 8px;}
+#search_bar2 ul li { list-style-type: none; padding: 0px; margin: 0px; }
+.search_image { width: 200px; }
+.search_w     { width: 300px; }
+
 #search_bar { margin-top: 15px; }
 .searchF, .searchB { 
 	border: 1px solid #999; 
@@ -424,16 +463,16 @@ ul#sitemaps li {
 	border-radius:15px;
 }
 .searchF { border-right: none; text-indent: 5px; }
+.searchF:hover, .searchF:focus { 
+	-moz-box-shadow: 0 0 .4em #3CF;
+	box-shadow: 0 0 .4em #3CF; 
+	border-width: 1px;
+}
 .searchB { 
-	border-left: none;
-	-moz-border-radius-topleft: 0px;
-	-moz-border-radius-bottomleft: 0px;
-	-webkit-border-top-left-radius: 0px;
-	-webkit-border-bottom-left-radius: 0px;
-	border-top-left-radius: 0px;
-	border-bottom-left-radius: 0px;
+	-moz-border-radius:5px; 
+	-webkit-border-radius:5px; 
 	color: #FFF;
-	margin-left: -20px; 
+/*	margin-left: -20px; */
 	background: url(../images/bg-button.png) bottom repeat-x;
 	text-transform:uppercase;
 	font-weight: bold;
