@@ -4,10 +4,11 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
-
+  include AuthenticateHelper
+  
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
-  
+
   def user_required(e)
     if request.xhr?
       render_403
@@ -27,8 +28,4 @@ class ApplicationController < ActionController::Base
   end
   helper_method :logged_in?
 
-  def authorize
-    session[:user]
-    redirect_to :controller => 'logins' if session[:user].nil?
-  end
 end

@@ -1,6 +1,5 @@
 class LoginsController < ApplicationController
   layout 'global'
-  before_filter :make_page_title
   
   def index
   end

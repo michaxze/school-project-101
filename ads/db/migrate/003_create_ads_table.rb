@@ -2,7 +2,7 @@ class CreateAdsTable < ActiveRecord::Migration
   def self.up
     create_table :ads do |t|
       t.column "name",   :string
-      t.column "image",  :string
+      t.column "image",  :string, :null => true
       t.column "redirect_to",  :string
       t.column "created_at",     :datetime, :null => false
       t.column "updated_at",     :datetime
