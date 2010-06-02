@@ -1,0 +1,22 @@
+LIST OF ADVERTISEMENTS: <span><%=link_to "Add", new_advertisement_path %> </span>
+
+<table cellpadding=2 cellspacing=2>
+  <tr>
+    <td></td>
+    <td> Name </td>
+    <td> URL </td>
+    <td> Image </td>
+  </tr>
+  <% @ads.each do |ad| %>
+  <tr>
+    <td>
+      <%= link_to "Edit", edit_advertisement_path(ad) -%> 
+      <%= link_to "Delete", advertisement_path(ad), :method => :delete, :confirm => "Are you sure?" -%> 
+    </td>
+    <td> <span> <%= ad.name %> </span> </td>
+    <td> <span> <%= ad.redirect_to %> </span> </td>
+    <td> <span> <%= link_to(image_tag("ads/#{ad.image}", :size => "80x20"), "/images/ads/#{ad.image}", :target => "_blank" )unless ad.image.nil? %> </span> </td>
+  </tr>
+
+  <% end %>
+</table>

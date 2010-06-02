@@ -1,0 +1,13 @@
+<div id='div_header'>Edit advertisement: </div>
+
+<% form_tag advertisement_path(@ad), :multipart => true, :method => :put  do -%>
+<ul style="list-style-type: none">
+  <li>Name : <%= text_field_tag "name", @ad.name %></li>
+  <li>Landing Page : <%= text_field_tag "redirect_page", @ad.redirect_to %></li>
+  <li>Image : <%= file_field "ad", "datafile" %></li>
+  <li> <%= submit_tag "Submit"%> or <%= link_to "Cancel", advertisements_path %></li>
+</ul>
+<% end %>
+<div style="padding: 10px">
+  <%= image_tag("ads/#{@ad.image}")%>
+</div>

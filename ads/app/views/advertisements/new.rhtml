@@ -1,0 +1,11 @@
+<div id='div_header'>Add new advertisement: </div>
+
+
+<% form_tag '/advertisements', :multipart => true, :method => :post  do -%>
+<ul style="list-style-type: none">
+  <li>Name : <%= text_field_tag "name"%></li>
+  <li>Landing Page : <%= text_field_tag "redirect_page" %></li>
+  <li>Image : <%= file_field "ad", "datafile" %></li>
+  <li> <%= submit_tag "Submit"%>  or <%= link_to "Cancel", advertisements_path %> </li>
+</ul>
+<% end %>
