@@ -28,6 +28,8 @@
 
 <div class="listing-bottom title"></div>
 
+<h4>Comments </h4>
+<center>
 <div id="fb-root"></div>
 <script src="http://connect.facebook.net/en_US/all.js"></script>
 <script>
@@ -39,5 +41,7 @@
   });
 </script>
 
-<fb:comments width="450px" xid="<?php echo $id;?>" numposts="15"  simple="1" showform="true" candelete="0" send_notification_uid="692776079" >
+<fb:comments width="500px" xid="<?php echo $id;?>" numposts="15"  simple="1" showform="true" candelete="0" send_notification_uid="692776079" >
 </fb:comments>
+
+</center>
