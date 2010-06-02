@@ -128,7 +128,7 @@ class Listings_Controller extends Controller {
 		$page->mobile		 = $listing['bus_mobile_no'];
 		$page->description	 = $listing['bus_description'];
 		$page->is_premium	 = $listing['is_pro_account'];
-		
+		$page->id	 = $listing['bus_id'];
 		$page->render(true);
 	}
 	
