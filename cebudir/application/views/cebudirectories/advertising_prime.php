@@ -20,7 +20,7 @@ shuffle($ads);
   foreach ($ads as $ad) {
     ?>
     <a href="<?php echo $ads_site;?>/advertisements/view/<?php echo $ad[0];?>">
-    <img src="<?php echo url::base()?>images/banners/<?php echo $ad[1];?>" />
+    <img src="<?php echo url::base()?>images/ads/<?php echo $ad[1];?>" />
     </a>
     <?php } ?>
   </div>
