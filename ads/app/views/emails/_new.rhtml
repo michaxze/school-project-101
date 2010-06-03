@@ -1,4 +1,4 @@
 <% form_tag emails_path, :method => 'post' do %>
-  Enter Email Address : <%= text_field_tag "email" %>
+  Enter Email Address : <%= text_field_tag "email", nil, :size => 35 %>
   <%= submit_tag "Add" %>
 <% end %>

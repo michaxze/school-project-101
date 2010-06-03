@@ -1,12 +1,13 @@
 <h3>CEBUDIRECTORIES</h3>
-<div style="padding: 10px; float:left;">
+
+<div id="top_menu" >
 <% if logged_in? %>
-<ul style="list-style-type:none; margin:0px; padding:0px">
-  <li style="list-style:none;display: list-item; margin:0px; padding: 0px"><%= link_to "Logout", logout_logins_path%></li>
-  <li>&nbsp;</li>
-  <li style="list-style:none;display: list-item; margin:0px; padding: 0px" ><%= link_to "Email Addresses", emails_path %> </li>
-  <li style="list-style:none;display: list-item; margin:0px; padding: 0px"><%= link_to "Ads", advertisements_path %></li>
-  <li style="list-style:none;display: list-item; margin:0px; padding: 0px"><%= link_to "Views", views_advertisements_path%></li>
+<ul>
+  <%= content_tag("li", (link_to 'Email Addresses', emails_path ) )%>
+  <%= content_tag("li", (link_to 'Advertisements', advertisements_path ) )%>
+  <%= content_tag("li", (link_to 'Ads Views', views_advertisements_path ) )%>
+  <%= content_tag("li", (link_to 'Messages', messages_path ) )%>
+  <%= content_tag("li", (link_to 'Quit', logout_logins_path ) )%>
 </ul>
 <% end %>
 </div>

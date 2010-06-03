@@ -31,3 +31,22 @@ input {
   font-weight: 600;
   font-size: 11px;
 }
+
+#top_menu {
+  padding: 10px; 
+  float:left;
+  width: 120px;
+  min-height: 700px;
+}
+#top_menu ul {
+  list-style-type:none; 
+  margin:0px; 
+  padding:0px
+}
+
+#top_menu ul li {
+ list-style:none;
+ display: list-item; 
+ margin:0px; 
+ padding: 0px
+}

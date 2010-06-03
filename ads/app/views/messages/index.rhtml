@@ -1,0 +1,40 @@
+<h3>Contact us messages </h3>
+
+<div style="margin-bottom:30px">
+<%= will_paginate(@messages)%>
+</div>
+
+<% @messages.each do |message| %>
+<table cellspacing=1 cellpadding=1 style="margin-bottom: 10px" >
+  <tr>
+    <td width=100 style="color: gray; font-size: 11px"><%= message.report_datesent.strftime('%B %d, %Y')%></td>
+    <td width=400> </td>
+  </tr>
+  <tr>
+    <td align="right">Name:</td>
+    <td><%= message.name %> </td>
+  </tr>
+  <tr>
+    <td align="right">Address:</td>
+    <td><%= message.address %> </td>
+  </tr>
+  <tr>
+    <td align="right">Email Address:</td>
+    <td><%= message.report_email%></td>
+  </tr>
+  <tr>
+    <td align="right">Report Type:</td>
+    <td><%= message.report_type %></td>
+  </tr>
+  <tr>
+    <td align="right">Subject:</td>
+    <td><%= message.report_subject%></td>
+  </tr>
+  <tr>
+    <td align="right">Message:</td>
+    <td style="white-space:normal;"><%= h message.report_message %></td>
+  </tr>
+</table>
+<% end %>
+
+
