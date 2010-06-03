@@ -11,7 +11,12 @@ $config['terms-of-use'] = 'home/termsofuse';
 $config['privacy-policy'] = 'home/privacypolicy';
 $config['listings']  = 'listings/index';
 
+// Construct Posts URI
+//   ex: http://cebudirectories.com/posts
+// 		 http://cebudirectories.com/posts/a-very-nice-article
 $config['posts']	 = 'posts/index';
+$config['posts/([0-9a-zA-z-]+)'] = 'posts/index/$1';
+
 $config['travel']	 = 'home/travel';
 
 $config['search']	 = 'listings/search';

@@ -26,24 +26,36 @@ class Posts_Controller extends Controller {
 		parent::__construct();
 	}
 	
-	function index()
+	function index($post_name = NULL)
 	{	
 		// Construct Pagination
 		//$this->paging->initialize();
 
-	    // Fetching of Categories
-		//$categories = $this->cat->get_categories();
-	
-	    // Fetching of Latest Listing
-	    //$listings = $this->lists->get_listings($this->paging->items_per_page);
-		
 		$page = new View('cebudirectories/posts/index');
 		$page->title = 'Waaazzzzzuuup?!?! - Cebu Directories Online Cebu Directory of Cebu City';
 		$page->menu  = '';
 		$page->has_banner = FALSE;
 		
-		//$page->categories = $categories;
-		//$page->listings   = $listings;
+		$post = new Post_Model;
+		
+		if(isset($post_name)) {
+			$name = str_replace('posts/', '', url::current());
+			$t[] = $post->get_posts_by_name($name);
+			$page->title = $t[0]['title'] . ' &raquo; Cebu Directories Online Cebu Directory of Cebu City';
+		} else {
+			$posts = $post->get_posts();
+		
+			foreach($posts as $p) {
+				$t[] = array("id" => $p->id,
+							 "title" => $p->title,
+							 "content" => $p->content,
+							 "url" => url::base() . 'posts/' . $p->post_name,
+							 "date_created" => $p->date_created);
+			}
+		}
+		
+		$page->posts = $t;
+		
 		//$page->pagination = $this->paging->render();
 		
 		$page->render(true);
@@ -77,100 +89,6 @@ class Posts_Controller extends Controller {
 		$page->elapsed_time = round($script_end - $script_start, 3);
 		$page->pagination = $this->paging->render();
 		$page->render(true);
-	}
-
-	function page($page)
-	{
-		// Construct Pagination
-		$this->paging->initialize();
-
-	    // Fetching of Categories
-		$categories = $this->cat->get_categories();
-	
-	    // Fetching of Latest Listing
-		$offset   = ($this->paging->items_per_page * $page);
-	    $listings = $this->lists->get_listings($this->paging->items_per_page, NULL, $offset);
-		
-		$page = new View('cebudirectories/listings/index');
-		$page->title = 'Listings - Cebu Directories Online Cebu Directory of Cebu City';
-		$page->menu  = 'listing';
-		$page->has_banner = TRUE;
-		
-		$page->categories = $categories;
-		$page->listings   = $listings;
-		$page->pagination = $this->paging->render();
-		
-		$page->render(true);
-	}
-	
-	function show($business)
-	{
-		$business_name = strtolower(str_replace('-',' ',$business));
-		$listing = $this->lists->get_listing($business_name);
-		$listing = $listing[0];
-		// Fetching of Categories
-		$categories = $this->cat->get_categories();
-		
-		$page = new View('cebudirectories/listings/index');
-		$page->title = ucwords(strtolower($listing['bus_name'])) . ' - Cebu Directories';
-		$page->menu  = 'listing';
-		$page->has_banner = TRUE;
-		
-		$page->categories = $categories;
-		
-		// Listing Variables
-		$page->listing 		 = $listing;
-		$page->business_name = $listing['bus_name'];
-		$page->address		 = $listing['bus_address'];
-		$page->website		 = $listing['bus_website'];
-		$page->email		 = $listing['bus_email'];
-		$page->telno		 = $listing['bus_telno'];
-		$page->mobile		 = $listing['bus_mobile_no'];
-		$page->description	 = $listing['bus_description'];
-		$page->is_premium	 = $listing['is_pro_account'];
-		
-		$page->render(true);
-	}
-	
-	function category($category, $page=NULL)
-	{
-		// replace "-" to space " "
-		$category = str_replace("-", " ", $category);
-		$cat_var = $this->cat->get_category_by_name($category);
-		
-		if(!empty($cat_var)) {
-			foreach($cat_var as $cat) {
-				$cids[] = $cat['cat_id'];	
-			}
-			
-			// Construct Pagination
-			$this->paging= new Pagination(array('base_url'		 => '/category/' . $category,
-												'uri_segment'	 => 3,
-												'total_items'	 => $this->lists->get_listings_total($cids),
-												'items_per_page' => 10,
-												'auto_hide'		 => true,
-												'style'			 => 'classic'));
-			$this->paging->initialize();
-			
-			// Fetching of Categories
-			$categories = $this->cat->get_categories();
-			
-			// Fetching of Listings by Category
-			$offset  = isset($page) ? ($page*$this->paging->items_per_page) : 0;
-			$listing = $this->lists->get_listings($this->paging->items_per_page, $cids, $offset);
-			
-			$page = new View('cebudirectories/listings/index');
-			$page->title = $cat_var[0]['cat_name'] . ' - Cebu Directories Online Cebu Directory of Cebu City';
-			$page->menu  = 'listing';
-			$page->has_banner = TRUE;
-			
-			$page->categories = $categories;
-			$page->listings   = $listing;
-			$page->pagination = $this->paging->render();
-			
-			$page->render(true);
-		}
-		
-		
 	}*/
+
 } // End Home Controller
