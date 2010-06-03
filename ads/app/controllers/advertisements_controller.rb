@@ -1,6 +1,7 @@
 class AdvertisementsController < ApplicationController
   layout 'global'  
-  
+
+  before_filter :make_page_title
   before_filter :authorize, :only => [ :index, :create, :destroy, :edit, :update ]
   
   #this method does not check any authentication
@@ -11,9 +12,25 @@ class AdvertisementsController < ApplicationController
     views.ipaddress = request.remote_ip
     views.hostname = request.host
     views.save
+    
+    Ad.increment_counter(:total_views, ads.id)
     redirect_to ads.redirect_to
   end
 
+  def views
+    @views= AdsView.get_views(params[:page])
+  end
+  
+  def update_views
+    ads = Ad.find(:all)
+    
+    ads.each do |ad|
+      ad.update_attribute(:total_views, ad.ads_views.length)
+    end
+    
+    redirect_to advertisements_path
+  end
+  
   def index
     @ads = Ad.find(:all)
   end
@@ -56,6 +73,12 @@ class AdvertisementsController < ApplicationController
     end
 
     redirect_to advertisements_path
+  end
+
+  private
+  
+  def make_page_title
+    @page_title = "Advertisements"
   end
 
 end

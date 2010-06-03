@@ -4,8 +4,6 @@ class CreateAdsTable < ActiveRecord::Migration
       t.column "name",   :string
       t.column "image",  :string, :null => true
       t.column "redirect_to",  :string
-      t.column "created_at",     :datetime, :null => false
-      t.column "updated_at",     :datetime
     end
 
     create_table :ads_views do |t|

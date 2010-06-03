@@ -1,7 +1,8 @@
 class EmailsController < ApplicationController
   layout 'global'
   before_filter :authorize
-  
+  before_filter :make_page_title
+
   def index
     @emails = EmailAddress.find(:all, :order => "created_at  DESC")
   end
@@ -18,4 +19,11 @@ class EmailsController < ApplicationController
       flash[:error] = error
     end
   end
+
+  private
+  
+  def make_page_title
+    @page_title = "Email Addresses"
+  end
+  
 end

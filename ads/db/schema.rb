@@ -9,7 +9,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 2) do
+ActiveRecord::Schema.define(:version => 4) do
+
+  create_table "ads", :force => true do |t|
+    t.string   "name",                           :null => false
+    t.string   "image"
+    t.string   "redirect_to",                    :null => false
+    t.boolean  "is_active",   :default => false
+    t.integer  "total_views"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ads_views", :force => true do |t|
+    t.integer  "ad_id",      :null => false
+    t.string   "ipaddress",  :null => false
+    t.string   "hostname",   :null => false
+    t.datetime "created_at", :null => false
+  end
 
   create_table "cebu_administrator", :primary_key => "admin_id", :force => true do |t|
     t.string   "admin_firstname", :limit => 20, :default => "", :null => false
@@ -59,6 +76,7 @@ ActiveRecord::Schema.define(:version => 2) do
     t.datetime "bus_date_added"
     t.datetime "bus_date_lastviewed"
     t.boolean  "is_pro_account",                            :default => false, :null => false
+    t.integer  "status",              :limit => 1,          :default => 0,     :null => false
   end
 
   add_index "cebu_business", ["bus_cat_id"], :name => "bus_cat_id"
@@ -241,6 +259,29 @@ ActiveRecord::Schema.define(:version => 2) do
     t.string   "price_size",       :limit => 250, :default => "", :null => false
     t.datetime "date_last_update",                                :null => false
     t.integer  "is_deleted",       :limit => 2,   :default => 0,  :null => false
+  end
+
+  create_table "submitted_businesses", :force => true do |t|
+    t.string   "name",            :null => false
+    t.text     "description",     :null => false
+    t.string   "address",         :null => false
+    t.integer  "location_id",     :null => false
+    t.integer  "category_id",     :null => false
+    t.string   "telno",           :null => false
+    t.string   "mobileno",        :null => false
+    t.string   "faxno",           :null => false
+    t.string   "email_address",   :null => false
+    t.string   "website",         :null => false
+    t.string   "twitter_link",    :null => false
+    t.string   "facebook_link",   :null => false
+    t.string   "yahoo_id",        :null => false
+    t.string   "skype_id",        :null => false
+    t.string   "status",          :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "billing_type",    :null => false
+    t.string   "billing_name",    :null => false
+    t.string   "billing_address", :null => false
   end
 
   create_table "users", :force => true do |t|

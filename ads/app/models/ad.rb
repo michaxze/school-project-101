@@ -1,4 +1,6 @@
 class Ad < ActiveRecord::Base
+  has_many :ads_views
+  
   #file_column :image, :magick => { :geometry => "960x250" }
   def self.save_ads_image(ad, filename, upload)
       directory = "public/images/ads"

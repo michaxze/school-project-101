@@ -1,10 +1,13 @@
-LIST OF ADVERTISEMENTS: <span><%=link_to "Add", new_advertisement_path %> </span>
+<span style="font-size:14px; font-weight:bold">Advertisements: </span>
+<span><%=link_to "Add", new_advertisement_path %> </span>
+<br/><br/>
 
 <table cellpadding=2 cellspacing=2>
   <tr>
     <td></td>
     <td> Name </td>
     <td> URL </td>
+    <td> Total Views </td>
     <td> Image </td>
   </tr>
   <% @ads.each do |ad| %>
@@ -15,6 +18,7 @@ LIST OF ADVERTISEMENTS: <span><%=link_to "Add", new_advertisement_path %> </span
     </td>
     <td> <span> <%= ad.name %> </span> </td>
     <td> <span> <%= ad.redirect_to %> </span> </td>
+      <td> <span> <%= ad.total_views %> </span> </td>
     <td> <span> <%= link_to(image_tag("ads/#{ad.image}", :size => "80x20"), "/images/ads/#{ad.image}", :target => "_blank" )unless ad.image.nil? %> </span> </td>
   </tr>
 
