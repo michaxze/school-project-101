@@ -37,6 +37,7 @@ class Posts_Controller extends Controller {
 		$page->has_banner = FALSE;
 		
 		$post = new Post_Model;
+		$t    = array();		
 		
 		if(isset($post_name)) {
 			$name = str_replace('posts/', '', url::current());
