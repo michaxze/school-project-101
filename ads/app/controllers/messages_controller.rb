@@ -1,6 +1,7 @@
 class MessagesController < ApplicationController
   layout 'global'
   before_filter :make_page_title
+  before_filter :authorize  
   
   def index
     @messages = Message.get_messages(params[:page])
