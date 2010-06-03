@@ -1,0 +1,24 @@
+Ad Views
+
+<table cellpadding=2 cellspacing=2>
+  <tr>
+    <td>Ad name </td>
+    <td> IP Address </td>
+    <td> Date </td>
+  </tr>
+<% @views.each do |view|%>
+<tr>
+  <td> <%= view.ad.name rescue '' %></td>
+  <td> <%= view.ipaddress %></td>
+  <td> <%= view.created_at.strftime('%B %d, %Y')%>
+    <span style="font-size:10px">
+    <%= " #{time_ago_in_words(view.created_at)} ago " %>
+    </span>
+  </td>
+</tr>
+<% end %>
+<tr>
+  <td colspan=3> <%= will_paginate @views %> </td>
+</tr>
+</table>
+
