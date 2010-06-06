@@ -1,8 +1,12 @@
 class ListingsController < ApplicationController
   layout 'global'
   before_filter :authorize
-  
+
   def index
+    
+  end
+  
+  def update_status
     members = CebuMember.find(:all)
     members.each do |member|
       if member.mem_reg_status.to_i == 1
@@ -24,5 +28,7 @@ class ListingsController < ApplicationController
     end
   end
   
-
+  def signups
+    
+  end
 end

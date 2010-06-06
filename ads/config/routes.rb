@@ -36,6 +36,9 @@ ActionController::Routing::Routes.draw do |map|
   # See how all your routes lay out with "rake routes"
 
   map.resources :messages, :controller => 'messages'  
+  map.resources :listings, :controller => 'listings',
+                           :collection => { :signups => :get }
+  map.resources :posts, :controller => 'posts'
   
   map.resources :advertisements, :controller => 'advertisements',
                 :collection => { :views => :get,
