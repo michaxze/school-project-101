@@ -188,6 +188,9 @@ ul#sitemaps li {
 .telno   { background: url(../images/contacticons.gif) 0px -33px no-repeat; }
 .website { background: url(../images/contacticons.gif) 0px -50px no-repeat; }
 .email	 { background: url(../images/contacticons.gif) 0px -18px no-repeat; }
+#more_listings li { padding: 3px 2px; width: 200px; }
+#more_listings li:hover { background: #F2F2F2; }
+
 /*** ADVERTISING SECTION ***/
 #ads, #cd-menus {
 	width: 202px;
