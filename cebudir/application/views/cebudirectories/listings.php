@@ -38,8 +38,11 @@
     		$curl_html  = '<a href="' . $curl . '" title="' . $curl_title . '" >' . $list['cat_name'] . '</a>';
 			
 			// Title link
-			$clean      = str_replace(array("'"), "", $bus_name);
-			$turl 		= url::base() . str_replace(array('-','- ',' '), "-", $clean);
+			//$clean      = str_replace(array("'"), "", $bus_name);
+			//$turl 		= url::base() . str_replace(array('-','- ',' '), "-", $clean);
+
+			// Quick fix for creating url while http://cebudirectories.com/ is not yet removed from the db
+			$turl		= url::base() . str_replace('http://www.cebudirectories.com/','', $list['bus_page_url']);
 			$turl_title = "{$list['cat_name']}: " . ucwords($list['bus_name']);
 			$turl_html  = '<a href="' . $turl . '" title="' . $turl_title . '">' . ucwords($bus_name) . '</a>';
 			
