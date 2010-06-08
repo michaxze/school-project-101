@@ -167,6 +167,7 @@ ul#sitemaps li {
 .services_advertising { background: url(../images/services/advertising.jpg) top center no-repeat; }
 .services_webdev 	  { background: url(../images/services/web-development.jpg) top center no-repeat; }
 /***  LISTINGS  ***/
+#content_container { padding-top: 15px; }
 #content_container img { max-width: 500px; !important }
 .details_container { height: 17px; }
 .details {
@@ -188,6 +189,10 @@ ul#sitemaps li {
 .telno   { background: url(../images/contacticons.gif) 0px -33px no-repeat; }
 .website { background: url(../images/contacticons.gif) 0px -50px no-repeat; }
 .email	 { background: url(../images/contacticons.gif) 0px -18px no-repeat; }
+#more_listings li { padding: 3px 2px; width: 200px; }
+#more_listings li:hover { background: #F2F2F2; }
+#more_listings li a { display: block; }
+
 /*** ADVERTISING SECTION ***/
 #ads, #cd-menus {
 	width: 202px;
@@ -219,7 +224,10 @@ ul#sitemaps li {
 	width: 200px; height: 400px;
 	background: url(../images/ads-200-by-400.png) top;
 }
-
+#cd-advertise h5 {
+	padding-left: 0px; 
+	width: 200px;
+}
 /*** FORM-CONTACT ***/
 #form-contact {
 	margin: 5px 15px;
@@ -409,22 +417,22 @@ ul#sitemaps li {
 .listing-category a:hover { color: #FFFFFF; }
 
 /*** POSTS ***/
-#posts img { 
+.posts img { 
 	padding: 10px; 
 	background: #EAF2D9; 
 	margin: 10px; 
 }
-#posts .ptitle { 
+.posts .ptitle a { 
 	font-size: 28px;
 	color: #6D8309;
 }
-#posts p { 
+.posts p { 
 	margin-bottom: 15px; 
 	font-size: 14px;
 	line-height: 22px;
 	letter-spacing: .02em;
 }
-#posts b { 
+.posts b { 
 	font-size: 14px; 
 	color: #333; 
 }

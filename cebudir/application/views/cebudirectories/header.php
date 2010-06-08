@@ -58,7 +58,7 @@
 	
   $(document).ready(function() {
       $('.slideshow').cycle({
-        fx: 'scrollUp', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+        fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
         timeout: 8000
       });
   });

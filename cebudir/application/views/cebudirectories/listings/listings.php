@@ -37,10 +37,10 @@
 				echo '<div class="details_container"><div class="details telno"> TEL. NO: </div><span class="details_text">' . $list['bus_telno'] . '</span></div>';	
 			}
 			if(strlen(trim($list['bus_website'])) > 0 && $is_premium) {
-				echo '<div class="details_container"><div class="details website"> WEBSITE: </div><span class="details_text">' . $list['bus_website'] . '</span></div>';	
+				echo '<div class="details_container"><div class="details website"> WEBSITE: </div><span class="details_text"><a href="' . $list['bus_website'] . '" target="_blank">' . $list['bus_website'] . '</a></span></div>';	
 			}
 			if(strlen(trim($list['bus_email'])) > 0 && $is_premium) {
-				echo '<div class="details_container"><div class="details email"> EMAIL: </div><span class="details_text">' . $list['bus_email'] . '</span>	</div>';	
+				echo '<div class="details_container"><div class="details email"> EMAIL: </div><span class="details_text"><a href="mailto:' . $list['bus_email'] . '">' . $list['bus_email'] . '</a></span>	</div>';	
 			}
     		echo '</div>';
 			/*echo '<pre>';
