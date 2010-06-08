@@ -6,7 +6,7 @@ if(!empty($more_listings)) {
 	
 	$list_items = '';
 	
-	echo '<h5 style="padding-left: 0px;">More Listings from ' . $category . '</h5>';
+	echo '<h5>More Listings from ' . $category . '</h5>';
 	echo '<ul id="more_listings">';
 	
 	foreach($more_listings as $list) {

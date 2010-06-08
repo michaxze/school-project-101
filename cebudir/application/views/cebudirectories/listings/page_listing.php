@@ -1,5 +1,5 @@
 <?php defined('SYSPATH') OR die('No direct access allowed.'); ?>
-<div class="listing-top title"></div>
+<div class=""></div>
 
 <!-- Latest Listings -->
 <div class="listing-latest">
@@ -26,7 +26,7 @@
     
 </div>
 
-<div class="listing-bottom title"></div>
+<div class=""></div>
 
 <h4>Comments </h4>
 <center>

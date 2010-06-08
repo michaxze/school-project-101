@@ -167,6 +167,7 @@ ul#sitemaps li {
 .services_advertising { background: url(../images/services/advertising.jpg) top center no-repeat; }
 .services_webdev 	  { background: url(../images/services/web-development.jpg) top center no-repeat; }
 /***  LISTINGS  ***/
+#content_container { padding-top: 15px; }
 #content_container img { max-width: 500px; !important }
 .details_container { height: 17px; }
 .details {
@@ -190,6 +191,7 @@ ul#sitemaps li {
 .email	 { background: url(../images/contacticons.gif) 0px -18px no-repeat; }
 #more_listings li { padding: 3px 2px; width: 200px; }
 #more_listings li:hover { background: #F2F2F2; }
+#more_listings li a { display: block; }
 
 /*** ADVERTISING SECTION ***/
 #ads, #cd-menus {
@@ -222,7 +224,10 @@ ul#sitemaps li {
 	width: 200px; height: 400px;
 	background: url(../images/ads-200-by-400.png) top;
 }
-
+#cd-advertise h5 {
+	padding-left: 0px; 
+	width: 200px;
+}
 /*** FORM-CONTACT ***/
 #form-contact {
 	margin: 5px 15px;
