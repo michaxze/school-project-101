@@ -105,7 +105,7 @@ class Listings_Controller extends Controller {
 	
 	function show($business)
 	{
-		$business_name = strtolower(str_replace('-',' ',$business));
+		$business_name = $business;
 		$listing = $this->lists->get_listing($business_name);
 		$listing = $listing[0];
 		// Fetching of Categories

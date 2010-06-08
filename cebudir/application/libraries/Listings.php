@@ -72,7 +72,7 @@ class Listings_Core {
 	 */
 	public function get_listing($name)
 	{
-		$cond = sprintf("REPLACE(cb.bus_name,\"%s\",'') = '%s'", "'", $name);
+		$cond = sprintf("REPLACE(cb.bus_page_url,'http://www.cebudirectories.com/','') = '%s'", $name);
 		//$this->db->from($this->table_name);
 		$this->db->from('cebu_business as cb', 'cebu_categories as cc');
 		$this->db->where('cc.cat_id = cb.bus_cat_id');
