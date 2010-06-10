@@ -26,6 +26,7 @@
 	li { padding: 3px 0px; list-style-type: none; }
 	</style>
     
+    <link rel="shortcut icon" href="http://cebudirectories.com/cebudirectories.png">
     <title>June Newsletter - Cebu Directories Co.</title>
 </head>
 <body>
