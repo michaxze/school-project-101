@@ -33,9 +33,9 @@
 <table width="700" align="center">
 <thead>
 <tr>
-    <td><a href="http://cebudirectories.com" alt="Cebu Directories" title="Cebu Directories Online Cebu Directory of Cebu City"><img src="<?php echo url::base(); ?>images/logo.png" alt="Cebu Directories Home Page" title="Cebu Directories Online Cebu Directory of Cebu City" width="250"/></a></td>
-    <td width="185"><a href="http://www.facebook.com/CebuDirectories" title="Join us on Facebook" ><img src="<?php echo url::base(); ?>images/newsletter/facebook.png" alt="Join us on Facebook" align="absmiddle"/>Join us on Facebook</a></td>
-    <td width="190"><a href="http://www.twitter.com/cebudirectories" title="Follow us on Twitter"><img src="<?php echo url::base(); ?>images/newsletter/twitter.png" alt="Follow us on Twitter" align="absmiddle"/>Follow us on Twitter</a></td>
+    <td><a href="http://cebudirectories.com" alt="Cebu Directories" title="Cebu Directories Online Cebu Directory of Cebu City"><img src="http://cebudirectories.com/images/logo.png" alt="Cebu Directories Home Page" title="Cebu Directories Online Cebu Directory of Cebu City" width="250"/></a></td>
+    <td width="185"><a href="http://www.facebook.com/CebuDirectories" title="Join us on Facebook" ><img src="http://cebudirectories.com/images/newsletter/facebook.png" alt="Join us on Facebook" align="absmiddle"/>Join us on Facebook</a></td>
+    <td width="190"><a href="http://www.twitter.com/cebudirectories" title="Follow us on Twitter"><img src="http://cebudirectories.com/images/newsletter/twitter.png" alt="Follow us on Twitter" align="absmiddle"/>Follow us on Twitter</a></td>
 </tr>
 </thead>
 <tbody>
@@ -47,7 +47,7 @@
 </tr>
 <tr>
     <td colspan="3">
-    	<center><img src="<?php echo url::base(); ?>images/newsletter/2010061001.jpg" style="margin: 0px;"/></center>
+    	<center><img src="http://cebudirectories.com/images/newsletter/2010061001.jpg" style="margin: 0px;"/></center>
         <br />
         <div class="boxy left">
             <p class="title">The more obvious aspects of this <b>big change</b> in the site are:</p>
@@ -89,7 +89,7 @@
     
         <p>Also, get updates from Cebu Directories on Twitter and Facebook.</p>
             </td>
-        	<td valign="top"><img src="<?php echo url::base(); ?>images/newsletter/2010061002.jpg" align="left"></td>
+        	<td valign="top"><img src="http://cebudirectories.com/images/newsletter/2010061002.jpg" align="left"></td>
             
         </tr>
         </table>
@@ -113,7 +113,7 @@
         
         <p><a href="http://cebudirectories.com/advertise">See Pricing</a></p>
         	</td>
-            <td><img src="<?php echo url::base(); ?>images/newsletter/2010061003.jpg" align="left"></td>
+            <td><img src="http://cebudirectories.com/images/newsletter/2010061003.jpg" align="left"></td>
         </tr>
         </table>
     </td>
@@ -134,7 +134,7 @@
         </ul>
         <p><a href="http://cebudirectories.com/services/listings">See Details</a></p>
         	</td>
-            <td><img src="<?php echo url::base(); ?>images/newsletter/2010061005.jpg" align="left"></td>
+            <td><img src="http://cebudirectories.com/images/newsletter/2010061005.jpg" align="left"></td>
         </tr>
         </table>
     </td>
@@ -147,7 +147,7 @@
     	<h3>Google Maps</h3>
         <p>Find out where the businesses are located using our Google Map tool. This helps clients identify a business' location.</p>
         	</td>
-            <td><img src="<?php echo url::base(); ?>images/newsletter/2010061004.jpg" align="left"></td>
+            <td><img src="http://cebudirectories.com/images/newsletter/2010061004.jpg" align="left"></td>
         </tr>
         </table>
     </td>
