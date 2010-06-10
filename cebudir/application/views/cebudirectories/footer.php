@@ -15,7 +15,13 @@
       
    	<div id="cd-sitemap" style="padding:5px">
       		<span class="stitle">Connect with us!</span><br style="margin-bottom: 5px;"/>
-            <?php require_once(APPPATH . '/views/cebudirectories/facebook_likebox.php'); ?>
+            <?php 
+			
+			if(!isset($show_facebook_like)) {
+				require_once(APPPATH . '/views/cebudirectories/facebook_likebox.php');
+			}
+			
+			?>
             <a href="http://twitter.com/cebudirectories"><img src="<?php echo url::base(); ?>images/twitter.png" title="Follow Cebu Directories on Twitter!" alt="Follow us on Twitter!" /></a>
   			<div class="clear"></div>
 	</div>
