@@ -16,6 +16,8 @@ $config['listings']  = 'listings/index';
 // 		 http://cebudirectories.com/posts/a-very-nice-article
 $config['posts']	 = 'posts/index';
 $config['posts/([0-9a-zA-z-]+)'] = 'posts/index/$1';
+$config['pages/([0-9a-zA-z-]+)'] = 'posts/index/$1';
+$config['newsletter'] = 'posts/newsletter';
 
 $config['travel']	 = 'home/travel';
 

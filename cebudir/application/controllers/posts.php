@@ -40,8 +40,10 @@ class Posts_Controller extends Controller {
 		$t    = array();		
 		
 		if(isset($post_name)) {
-			$name = str_replace('posts/', '', url::current());
-			$t[] = $post->get_posts_by_name($name);
+			$type  = explode("/", url::current());
+			$ptype = $type[0] == 'posts' ? 'post' : 'page';
+			$name = str_replace($type[0] . '/', '', url::current());
+			$t[] = $post->get_posts_by_name($name, $ptype);
 			$page->title = $t[0]['title'] . ' &raquo; Cebu Directories Online Cebu Directory of Cebu City';
 		} else {
 			$posts = $post->get_posts();
@@ -50,7 +52,7 @@ class Posts_Controller extends Controller {
 				$t[] = array("id" => $p->id,
 							 "title" => $p->title,
 							 "content" => $p->content,
-							 "url" => url::base() . 'posts/' . $p->post_name,
+							 "url" => url::base() . $p->type . 's/' . $p->post_name,
 							 "date_created" => $p->date_created);
 			}
 		}
@@ -59,6 +61,13 @@ class Posts_Controller extends Controller {
 		
 		//$page->pagination = $this->paging->render();
 		
+		$page->render(true);
+	}
+	
+	function newsletter()
+	{
+		$page = new View('cebudirectories/posts/page_newsletter');
+		$page->title = 'June - Cebu Directories Online Cebu Directory of Cebu City';
 		$page->render(true);
 	}
 	

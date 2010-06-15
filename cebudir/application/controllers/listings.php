@@ -105,7 +105,7 @@ class Listings_Controller extends Controller {
 	
 	function show($business)
 	{
-		$business_name = strtolower(str_replace('-',' ',$business));
+		$business_name = $business;
 		$listing = $this->lists->get_listing($business_name);
 		$listing = $listing[0];
 		// Fetching of Categories
@@ -118,6 +118,10 @@ class Listings_Controller extends Controller {
 		
 		$page->categories = $categories;
 		
+		// Fetch More Listing from this Category
+		$listings = $this->lists->get_listings(10, $listing['bus_cat_id']);
+		$page->more_listings = $listings;
+			
 		// Listing Variables
 		$page->listing 		 = $listing;
 		$page->business_name = $listing['bus_name'];
@@ -128,7 +132,8 @@ class Listings_Controller extends Controller {
 		$page->mobile		 = $listing['bus_mobile_no'];
 		$page->description	 = $listing['bus_description'];
 		$page->is_premium	 = $listing['is_pro_account'];
-		$page->id	 = $listing['bus_id'];
+		$page->id	 		 = $listing['bus_id'];
+		$page->category		 = $listing['cat_name'];
 		$page->render(true);
 	}
 	

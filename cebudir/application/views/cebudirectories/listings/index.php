@@ -19,6 +19,11 @@
         </div>
         
         <div id="cd-advertise">
+        	<?php
+			if(isset($more_listings)) {
+				require_once(APPPATH . '/views/cebudirectories/sidebar_listing.php'); 
+			}
+			?>
         	<?php require_once(APPPATH . '/views/cebudirectories/advertising.php'); ?>
         </div>
         

@@ -26,7 +26,6 @@ class Listings_Core {
      */
     public function get_listings($limit = null, $cat_id = null, $offset = 0)
     {
-
       $this->db->from('cebu_business as cb', 'cebu_categories as cc');
 
 		if(isset($cat_id)) {
@@ -43,10 +42,8 @@ class Listings_Core {
 
 		$this->db->offset($offset);
 		$this->db->where('cc.cat_id = cb.bus_cat_id');
-		$this->db->where('cb.status = 1');
 		$this->db->orderby('bus_date_added','DESC');
 		$result = $this->db->get();
-		
 		
 		return $result->result_array(FALSE);
     }
@@ -58,7 +55,6 @@ class Listings_Core {
       $this->db->offset($offset);
       $this->db->orderby('bus_date_added','DESC');
       $this->db->where('cc.cat_id = cb.bus_cat_id');
-      $this->db->where('cb.status = 1');
       if(isset($limit)) {
         $this->db->limit($limit);
       }
@@ -67,10 +63,19 @@ class Listings_Core {
       return $result->result_array(FALSE);
     }
 
+	/**
+	 * Returns a specific Business record
+	 *
+	 * @param	string	$name	The name of the listing in clean form
+	 * @returns	record			The record of the listing
+	 * @author	Paul Villacorta		<pwvillacorta@cebudirectories.com>
+	 */
 	public function get_listing($name)
 	{
-		$cond = sprintf("REPLACE(bus_name,\"%s\",'') = '%s'", "'", $name);
-		$this->db->from($this->table_name);
+		$cond = sprintf("REPLACE(cb.bus_page_url,'http://www.cebudirectories.com/','') = '%s'", $name);
+		//$this->db->from($this->table_name);
+		$this->db->from('cebu_business as cb', 'cebu_categories as cc');
+		$this->db->where('cc.cat_id = cb.bus_cat_id');
 		$this->db->where($cond);
 		$result = $this->db->get();
 		
@@ -85,8 +90,7 @@ class Listings_Core {
 			if(is_array($cat_id)) {
 				$this->db->in('bus_cat_id', $cat_id);
 			} else {
-				$this->db->where('bus_cat_id', $cat_id);
-				$this->db->where('status', 1);
+				$this->db->where('bus_cat_id', $cat_id);	
 			}
 		}
 		

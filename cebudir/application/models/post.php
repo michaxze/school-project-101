@@ -25,10 +25,11 @@ class Post_Model extends ORM {
 		return ORM::factory('post')->find_all();
 	}
 	
-	public function get_posts_by_name($name)
+	public function get_posts_by_name($name, $type = 'post')
 	{
 		$return = array();
-		$post = ORM::factory('post')->where('post_name', $name)->find();
+		
+		$post = ORM::factory('post')->where('post_name', $name)->where('type', $type)->find();
 		
 		$return = array("id" => $post->id,
 						"title" => $post->title,
