@@ -26,7 +26,10 @@
     
 </div>
 
-<div class=""></div>
+<div class="">
+  <center><div id="map_canvas" style="width: 500px; height: 300px;"></div></center>
+</div>
+
 
 <h4>Comments </h4>
 <center>
@@ -41,7 +44,7 @@
   });
 </script>
 
-<fb:comments width="500px" xid="<?php echo $id;?>" numposts="15"  simple="1" showform="true" candelete="0" send_notification_uid="692776079" >
+<fb:comments width="500px" xid="<?php echo $id;?>" numposts="15"  simple="1" showform="true" candelete="0" send_notification_uid=692776079 >
 </fb:comments>
 
 </center>
