@@ -21,6 +21,8 @@
   	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.accordion.js"></script>
   	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.cycle.all.2.72.js"></script>
 
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA5siaJWihF_VAT8BT4vobXBStf0SYYC-7HG1ciYzoNQSEcsM8DBSWFpsuxHWROz5rLWyuPpByYFEckQ&sensor=true" type="text/javascript"></script>
+
 	<?php
 	## Append Dynamic Javascripts
 	$js_texts = '';
@@ -68,7 +70,50 @@
 
 
 </head>
+
+<?php if (isset($address)) { ?>
+<body id="cd-body" onload="initialize()" onunload="GUnload()">
+<?php }else {?>
 <body id="cd-body">
+<?php } ?>
+
+  <?php
+    $map_address = "";
+    if (isset($address)) {
+      $address = strtolower($address);
+      $map_address = str_replace("cebu philippines", "", $address);
+  ?>
+    <script type="text/javascript">
+        var map = null;
+        var geocoder = null;
+
+        function initialize() {
+          if (GBrowserIsCompatible()) {
+            map = new GMap2(document.getElementById("map_canvas"));
+            map.addControl(new GLargeMapControl());
+            map.setCenter(new GLatLng(10.3455617, 123.8969328), 15);
+            geocoder = new GClientGeocoder();
+            showAddress("<?= $map_address . " cebu philippines " ?>");
+          }
+        }
+
+        function showAddress(address) {
+          geocoder.getLatLng(
+            address,
+            function(point) {
+              if (!point) {
+                //alert(address + " not found");
+              } else {
+                map.setCenter(point, 15);
+                var marker = new GMarker(point);
+                map.addOverlay(marker);
+                //marker.openInfoWindowHtml(address);
+              }
+            }
+          );
+        }
+    </script>
+  <?php } ?>
 
 <div id="cd-wrapper">
 
