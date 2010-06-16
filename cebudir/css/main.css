@@ -416,6 +416,7 @@ ul#sitemaps li {
 .listing-category a:hover { color: #FFFFFF; }
 
 /*** POSTS ***/
+.posts, .posts ul li { font-size: 14px; }
 .posts img { 
 	padding: 10px; 
 	background: #EAF2D9; 
@@ -432,9 +433,11 @@ ul#sitemaps li {
 	letter-spacing: .02em;
 }
 .posts b { 
-	font-size: 14px; 
-	color: #333; 
+	color: #333;
+	font-size: 14px;
 }
+.posts ul { padding-left: 15px; margin: 15px 0px; }
+.posts ul li { padding: 3px 0px; }
 #source { padding: 10px; }
 
 /*** MISCS ***/
