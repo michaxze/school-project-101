@@ -1,7 +1,7 @@
 <?php defined('SYSPATH') OR die('No direct access allowed.'); ?>
 <?php require_once(APPPATH . 'views/cebudirectories/header.php'); ?>   
 
-    <div id="cd-content" style="padding-top: 20px;">
+    <div id="cd-content">
   		
         <h1>Have your Business listed to us!</h1>
         
