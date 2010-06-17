@@ -128,7 +128,7 @@ ul#sitemaps li {
 }
 
 /***  CD-CONTENT ***/
-#cd-content h1, #cd-content h2 { color: #6D8309; }
+#cd-content h1, #cd-content h2 { color: #6D8309; margin: 10px 0px; }
 #cd-content h3, #cd-content h4,
 #cd-content h5, #cd-content h6 { 
 	color: #333; padding-left: 10px; 
