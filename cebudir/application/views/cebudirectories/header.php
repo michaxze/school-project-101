@@ -32,16 +32,12 @@
 		}
 	}
 	?>
-
-
 	
     <?php echo $js_texts; ?>
 
 	<title><?php echo $title; ?></title>
 
 	<?php echo (isset($active_script)) ? $active_script : ''; ?>
-
-
     
 	<script type="text/javascript">
 	jQuery().ready(function(){
@@ -66,8 +62,6 @@
   });
 	
 	</script>
-
-
 
 </head>
 
@@ -113,7 +107,7 @@
           );
         }
     </script>
-  <?php } ?>
+<?php } ?>
 
 <div id="cd-wrapper">
 
@@ -144,5 +138,3 @@
 		}
 		?>
     </div>
-
-	<?php //require_once(APPPATH . '/views/cebudirectories/search.php'); ?>
