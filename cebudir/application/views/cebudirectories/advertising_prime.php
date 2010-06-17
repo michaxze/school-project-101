@@ -9,8 +9,9 @@ $ads[] = array("2", "wheatgrass-easy.jpg");
 $ads[] = array("1", "hostfortes-web-hosting.jpg");
 $ads[] = array("3", "numbers-emergency.jpg");
 $ads[] = array("4", "banner.jpg");
-$ads[] = array("5", "banner3.jpg");
-$ads[] = array("7", "7-philippine-independence-day.jpg");
+//$ads[] = array("5", "banner3.jpg");
+$ads[] = array("8", "8-nude-sandals.jpg");
+$ads[] = array("9", "9-fete-dela-musique-2010.jpg");
 
 shuffle($ads);
 ?>
