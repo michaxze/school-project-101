@@ -3,7 +3,8 @@
 
     <div id="cd-content">
   		
-        <h1>Have your Business listed to us!</h1>
+        <h1>Business Listing</h1>
+        <h3>Have your Business listed to us!</h4>
         
         <p>
         Business directories benefit small, medium, local companies as well 
