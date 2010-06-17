@@ -43,32 +43,13 @@ class Services_Controller extends Controller {
 	    $page->title = 'Listings - Cebu Directories Online Cebu Directory of Cebu City';
 		$page->menu  = 'services';
 		$page->has_banner = FALSE;
+		$page->show_facebook_like = FALSE;
 		
-		$page->scripts = array(url::base(FALSE) . "javascript/jquery.flow.1.2.js",
-							   url::base(FALSE) . "javascript/thickbox-min.js");
-		$page->active_script = <<<ACTIVESCRIPT
-<script type="text/javascript">
-	$(function() {
-		$("div#controller").jFlow({
-			slides: "#slides"
-		});
-	});
-	</script>
-
-ACTIVESCRIPT;
+		$page->scripts = array(url::base(FALSE) . "javascript/thickbox-min.js");
 
 		$page->categories = $this->categories;
 		
 		$page->render(true);
 	}
 	
-	function webdevelopment()
-	{
-		echo "Hello again!";	
-	}
-	
-	function advertising()
-	{
-		echo "Wassssup!!";	
-	}
 } // End Home Controller
