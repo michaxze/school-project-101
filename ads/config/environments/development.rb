@@ -15,3 +15,15 @@ config.action_controller.perform_caching             = false
 
 # Don't care if the mailer can't send
 config.action_mailer.raise_delivery_errors = false
+
+config.action_mailer.perform_deliveries = true
+config.action_mailer.delivery_method = :smtp
+
+config.action_mailer.smtp_settings = {
+  :address        => 'smtp.gmail.com',
+  :port           => 465,
+  :domain         => 'www.cebudirectories.com',
+  :authentication => :login,
+  :user_name      => 'news',
+  :password       => 'n3ws101'
+}

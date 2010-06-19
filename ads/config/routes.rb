@@ -43,7 +43,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :advertisements, :controller => 'advertisements',
                 :collection => { :views => :get,
                                  :update_views => :get }
-  map.resources :emails, :controller => 'emails'  
+  map.resources :emails, :controller => 'emails',
+                         :collection => { 'send_newsletter' => :get }
   map.resources :logins, 
                 :controller => 'logins',
                 :collection => { :logout => :get, :index => :get }

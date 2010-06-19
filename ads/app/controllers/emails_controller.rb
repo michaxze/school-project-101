@@ -19,6 +19,12 @@ class EmailsController < ApplicationController
       flash[:error] = error
     end
   end
+  
+  def send_newsletter
+    email = EmailAddress.find(params[:id])
+    Mailer.deliver_newsletter(email)
+    redirect_to emails_url
+  end
 
   private
   
