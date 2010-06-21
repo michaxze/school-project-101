@@ -19,9 +19,42 @@ class EmailsController < ApplicationController
       flash[:error] = error
     end
   end
+
+  def send_premium
+    email = EmailAddress.find(params[:id])
+    email_type = EmailType.find_by_code("premium")
+    
+    emailsent = EmailSent.new
+    emailsent.email_address_id = email.id
+    emailsent.email_type_id = email_type.id
+    emailsent.save
+    
+    Mailer.deliver_premium(email)
+    redirect_to emails_url
+  end
+
+  def send_basic
+    email = EmailAddress.find(params[:id])
+    email_type = EmailType.find_by_code("basic")
+
+    emailsent = EmailSent.new
+    emailsent.email_address_id = email.id
+    emailsent.email_type_id = email_type.id
+    emailsent.save
+  
+    Mailer.deliver_basic(email)
+    redirect_to emails_url
+  end
   
   def send_newsletter
     email = EmailAddress.find(params[:id])
+    email_type = EmailType.find_by_code("newsletter")
+    
+    emailsent = EmailSent.new
+    emailsent.email_address_id = email.id
+    emailsent.email_type_id = email_type.id
+    emailsent.save
+    
     Mailer.deliver_newsletter(email)
     redirect_to emails_url
   end

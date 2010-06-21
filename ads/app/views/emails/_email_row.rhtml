@@ -3,7 +3,7 @@
   <td><%= email_row.sent ? email_row.date_sent.strftime("%m-%d-%Y") : '' %></td>
   <td><%= email_row.created_at.strftime("%m-%d-%Y") %> </td>
   <td>
-    <span> <%= link_to "Send Newsletter", send_newsletter_emails_path(:id => email_row.id) %> </span> |
+    <span> <%= link_to "Send Newsletter", send_newsletter_emails_path(:id => email_row.id) %> <%= "(#{email_row.email_sents.length})" %></span> |
     <span> Send Proposal Premium </span> |
     <span> Send Proposal Basic </span> 
   </td>

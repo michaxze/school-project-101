@@ -4,6 +4,7 @@ class Mailer < ActionMailer::Base
     recipients  email.email
     from        "news@cebudirectories.com"
     subject     "Cebu Directories Co. Newsletter"
+    
   end
   
 end

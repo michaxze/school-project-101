@@ -52,7 +52,9 @@ ActionMailer::Base.smtp_settings = {
   :address => "smtp.gmail.com",
   :port => "587",
   :domain => "www.cebudirectories.com",
-  :authentication => :plain,
-  :user_name => "news",
+  :authentication => :login,
+  :user_name => "news@cebudirectories.com",
   :password => "n3ws101"
 }
+
+ActionMailer::Base.default_content_type = "text/html"
