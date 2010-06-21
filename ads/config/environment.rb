@@ -46,3 +46,13 @@ Rails::Initializer.run do |config|
 end
 
 #require "will_paginate"
+
+ActionMailer::Base.smtp_settings = {
+  :tls => true,
+  :address => "smtp.gmail.com",
+  :port => "587",
+  :domain => "www.cebudirectories.com",
+  :authentication => :plain,
+  :user_name => "news",
+  :password => "n3ws101"
+}
