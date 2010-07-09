@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(:version => 6) do
     t.string   "image"
     t.string   "redirect_to",                    :null => false
     t.boolean  "is_active",   :default => false
-    t.integer  "total_views"
+    t.integer  "total_views", :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -76,7 +76,7 @@ ActiveRecord::Schema.define(:version => 6) do
     t.datetime "bus_date_added"
     t.datetime "bus_date_lastviewed"
     t.boolean  "is_pro_account",                            :default => false, :null => false
-    t.integer  "status",              :limit => 1,          :default => 0,     :null => false
+    t.integer  "status",                                    :default => 0,     :null => false
   end
 
   add_index "cebu_business", ["bus_cat_id"], :name => "bus_cat_id"
@@ -263,6 +263,16 @@ ActiveRecord::Schema.define(:version => 6) do
     t.string "name"
   end
 
+  create_table "posts", :force => true do |t|
+    t.string   "type",         :limit => 25,         :null => false
+    t.text     "title",                              :null => false
+    t.text     "content",      :limit => 2147483647, :null => false
+    t.text     "post_name",                          :null => false
+    t.datetime "date_created",                       :null => false
+    t.integer  "user_id",                            :null => false
+    t.string   "status",       :limit => 0,          :null => false
+  end
+
   create_table "products", :force => true do |t|
     t.string   "itemname",         :limit => 50,  :default => "", :null => false
     t.string   "picture",          :limit => 100, :default => "", :null => false
@@ -288,11 +298,11 @@ ActiveRecord::Schema.define(:version => 6) do
     t.string   "yahoo_id",        :null => false
     t.string   "skype_id",        :null => false
     t.string   "status",          :null => false
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
     t.string   "billing_type",    :null => false
     t.string   "billing_name",    :null => false
     t.string   "billing_address", :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "users", :force => true do |t|
