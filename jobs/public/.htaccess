@@ -1,0 +1,7 @@
+PassengerEnabled on
+PassengerAppRoot /home/michael/school-project-101/jobs/
+
+RewriteRule ^$ index.html [QSA]
+ RewriteRule ^([^.]+)$ $1.html [QSA]
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteRule ^(.*)$ dispatch.cgi [QSA,L]
