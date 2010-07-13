@@ -1,5 +1,7 @@
 <?php defined('SYSPATH') OR die('No direct access allowed.'); ?>
 
+<a href="http://twitter.com/cebudirectories"><img src="<?php echo url::base(); ?>images/cebudirectories-twitter2.jpg" title="Follow Cebu Directories on Twitter!" alt="Follow us on Twitter!"/></a>
+
 <h5 style="padding-left: 0px;">Sponsors</h5>
 
 <div id="ads">
