@@ -1,0 +1,63 @@
+
+#jb-content { 
+	width: 630px; 
+}
+#share-me { 
+	border: 1px solid red; 
+	width: 300px; 
+}
+.steps { 
+	font-size: 28px; 
+	color: #F2460D; 
+}
+#addjob table { 
+	margin-bottom: 15px; 
+}
+#addjob table tr td {
+	font-size: 13px;
+	padding: 5px 10px;
+	vertical-align: top;
+}
+#addjob table tr td:first-child { 
+	font-weight: bold; 
+	max-width: 130px; 
+}
+#addjob h4, .apply-now h4 { 
+	color: #7AA220; 
+}
+
+#submit {
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 5px 15px;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.27, rgb(235,57,3)),
+									   color-stop(1, rgb(247,105,10)), color-stop(0.79, rgb(250,92,0)));
+	background-image: -moz-linear-gradient(center bottom, rgb(235,57,3) 27%, rgb(247,105,10) 100%, rgb(250,92,0) 79%);
+	border: 3px solid #FFF;
+}
+#submit:hover { 
+	border-color: #E6471A;
+}
+ul li 		{ padding: 5px; }
+ul li label { font-size: 13px; }
+.fields { 
+	padding: 5px 5px; 
+	width: 350px; 
+}
+textarea 	{ width: 400px; }
+.fields, textarea { font-size: 18px; }
+.jdescription {
+	color: #666;
+	padding-top: 5px;
+	font-size: 12px;
+}
+.errorL { color: red; font-weight: bold; }
+.error {
+	border: 1px solid red;
+}
+.apply-now .standout, 
+.standout label { 
+	font-size: 14px; 
+}
+.standout label { margin-left: 10px; }
+.standout 		{ margin-bottom: 10px; }

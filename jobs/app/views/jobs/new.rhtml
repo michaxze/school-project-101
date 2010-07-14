@@ -1,0 +1,123 @@
+
+	<div id="cd-jobs"> 
+        <div id="jb-profile"> 
+        	<h1 class="steps">Step 1 : Create a job post</h1> 
+        </div> 
+        
+        <div> 
+            <div id="jb-content"> 
+              
+            <% form_for new_job_path, :method => :post do |f|%>
+            	<h4>First, tell us about the position</h4> 
+                <table> 
+                <tr> 
+                	<td>Job Title</td> 
+                    <td>
+                      <%= text_field_tag "title", session["title"], :class => "fields"%>
+                      <br/> 
+                    	<span class="jdescription">“Senior Designer”, "Quality Assurance" or “PHP Programmer”</span> 
+                    </td> 
+                </tr> 
+                <tr> 
+                	<td>Category</td> 
+                    <td> 
+                    	<ul>
+                    	  <% @categories.each do |cat|%> 
+                        	<li>
+                        	  <%= radio_button_tag "category_id", cat.id, false %>
+                            <label for="job_category_1"><%= cat.name %></label> 
+                            </li>
+                        <% end %>
+                        </ul> 
+                    </td> 
+                </tr> 
+                <tr> 
+                	<td>Location</td> 
+                    <td>
+                      <%= text_field_tag "location", session["location"], :class => "fields"%>
+                      <br /> 
+						          <span class="jdescription">“Asiatown IT Park”, “JY, Lahug”, or “Anywhere”</span> 
+                    </td> 
+                </tr> 
+                <tr>                
+                    <td></td> 
+                    <td><strong>Job Description</strong><br /> 
+                      <%= text_area_tag "title", session["description"], :class => "fields"%>
+						        </td> 
+                </tr> 
+                <tr>                
+                    <td></td> 
+                    <td> 
+                    <strong>How do people apply for this job?</strong><br /> 
+                    <span class="jdescription">Example: Send a resume to jane@company.com</span> 
+                    <%= text_area_tag "title", session["how_to_apply"], :class => "fields"%>
+                    </td> 
+                </tr> 
+                </table> 
+                
+                <h4>Tell us about your company</h4> 
+                <table> 
+                <tr> 
+                	<td>Company Name</td> 
+                    <td><span class="errorL">Please enter your company name</span><br /> 
+                      <%= text_field_tag "company_name", session["company_name"], :class => "fields error"%>
+                    	<br/> 
+                    	<span class="jdescription">Enter your company or organization’s name.</span> 
+                    </td> 
+                </tr> 
+                <tr> 
+                	<td>Logo</td> 
+                    <td>
+                      <%= file_field_tag "logo", :class => "fields"%>
+                      <br/> 
+                    	<span class="jdescription">Optional — Your company logo will appear at the top of your listing.<br /> 
+190px wide is optimal. We'll resize automatically if it's wider than 190px.</span> 
+                    </td> 
+                </tr> 
+                <tr> 
+                	<td>URL</td> 
+                    <td>
+                      <%= text_field_tag "company_name", session["company_name"], :class => "fields"%>
+                      <br/> 
+                    	<span class="jdescription">Example: http://www.google.com</span> 
+                    </td> 
+                </tr> 
+                <tr> 
+                	<td>Email</td> 
+                    <td><span class="errorL">Please enter your email</span><br /> 
+                    	<%= text_field_tag "email", session["email"], :class => "fields error"%>
+                    	<br/> 
+                    	<span class="jdescription">This is where we’ll send your receipt and confirmation email.</span> 
+                    </td> 
+                </tr> 
+                </table> 
+                
+                <div class="apply-now"> 
+                    <h4>Help your job post stand out</h4> 
+                    <div class="standout">For only <strong>300 Pesos more</strong> you can highlight your ad. Highlighted ads have a yellow background in the list so they stand out against the others.</div> 
+                    <div class="standout">
+                      <%= check_box_tag "highlight", session["highlight"], :class => "fields error"%>
+                      <label for="stand-me-out"><strong>Yes, highlight my ad</strong> for only 300 Pesos.</label></div> 
+                    
+                    <input type="submit" value="Continue and Show Preview" id="submit" name="submit" /> 
+                </div> 
+            
+            </div> 
+            <div id="share-me"> 
+            	<ul> 
+                	<li><a href="" title="">Tell A Friend</a></li> 
+                    <li><a href="" title="">Twit this job</a></li> 
+                    <li><a href="" title="">Share me on Facebook</a></li> 
+                    <li><a href="" title="">Print Me</a></li> 
+                </ul> 
+            </div> 
+            
+            <% end %>
+            
+             
+            <div class="clear"></div> 
+        </div> 
+        
+    </div> 
+	
+</div> 

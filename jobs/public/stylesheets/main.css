@@ -1,0 +1,132 @@
+@charset "utf-8";
+@import url(../css/reset-min.css);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+*, body { 
+	padding: 0; margin: 0;
+	font-family: "Lucida Sans", "Lucida Grande", sans-serif;
+	font-size: 11px;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+	font-weight: bold;
+	padding: 10px 0px; 
+}
+h1 { font-size: 20px; }
+h2 { font-size: 18px; }
+h3 { font-size: 16px; }
+h4 { font-size: 14px; }
+h5 { font-size: 12px; }
+h6 { font-size: 10px; }
+
+span, a { font-size: inherit; }
+a { color: #6D8309; }
+strong { font-weight: bold; font-size: inherit; }
+/*** CEBU DIRECTORIES MAIN DIVS ***/
+#cd-body 	   { height: 100%; background: #F2F2F2; margin-top: -10px; padding-top: 10px; }
+#cd-wrapper    { width: 960px; margin: 15px auto; background: #FFFFFF; padding: 5px 15px; border: 1px solid #E9E9E9; }
+#cd-footer	   { padding: 15px 0px; }
+#cd-header { padding: 10px 0px; }
+#cd-header h1 { 
+	font-family: 'Lobster', "Lucida Grande", sans-serif; 
+	font-size: 36px;
+	padding: 0px;
+}
+#cd-header .caption {
+	text-align: center;
+	border-top: 2px solid #999999;
+	border-bottom: 2px solid #999999;
+	padding: 10px 5px;
+	width: 500px;
+}
+#cd-jobs   { border-top: 3px solid #333; margin-top: 15px; }
+#cd-search { margin-top: 10px; }
+#cd-categories { 
+	border: 1px solid red;
+	padding: 2px 10px; 
+	background: #FE4010;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.27, rgb(235,57,3)),
+									   color-stop(1, rgb(247,105,10)), color-stop(0.79, rgb(250,92,0)));
+	background-image: -moz-linear-gradient(center bottom, rgb(235,57,3) 27%, rgb(247,105,10) 100%, rgb(250,92,0) 79%);
+}
+#cd-categories h4, #cd-categories h5 { color: #FFF; }
+#cd-categories h5 { padding: 3px 0px; }
+#cd-categories span { padding-left: 10px; color: #FFF; }
+#cd-categories span a { color: #FFF; font-style: italic; text-decoration: none; font-size: 10px; }
+#cd-categories span a:hover { text-decoration: underline; }
+
+.jb-status  { width: 50px; text-align: center; padding: 10px 0px; }
+.jb-details a { display: block; padding: 10px 0px; text-decoration: none; color: #222; }
+.jb-details { width: 910px; font-size: 13px; border-bottom: 1px solid #CCC; } 
+.jb-details:hover { background: #ecf7df; }
+.jb-prime   { background: #dff2f7; }
+.jb-prime:hover { background: #a6e5f4; }
+.jb-more	{ text-align: center; padding-top: 15px; }
+.jb-more a  { color: #f15a2f; font-size: 13px; }
+.jb-nav		{ margin-top: 15px; font-size: 14px; }
+.jb-nav a	{ text-decoration: none; color: #f15a2f; }
+.apply-now	{ background: #D3F4FE; padding: 15px; font-size: 13px; }
+.apply-now h4 { padding-bottom: 20px;}
+
+#jb-profile { border-bottom: 1px solid #CCCCCC; padding-bottom: 15px; }
+#jb-profile h1.position { font-size: 28px; }
+#jb-content { width: 730px; float: left; padding: 15px 0px; }
+#jb-content p { font-size: 14px; margin-bottom: 20px; line-height: 24px; }
+#jb-content b { font-size: inherit; }
+#share-me	{ float: right; width: 200px; }
+#share-me ul li { padding: 15px 10px; border-bottom: 1px solid #DFDFDF; }
+
+span.post-date { font-size: 13px; color: #666; font-weight: lighter; font-style: italic; }
+span.jb-date   { font-weight: normal; padding-right: 10px; color: #666; }
+
+span.jb-company, span.jb-location { font-weight: bold; }
+
+span.jb-location { padding-left: 5px; }
+span.jb-position, span.jb-company {
+	padding: 0px 8px;
+}
+span.jb-position { text-decoration: underline; }
+span.jb-date, span.jb-position,
+span.jb-company, span.jb-location,
+span.post-date { 
+	font-size: 13px;
+}
+span.new {
+	font-size: 10px;
+	background: #c0da70;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	-o-border-radius:3px;
+	padding: 1px 3px;
+	text-transform:uppercase;
+	color: #FFF;
+}
+.post-new { 
+	background: #88a13c;
+	padding: 8px 35px;
+	text-align: center;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-khtml-border-radius:5px;
+	-o-border-radius:5px;
+}
+.post-new a {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+}
+.searchF {
+	font-size: 15px;
+	padding: 5px 10px;
+	width: 400px;
+}
+
+.flat3 { width: 310px; }
+
+.left   { float: left; }
+.right  { float: right; }
+.center { margin: 0px auto; }
+.clear  { clear:both; }
+
+.green { color: #88a13c; }

@@ -1,0 +1,24 @@
+<%= render :partial => "global/categories" %>
+<%= render :partial => "global/search" %>
+
+<div id="cd-jobs"> 
+  <h1>Latest Jobs <span class="post-date">Latest post about <%= @jobs.first.shown_on.time.hour.ago %></span></h1>
+  <!-- Jobs 123456 Regular Job Post --> 
+  <% @jobs.each do |job|%>
+  <div>
+      <div class="jb-status left"><span class="new">NEW</span></div> 
+      <div class="jb-details right">
+        <a href="<%= job_url(job)%>" title="">
+          <span class="jb-location"><%= job.company.location rescue ''%></span> 
+          <span class="jb-position"><%= job.title %></span> at 
+          <span class="jb-company"><%= job.company.name %></span> 
+          <span class="jb-date right"><%= job.shown_on.strftime("%b %d, %Y") %></span>
+        </a></div> 
+      <div class="clear"></div> 
+  </div> 
+  <% end %>
+
+  <% if @jobs.length > Constant::MAX_JOB_POST_DISPLAYED %>
+  <div class="jb-more"><a href="" title="">View All 108 Jobs from Category</a></div> 
+  <% end %>
+</div>
