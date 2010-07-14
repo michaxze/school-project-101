@@ -1,5 +1,5 @@
 PassengerEnabled on
-PassengerAppRoot /home/michael/school-project-101/jobs/
+PassengerAppRoot /home/michael/school-project-101/ads/
 
 RewriteRule ^$ index.html [QSA]
  RewriteRule ^([^.]+)$ $1.html [QSA]
