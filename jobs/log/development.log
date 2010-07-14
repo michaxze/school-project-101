@@ -29161,3 +29161,36 @@ ActionController::RoutingError (No route matches "/css/reset-min.css" with {:met
   
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing JobsController#index (for 127.0.0.1 at 2010-07-15 00:49:39) [GET]
+  [4;35;1mJob Load (0.4ms)[0m   [0mSELECT * FROM `jobs` [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Rendered global/_categories (1.7ms)
+Rendered global/_search (12.8ms)
+  [4;36;1mJob Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `jobs`[0m
+  [4;35;1mCompany Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `companies`[0m
+  [4;36;1mCompany Load (0.3ms)[0m   [0;1mSELECT * FROM `companies` WHERE (`companies`.`id` = 1) [0m
+  [4;35;1mCompany Load (0.3ms)[0m   [0mSELECT * FROM `companies` WHERE (`companies`.`id` = 2) [0m
+Rendered global/_header (0.5ms)
+Completed in 165ms (View: 155, DB: 5) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-15 00:49:39) [GET]
+
+ActionController::RoutingError (No route matches "/css/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-15 00:49:39) [GET]
+
+ActionController::RoutingError (No route matches "/css/reset-min.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
