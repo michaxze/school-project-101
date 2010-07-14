@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 	padding: 8px 0px;
 }
+h5, h6 { padding: 3px 0px; }
 h1 { font-size: 20px; }
 h2 { font-size: 18px; }
 h3 { font-size: 16px; }
@@ -34,7 +35,7 @@ h6 { font-size: 10px; }
   margin-left:-99999px;
   position:absolute;
 }
-#cd-banner 	   { height: 250px; width: 960px; background: #300; margin-top: 40px; }
+#cd-banner 	   { height: 250px; width: 960px; background: #300; margin-top: 20px; }
 #cd-bannerbg   { width: 1009px; height: 298px; 
 				 background: url(../images/bg.jpg) top center no-repeat; 
 				 margin-left: -25px; margin-top: -277px; }
@@ -56,15 +57,8 @@ h6 { font-size: 10px; }
 #cd-categories { float: left; padding: 0px 0px; }
 #cd-listing    { float: left; margin-left: 10px; width: 530px; background: #FFF; }
 #cd-listing {
-	/*border-top:2px solid #dcdcdc; */
 	border-left:1px solid #dcdcdc; 
 	border-right:1px solid #dcdcdc; 
-	/*border-bottom:1px solid #dcdcdc; 
-	border-radius:5px; 
-	-moz-border-radius:5px; 
-	-webkit-border-radius:5px; 
-	-khtml-border-radius:5px; 
-	-o-border-radius:5px;*/
 }
 #cd-advertise {
 	float: left;
@@ -401,7 +395,7 @@ ul#sitemaps li {
 .listing-top, .listing-bottom { width: 530px; }
 .listing-top    { background: url(../images/bg-listing.png) 0px 0px no-repeat; padding: 5px 0px; height: 16px; text-indent: 10px; }
 .listing-bottom { background: url(../images/bg-listing.png) 0px -53px no-repeat; height: 10px;}
-.listing-feature{ border-bottom: 1px solid #CCC; width: 98%; margin: 0px auto; margin-bottom: 10px; min-height: 320px; }
+.listing-feature{ border-bottom: 1px solid #CCC; margin: 0px auto; margin-bottom: 10px; min-height: 200px; }
 .listing-latest { width: 98%; margin: 0px auto; margin-bottom: 10px; color: #6D8309; }
 .listing-category { background: #F2F2F2; padding: 0px; }
 .listing-category:hover { background: #b0c061; }
@@ -447,6 +441,7 @@ ul#sitemaps li {
 
 .borderized { border: 1px solid #999; padding: 10px; margin: 0px 15px 15px 0px; }
 .noborder	{ border: 0px; }
+.posts .cleanimg   { padding: 0px; margin: 0px; }
 
 .left	{ float: left; }
 .right  { float: right; }
@@ -472,7 +467,7 @@ ul#sitemaps li {
 	-webkit-border-radius:15px; 
 	border-radius:15px;
 }
-.searchF { border-right: none; text-indent: 5px; }
+.searchF { text-indent: 5px; }
 .searchF:hover, .searchF:focus { 
 	-moz-box-shadow: 0 0 .4em #3CF;
 	box-shadow: 0 0 .4em #3CF; 
