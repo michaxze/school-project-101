@@ -1,0 +1,9 @@
+<h3>Edit prospect: </h3>
+<% form_tag prospect_path(@prospect), :method => 'put' do %>
+  Name : <%= text_field_tag "prospect[name]", @prospect.name, :size => 35 %> <br/>
+  Email Address : <%= text_field_tag "prospect[email]", @prospect.email, :size => 35 %> <br/>
+  Position : <%= text_field_tag "prospect[position]", @prospect.position, :size => 35 %> <br/>
+  Company Name : <%= text_field_tag "prospect[company_name]", @prospect.company_name, :size => 35 %> <br/>
+  Status : <%= select_tag "prospect[prospect_status_id]", options_for_select(@prospect_statuses, @prospect.prospect_status_id) %> <br/>
+  <%= submit_tag "Save changes" %> or <%= link_to "Cancel", prospects_path %>
+<% end %>

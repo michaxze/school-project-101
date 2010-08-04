@@ -1,0 +1,12 @@
+<tr>
+  <td><%= prospect_row.name.titleize %> (<%= prospect_row.position.titleize rescue ''%>)</td>
+  <td><%= prospect_row.email rescue '' %></td>
+    <td><%= prospect_row.company_name rescue '' %></td>
+  <td><%= prospect_row.prospect_status.name %></td>
+  <td><%= prospect_row.created_at.strftime("%m-%d-%Y") %> </td>
+  <td>
+    <span> <%= link_to "Send Proposal", send_premium_prospects_path(:id => prospect_row.id) %> </span>|
+    <span> <%= link_to "Edit", edit_prospect_path(prospect_row) %> </span> |
+    <span> <%= link_to "Delete", prospect_path(prospect_row), :confirm => "Are you sure you want to delete this??", :method => :delete %> </span>
+  </td>
+</tr>
