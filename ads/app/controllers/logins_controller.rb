@@ -2,6 +2,13 @@ class LoginsController < ApplicationController
   layout 'global'
   
   def index
+    if logged_in?
+      if current_user.permissions == 1
+        redirect_to emails_path
+      else
+        redirect_to prospects_path
+      end
+    end 
   end
 
   def create
