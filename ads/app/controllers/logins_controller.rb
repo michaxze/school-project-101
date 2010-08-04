@@ -9,7 +9,11 @@ class LoginsController < ApplicationController
     user = User.find(:first, :conditions => ["login=? and password_hash=?", params[:username], password]) 
     if user
       session[:user] = params[:username]
-      redirect_to emails_path
+      if user.permissions == 1
+        redirect_to emails_path
+      else
+        redirect_to prospects_path
+      end
     else
       flash[:error] = "Incorrect username or password"
       render(:action => 'index') and return
@@ -18,7 +22,7 @@ class LoginsController < ApplicationController
   
   def logout
     session[:user] = nil
-    render(:action => 'index') and return
+    redirect_to logins_path
   end
   
   private

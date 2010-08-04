@@ -1,7 +1,10 @@
-<h3>CEBUDIRECTORIES</h3>
+<div style="background-color: #72c912; padding:1px; padding-left: 10px">
+  <h1>CebuDirectories Co.</h1>
+</div>
 
 <div id="top_menu" >
 <% if logged_in? %>
+  <% if current_user.permissions == 1 %>
 <ul>
   <%= content_tag("li", (link_to 'Email Addresses', emails_path ) )%>
   <%= content_tag("li", (link_to 'Advertisements', advertisements_path ) )%>
@@ -12,5 +15,12 @@
   <%= content_tag("li", (link_to 'Posts', posts_path ) )%>
   <%= content_tag("li", (link_to 'Quit', logout_logins_path ) )%>
 </ul>
+
+  <% else %>
+  <ul>
+    <%= content_tag("li", (link_to 'Prospects', prospects_path ) )%>
+    <%= content_tag("li", (link_to 'Quit', logout_logins_path ) )%>
+  </ul>
+  <% end %>
 <% end %>
 </div>

@@ -44,10 +44,16 @@ ActionController::Routing::Routes.draw do |map|
                 :collection => { :views => :get,
                                  :update_views => :get }
   map.resources :emails, :controller => 'emails',
-                         :collection => { 'send_newsletter' => :get }
+                         :collection => { 'send_newsletter' => :get,
+                                          'send_premium' => :get}
   map.resources :logins, 
                 :controller => 'logins',
                 :collection => { :logout => :get, :index => :get }
+  map.resources :prospects, 
+                :controller => 'prospects',
+                :collection => { 'send_premium' => :get }
+
+
 
 
   # Install the default routes as the lowest priority.
