@@ -4,27 +4,16 @@
     <div id="cd-content">
   		
         <h1>Advertise with Cebu Directories</h1>
-     
-        <p>
-        We at Cebu Directories offers an ideal advertising unit to build your 
-        company's brand. We ensure that your Business is always visible.
-        </p>
-        
-        <p>
-        By advertising on Cebu Directories, we help you create more awareness 
-        for your company by improving your Business popularity.  Unlocking the 
-        potential to reach more consumers and engage your target audience on a 
-        variety of levels in a cost-effective way.
-        </p>
+
+        <p>Cebu Directories offers ideal advertising packages to provide your business the winning edge. These advertisement schemes ensure that your business is always visible.</p>
+        <p>Advertising with Cebu Directories helps create more awareness for your business. Unlock the potential to reach more consumers and engage your target market on a variety of levels in a cost-effective way.</p>
+
         
         <h2>Ad Specification</h2>
                 
         <p>
-        Ad Specifications or Ad Specs are requirements for an Ad.  We have 
-        different specifications for each of the ad placement.  Your ad could be 
-        of image or text only.
-        </p>
-        
+         Cebu Directories has a standard of six (6) advertisement types you can choose from. The specific ad requirements are detailed in the table below.</p>
+
         <table id="adspecs">
         <thead>
         <tr>
@@ -104,17 +93,13 @@
         </p>
         
         <p>
-        Cebu Directories is the next leading Cebu Directory site for 
-        Cebu Businesses, Establishments and Talents. We provide comprehensive 
-        contents, resources for small, medium and large companies.
+        Advertisements are strategically positioned on the Cebu Directories website to provide your business or brand more exposure. Cebu Directories has allocated five (5) sections where you want your ads be seen.
         </p>
         
         <h2>Pricing</h2>
                 
         <p>
-        Cebu Directories is the next leading Cebu Directory site for 
-        Cebu Businesses, Establishments and Talents. We provide comprehensive 
-        contents, resources for small, medium and large companies.
+        Cebu Directories is the leading online directory for Cebu businesses, establishments, and talents. Our advertising and listing rates caters to small, medium, and large companies.
         </p>
         
         <p align="center">
@@ -181,9 +166,7 @@
         <h2>Inquiry</h2>
 
         <p>
-        Cebu Directories is the next leading Cebu Directory site for 
-        Cebu Businesses, Establishments and Talents. We provide comprehensive 
-        contents, resources for small, medium and large companies.
+          Write to us at <strong><a href="mailto:info@cebudirectories.com">info@cebudirectories.com</a></strong> for any questions regarding our advertising and listing services. We will be happy to accommodate your inquiries.
         </p>
                
     </div>

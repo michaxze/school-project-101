@@ -11,11 +11,9 @@
             </a></div>
             
             <p class="medium">
-    	Business directories benefit small, local companies 
-        as well as large, international companies. The important thing is that you get your name 
-        out there so customers know they can turn to your business. Online business directories 
-        are an inexpensive, effective way to maintain your business's standing
-    	</p>
+              Raising an awareness about your business has been made easier through business listing. Online business directories 
+              are an inexpensive, effective way to maintain your business' standing.
+    	      </p>
         </div>
         
         <div class="left center services_block">
@@ -25,10 +23,7 @@
             </a></div>
             
             <p class="medium">
-    	Business directories benefit small, local companies 
-        as well as large, international companies. The important thing is that you get your name 
-        out there so customers know they can turn to your business. Online business directories 
-        are an inexpensive, effective way to maintain your business's standing
+    	Advertising also helps create more awareness for your business. With Cebu Directories, unlock the potential to reach more consumers, and engage your target market on a variety of levels in a cost-effective way.
     	</p>
         </div>
         
@@ -39,10 +34,7 @@
             </a></div>
             
             <p class="medium">
-    	Business directories benefit small, local companies 
-        as well as large, international companies. The important thing is that you get your name 
-        out there so customers know they can turn to your business. Online business directories 
-        are an inexpensive, effective way to maintain your business's standing
+    	Putting up a Web sites is a good way of providing information to prospective clients 24/7. Cebu Directories designs and develops Web sites to effectively market your company's product or services.
     	</p>
         </div>
         

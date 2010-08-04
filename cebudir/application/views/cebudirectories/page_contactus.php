@@ -6,23 +6,13 @@
 			<h1 style="text-align: center;">Thank You for sending Cebu Directories an inquiry! 
 				We will get back to you about your concern within 48-hours.</h1>
                 
-            <p class="medium">
-            Cebu Directories would be glad to hear any messages, comments, suggestions
-            from our valued clients that may help improve our services. You may contact
-            us by sending us an email to <a href="mailto:info@cebudirectories.com" title="Mail Us">info@cebudirectories.com</a>
-            </p>
 		<?php } else { ?>
         
     	<h1>Contact Cebu Directories</h1>
     	<p class="medium">
-    	Cebu Directories would be glad to hear any messages, comments, suggestions
-        from our valued clients that may help improve our services. You may contact
-        us by sending us an email to <a href="mailto:info@cebudirectories.com" title="Mail Us">info@cebudirectories.com</a>
-        </p>
-
-		<p class="medium">We will get back to you about your concern within 48-hours.</p>
-
-		<p class="medium">You may also you use the contact form below. </p>
+      	Your questions, comments, and suggestions are most welcome.  Send them to  <a href="mailto:info@cebudirectories.com" title="Mail Us">info@cebudirectories.com</a> or you may use the contact form below. 
+      </p> 
+    	  
         
         <?php
 			$req = '&nbsp;&nbsp;<img src="' . url::base() . 'images/star.gif" alt="(required)" align="top"/>';
