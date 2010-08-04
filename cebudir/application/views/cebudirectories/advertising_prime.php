@@ -5,13 +5,12 @@ if ($_SERVER['DOCUMENT_ROOT'] == "/Users/michaxze/Sites") {
   $ads_site = "http://ads.cebudirectories.com";
 }
 $ads = array();
-$ads[] = array("2", "wheatgrass-easy.jpg");
-$ads[] = array("1", "hostfortes-web-hosting.jpg");
 $ads[] = array("3", "numbers-emergency.jpg");
 $ads[] = array("4", "banner.jpg");
 //$ads[] = array("5", "banner3.jpg");
-$ads[] = array("8", "8-nude-sandals.jpg");
-$ads[] = array("9", "9-fete-dela-musique-2010.jpg");
+//$ads[] = array("8", "8-nude-sandals.jpg");
+$ads[] = array("10", "10-mandaue-run-for-life2.jpg");
+$ads[] = array("11", "11-one-cebu-business-summit.jpg");
 
 shuffle($ads);
 ?>

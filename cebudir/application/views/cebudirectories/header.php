@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="<?php echo url::base(FALSE) ?>cebudirectories.png">
 
 	<style>
-	#cd-body { background: #FFF url(<?php echo url::base(FALSE) ?>/images/mbm.jpg) top center no-repeat; }
+	#cd-body { background: #FFF url(<?php echo url::base(FALSE) ?>/images/mbm.jpg) top center fixed no-repeat; }
 	</style>
 
   	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.min.js"></script>
