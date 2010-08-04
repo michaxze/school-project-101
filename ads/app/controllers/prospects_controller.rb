@@ -32,7 +32,7 @@ class ProspectsController < ApplicationController
     @prospect = Prospect.find(params[:id])
     statuses = ProspectStatus.find(:all)
     statuses.each do |s|
-      @prospect_statuses << [s.name, s.id]
+      @prospect_statuses << [s.name.titleize, s.id]
     end
   end
   

@@ -1,8 +1,8 @@
 <h3>Add prospect: </h3>
 <% form_tag prospects_path, :method => 'post' do %>
-  Name : <%= text_field_tag "prospect[name]", nil, :size => 35 %> <br/>
-  Email Address : <%= text_field_tag "prospect[email]", nil, :size => 35 %> <br/>
-  Position : <%= text_field_tag "prospect[position]", nil, :size => 35 %> <br/>
-  Company Name : <%= text_field_tag "prospect[company_name]", nil, :size => 35 %> <br/>
-  <%= submit_tag "Add" %>
+  Name : <%= text_field_tag "prospect[name]", nil, :size => 35, :style => "margin-left:60px" %> <br/>
+  Email Address : <%= text_field_tag "prospect[email]", nil, :size => 35, :style => "margin-left:18px" %> <br/>
+  Position : <%= text_field_tag "prospect[position]", nil, :size => 35, :style => "margin-left:50px" %> <br/>
+  Company Name : <%= text_field_tag "prospect[company_name]", nil, :size => 35, :style => "margin-left:6px" %> <br/>
+  <%= submit_tag "Add", :style => "margin-left:100px"%>
 <% end %>

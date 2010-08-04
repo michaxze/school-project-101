@@ -1,9 +1,9 @@
 <div id="login_form">
 <% form_tag logins_path, :method => 'post' do -%>
 <ul style="list-style-type:none;">
-  <li>Username : <%= text_field_tag('username')  %></li>
-  <li>Password : <%= password_field_tag('password') %></li>
-  <li><%= submit_tag "Login" %></li>
+  <li style="height: 25px">Username : <%= text_field_tag('username', nil, :style => "margin-left:7px")  %></li>
+  <li style="height: 25px">Password : <%= password_field_tag('password', nil, :style => "margin-left:10px") %></li>
+  <li style="height: 25px"><%= submit_tag "Login" %></li>
 </ul>
 <% end %>
 </div>

@@ -1,9 +1,11 @@
 <h3>Edit prospect: </h3>
 <% form_tag prospect_path(@prospect), :method => 'put' do %>
-  Name : <%= text_field_tag "prospect[name]", @prospect.name, :size => 35 %> <br/>
-  Email Address : <%= text_field_tag "prospect[email]", @prospect.email, :size => 35 %> <br/>
-  Position : <%= text_field_tag "prospect[position]", @prospect.position, :size => 35 %> <br/>
-  Company Name : <%= text_field_tag "prospect[company_name]", @prospect.company_name, :size => 35 %> <br/>
-  Status : <%= select_tag "prospect[prospect_status_id]", options_for_select(@prospect_statuses, @prospect.prospect_status_id) %> <br/>
-  <%= submit_tag "Save changes" %> or <%= link_to "Cancel", prospects_path %>
+  Name : <%= text_field_tag "prospect[name]", @prospect.name, :size => 35, :style => "margin-left:60px"  %> <br/>
+  Email Address : <%= text_field_tag "prospect[email]", @prospect.email, :size => 35, :style => "margin-left:18px"  %> <br/>
+  Position : <%= text_field_tag "prospect[position]", @prospect.position, :size => 35, :style => "margin-left:50px"  %> <br/>
+  Company Name : <%= text_field_tag "prospect[company_name]", @prospect.company_name, :size => 35, :style => "margin-left:6px"  %> <br/>
+  Status : <%= select_tag "prospect[prospect_status_id]", options_for_select(@prospect_statuses, @prospect.prospect_status_id), :style => "margin-left:60px" %> <br/>
+  <div style="margin-left: 240px; margin-top: 10px">
+    <%= submit_tag "Save changes" %> or <%= link_to "Cancel", prospects_path %>
+  </div>
 <% end %>
