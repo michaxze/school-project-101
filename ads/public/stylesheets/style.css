@@ -50,3 +50,15 @@ input {
  margin:0px; 
  padding: 0px
 }
+
+ul li {
+  height: 20px;
+}
+
+#right_content {
+  padding-top: 15px;
+}
+
+#notice_wrapper {
+  color: #019f4a;
+}
