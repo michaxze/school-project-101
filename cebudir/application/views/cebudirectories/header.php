@@ -75,6 +75,19 @@
 <body id="cd-body">
 <?php } ?>
 
+
+<!-- KISSinsights for cebudirectories.com -->
+<script type="text/javascript">
+  var _kiq = _kiq || [];
+  (function(u){
+    var s = document.createElement('script'), f = document.getElementsByTagName('script')[0];
+    s.type = 'text/javascript'; s.async = true;
+    s.src = '//s3.amazonaws.com/j.kissinsights.com/u/' + u + '.js?' + (5*Math.floor(new Date().getMinutes()/5));
+    f.parentNode.insertBefore(s, f);
+  })('5872/3906a5294336991d0cd7d0a655b057f357432a2e');
+</script>
+
+
   <?php
     $map_address = "";
     if (isset($address)) {
