@@ -169,6 +169,7 @@ ACTIVESCRIPT;
         $from = Kohana::config('cebudirectories.email_from');
         $subject = Kohana::config('cebudirectories.email_subject_contactus');
         $message = Kohana::config('cebudirectories.email_message_contactus');
+        $message .= "\n http://ads.cebudirectories.com";
         email::send($to, $from, $subject, $message);
 
 		$page = new View('cebudirectories/page_contactus');

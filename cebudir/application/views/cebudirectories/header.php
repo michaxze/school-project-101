@@ -15,9 +15,12 @@
     <link rel="stylesheet" href="<?php echo url::base(FALSE) ?>css/thickbox.css" type="text/css" media="screen"/>
 
     <link rel="shortcut icon" href="<?php echo url::base(FALSE) ?>cebudirectories.png">
-
+	<?php
+	$bgs = array("xpat","xpat2","xpat3","xpat4","xpat5");
+	$bg = url::base(FALSE) . 'images/background/' . $bgs[rand(0, count($bgs) - 1)] . ".png";
+	?>
 	<style>
-	#cd-body { background: #FFF url(<?php echo url::base(FALSE) ?>/images/mbm.jpg) top center fixed no-repeat; }
+	#cd-body { background: #FFF url(<?php echo $bg; ?>) top left repeat; }
 	</style>
 
   	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.min.js"></script>

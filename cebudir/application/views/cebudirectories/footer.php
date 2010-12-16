@@ -49,6 +49,24 @@
 </body>
 </html>
 <script type="text/javascript">
+function bgChanger()
+{
+   var bgs = new Array(5);
+   bgs[0] = "xpat";
+   bgs[1] = "xpat2";
+   bgs[2] = "xpat3";
+   bgs[3] = "xpat4";
+   bgs[4] = "xpat5";
+   
+   var adjustedHigh = (parseFloat(bgs.length) - parseFloat(0)) + 1;
+   var numRand = Math.floor(Math.random()*adjustedHigh) + parseFloat(0);
+   var background = 'images/background/' + bgs[numRand] + '.png';
+   $("#cd-body").blur().css('background-image', 'url(' + background + ')');
+}
+
+setInterval("bgChanger()", 15000);
+</script>
+<script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>

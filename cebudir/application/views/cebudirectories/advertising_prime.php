@@ -7,10 +7,10 @@ if ($_SERVER['DOCUMENT_ROOT'] == "/Users/michaxze/Sites") {
 $ads = array();
 $ads[] = array("3", "numbers-emergency.jpg");
 $ads[] = array("4", "banner.jpg");
-//$ads[] = array("5", "banner3.jpg");
+$ads[] = array("5", "xmas-banner1.jpg");
 //$ads[] = array("8", "8-nude-sandals.jpg");
-$ads[] = array("10", "10-mandaue-run-for-life2.jpg");
-$ads[] = array("11", "11-one-cebu-business-summit.jpg");
+//$ads[] = array("10", "10-mandaue-run-for-life2.jpg");
+//$ads[] = array("11", "11-one-cebu-business-summit.jpg");
 
 shuffle($ads);
 ?>
