@@ -18,8 +18,8 @@
 	if(strlen(trim($email)) > 0 && $is_premium) {
 		echo '<div class="details_container"><div class="details email"> EMAIL: </div><span class="details_text"><a href="mailto:' . $email . '">' . $email . '</a> </span></div>';	
 	}
-	if(strlen(trim($description) && $is_premium) > 0) {
-		echo '<div id="content_container">' . $description . '</div>';
+	if(strlen(trim($bus_description) && $is_premium) > 0) {
+		echo '<div id="content_container">' . $bus_description . '</div>';
 	}
 
     ?>
@@ -34,17 +34,9 @@
 <h4>Comments </h4>
 <center>
 <div id="fb-root"></div>
-<script src="http://connect.facebook.net/en_US/all.js"></script>
-<script>
-  FB.init({
-    appId  : '129053693788286',
-    status : true, // check login status
-    cookie : true, // enable cookies to allow the server to access the session
-    xfbml  : true  // parse XFBML
-  });
-</script>
+<script src="http://connect.facebook.net/en_US/all.js#appId=224390210914276&amp;xfbml=1"></script>
+<fb:like href="<?php echo $bus_url; ?>" send="false" layout="button_count" width="500" show_faces="true" font=""></fb:like><br /><br />
 
-<fb:comments width="500px" xid="<?php echo $id;?>" numposts="15"  simple="1" showform="true" candelete="0" send_notification_uid=692776079 >
-</fb:comments>
+<fb:comments href="<?php echo $bus_url; ?>" num_posts="15" width="500"></fb:comments>
 
 </center>

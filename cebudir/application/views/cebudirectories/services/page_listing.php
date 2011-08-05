@@ -4,62 +4,48 @@
     <div id="cd-content">
   		
         <h1>Business Listing</h1>
-        <h3>Have your Business listed to us!</h3>
+        <h3>Have your Business listed with us!</h3>
         
         <p>
-        Business directories benefit small, medium, local companies as well 
-        as large, international companies. The important thing is that you 
-        get your name out there so customers know they can turn to your business. 
+        Advertising has never been this affordable.
         </p>
         
         <p>
-        Online business directories are an inexpensive, effective way to maintain 
-        your business's standing.
-        </p>
-        
-        <p>
-        The Cebu Directories Business Directory Listing is organized by categories.  
-        Our team handles the placement of the business by category to ensure everything 
-        is in place and making things helpful to everyone.
+        Businesses whether small, medium  or large, benefit from directory listings. 
+        It doesn't matter if you are a local or international company. The important 
+        thing is that you get your brand out there to let consumers know that your 
+        business exists!
         </p>
         
         <h2>Benefits of Directory Listing</h2>
-                
-        <h3>More Exposure</h3>
-        <p>
-        This means more customers. People will not buy your products or use your services if they don't 
-        know who you are. It's that simple. Your business directory listing will contain important business 
-        information that customers are interested in. 
-        </p>
         
-        <h3>Cheap Advertising Cost</h3>
-        <p>
-        The cost of running a business is high; advertising costs are high. Listing with an online business 
-        directory is a good, inexpensive way to gain exposure for your company. Often the cost is 
-        less than that of advertising in the traditional paper yellow pages.
-        </p>
+        <table style="width: 100%; background: #CCC;">
+        <thead style="text-align: center; font-weight: bold; background: #333; color: #FFF;">
+        <tr>
+            <td style="width: 240px; font-size: 14px; vertical-align: top; padding: 10px 5px;">More Exposure</td>
+            <td style="width: 240px; font-size: 14px; vertical-align: top; padding: 10px 5px;">Lower Advertising Cost</td>
+            <td style="width: 240px; font-size: 14px; vertical-align: top; padding: 10px 5px;">Value-Added Optimization Services</td>
+            <td style="width: 240px; font-size: 14px; vertical-align: top; padding: 10px 5px;">Top Ranked Cebu Online Directory</td>
+        </thead>
+        <tbody>
+        <tr>
+            <td style="vertical-align: top; padding: 10px 5px;">Your business is guaranteed maximum exposure through the various listing and
+        ad placement schemes, as complimented by the intuitive layout of the Cebu Directories web site.</td>
+            <td style="vertical-align: top; padding: 10px 5px;">Compared to other online listing sites, Cebu Directories offers listing and advertising
+        packages at  very affordable rates.</td>
+            <td style="vertical-align: top; padding: 10px 5px;">Let Cebu Directories work its  magic to help you generate more traffic to your web site,
+        thereby improving  your search ranking in your specific business industry.</td>
+            <td style="vertical-align: top; padding: 10px 5px;">When looking up for a Cebu directory online, Cebu Directories is the top ranked Cebu listing website.</td>
+        </tr>
+        </tbody>
+        </table>        
         
-        <h3>Get Optimization Services</h3>
-        <p>
-        Depending on the business directory or directories you subscribe to, you may be able to get optimization 
-        services. This means that your listing will be enhanced to contain specific keywords that draw better search
-        engine rankings.
-        </p>
-        
-        <h3>Good Search Engine Ranking</h3>
-        <p>
-        Good search engine rankings ensure your company will have increased visibility and traffic. Rank is 
-        determined by the number of inbound links to a site. An online business directory lets business owners 
-        get these links. The more business directories your business is submitted to, the more inbound links it has. 
-        This increases page rankings.
-        </p>
-        
-        <h2>We Rank Top in Search Engines</h2>
+        <h2>We are 1st in Cebu Directory ranking</h2>
         
         <blockquote style="text-align:center;">
-        	We ranked <b>#1</b> in Google! Search using the keyword <b>"cebu directories"</b><br />
-            We ranked <b>#1</b> in Yahoo! Search using the keyword <b>"cebu directories"</b><br />
-            We ranked <b>#1</b> in Bing! Search using the keyword <b>"cebu directory"</b>
+        	Ranked <b>#1</b> in Google! Search using the keyword <b>"cebu directories"</b><br />
+            Ranked <b>#1</b> in Yahoo! Search using the keyword <b>"cebu directories"</b><br />
+            Ranked <b>#1</b> in Bing! Search using the keyword <b>"cebu directory"</b>
         </blockquote>
         
         <ul style="text-align:center;">
@@ -130,6 +116,10 @@
                 <li>Mobile Number</li>
                 <li>E-mail Address</li>
                 <li>Website</li>
+                <li>Facebook Page</li>
+                <li>Twitter Account</li>
+                <li>Skype ID</li>
+                <li>Yahoo Messenger Account</li>
             </ul>
           </td>
             <td>Requirements</td>
@@ -144,15 +134,16 @@
         Cebu Businesses, Establishments and Talents. We provide comprehensive 
         contents, resources for small, medium and large companies.
         </p>
-        
+       
+        <center> 
         <img src="<?php echo url::base(); ?>images/services/price-listing-basic.jpg" />&nbsp;&nbsp;&nbsp;
         <img src="<?php echo url::base(); ?>images/services/price-listing-premium.jpg" />
-        
+        </center>        
+
         <h2>Inquiry</h2>
         <p>
-        Cebu Directories is the next leading Cebu Directory site for 
-        Cebu Businesses, Establishments and Talents. We provide comprehensive 
-        contents, resources for small, medium and large companies.
+        Write to us at info@cebudirectories.com for any questions regarding our advertising 
+        and listing services. We will be happy to accommodate your inquiries.
         </p>
         
     </div>

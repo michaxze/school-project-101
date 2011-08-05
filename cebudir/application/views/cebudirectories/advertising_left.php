@@ -3,6 +3,6 @@
 <h5 style="padding-left: 0px;">Sponsored</h5>
 
 <div id="ads">
-  <a href="advertise"><img src="<?php echo url::base(); ?>images/advertising/ads-200-by-400.png" class="banner400" /></a>
+  <a href="http://ads.cebudirectories.com/advertisements/view/19" title="Phoebe's CupCakery"><img src="<?php echo url::base(); ?>images/advertising/phoebes-cupcakery2.jpg" class="banner400" /></a>
 
 </div>

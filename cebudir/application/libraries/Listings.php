@@ -42,7 +42,7 @@ class Listings_Core {
 
 		$this->db->offset($offset);
 		$this->db->where('cc.cat_id = cb.bus_cat_id');
-		$this->db->orderby('bus_date_added','DESC');
+		$this->db->orderby(NULL,'RAND()');
 		$result = $this->db->get();
 		
 		return $result->result_array(FALSE);

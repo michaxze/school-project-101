@@ -3,8 +3,10 @@
 
     <div id="cd-content">
     	<?php if(isset($status)) { ?>
-			<h1 style="text-align: center;">Thank You for sending Cebu Directories an inquiry! 
-				We will get back to you about your concern within 48-hours.</h1>
+			<h1 style="text-align: center;">
+You have successfully sent a message to info@cebudirectories.com. We will be sending you a feedback shortly.
+Thank you for taking interest in Cebu Directories.
+</h1>
                 
 		<?php } else { ?>
         

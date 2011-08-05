@@ -152,6 +152,33 @@ class Categories_Core {
 		return $cat;
 	}
 	
+	/**
+	 *
+	 */
+	public function get_category_by_url($cat_url)
+	{
+		// remove white spaces
+		$cat_url= trim($cat_url);
+		
+		$this->db->from($this->table_name);
+		$this->db->where('cat_url', $cat_url);
+		
+		$result = $this->db->get();
+		$cat = $result->result_array(FALSE);
+		
+		if(empty($result)) {
+			return FALSE;
+		}
+		
+		$child  = $this->get_child_categories($cat[0]['cat_id']);
+		
+		if(!empty($child)) {
+			$cat = array_merge($cat, $child);
+		}
+		
+		return $cat;
+	}
+	
     /**
      * Get specific Category
      * 
