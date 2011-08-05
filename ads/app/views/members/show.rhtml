@@ -1,0 +1,28 @@
+<h3><%= @member.name.titleize %></h3>
+
+<table cellspacing=4 cellpadding=5 border=0 style="border-collapse: collapse" width="800">
+  <tr>
+    <td width="120">Member Type : </td>    
+    <td><%= @member.member_type.name %></td>
+  </tr>
+  <tr>
+    <td width="80">Address : </td>    
+    <td><%= @member.address%></td>
+  </tr>
+  <tr>
+    <td>Email : </td>    
+    <td><%= @member.email %></td>
+  </tr>
+  <tr>
+    <td>Tel.no.: </td>    
+    <td><%= @member.telno%></td>
+  </tr>
+  <tr>
+    <td>Mobile no. : </td>    
+    <td><%= @member.mobileno%></td>
+  </tr>
+  <tr>
+    <td>Status : </td>    
+    <td><%= @member.status %></td>
+  </tr>
+</table>

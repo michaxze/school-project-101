@@ -1,0 +1,64 @@
+<h2>Add new business </h2>
+
+<%= error_messages_for :listing, :header_message => "Please Try Again!", :message => "We had some problems when adding the business:" %>
+<% form_for @listing, :url => listings_path,  :html => {:method => :post} do |f|%>
+
+<table>
+  <tr>
+    <td> Category </td>
+    <td> <%= f.select :category_id, @categories %></td>
+  </tr>
+  <tr>
+    <td> Name </td>
+    <td> <%= f.text_field :name, :style => "width: 400px" %></td>
+  </tr>
+  <tr>
+    <td> Address </td>
+    <td> <%= f.text_field :address, :style => "width: 400px"  %></td>
+  </tr>
+  <tr>
+    <td> Area </td>
+    <td> <%= f.select :location_id, @locations %></td>
+  </tr>
+  <tr>
+    <td> Phone number </td>
+    <td> <%= f.text_field :telno %></td>
+  </tr>
+  <tr>
+    <td> Email address </td>
+    <td> <%= f.text_field :email %></td>
+  </tr>
+  <tr height="60">
+    <td cols=2> <strong>For premium accounts only</strong> </td>
+  </tr>
+  <tr>
+    <td> Fax  number </td>
+    <td> <%= f.text_field :fax_no %></td>
+  </tr>
+  <tr>
+    <td> Mobile number </td>
+    <td> <%= f.text_field :mobile_no %></td>
+  </tr>
+  <tr>
+    <td> Website </td>
+    <td> <%= f.text_field :website %></td>
+  </tr>
+  <tr>
+    <td> Twitter url: </td>
+    <td> <%= f.text_field :twitter %></td>
+  </tr>
+  <tr>
+    <td> Facebook url: </td>
+    <td> <%= f.text_field :facebook %></td>
+  </tr>
+  <tr>
+    <td> Description: </td>
+    <td> <%= f.text_area :description, :style=> "width: 500px; height: 200px" %></td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> <%= submit_tag "Add to list" %></td>
+  </tr>
+
+</table>
+<% end %>
