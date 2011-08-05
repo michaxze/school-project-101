@@ -22,6 +22,7 @@ $config['newsletter'] = 'posts/newsletter';
 $config['travel']	 = 'home/travel';
 
 $config['search']	 = 'listings/search';
+$config['searchJSON']	 = 'listings/searchJSON';
 #$config['test']		 = 'home/test';
 #$config['setup'] 	 = 'setup/index';
 

@@ -1,1 +1,6 @@
 Posts:
+<% 
+  value = "on" 
+  ischecked = value == "on" ? true : false
+%>
+<%= check_box_tag "mybox", value, ischecked %>

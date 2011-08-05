@@ -7,7 +7,8 @@
 //    print_r($categories[4]['child']);
 	for($i=0; $i<count($categories); $i++) {
 		$c = $categories[$i];
-		$curl = str_replace(" ","-",strtolower($c['cat_name']));
+		//$curl = str_replace(" ","-",strtolower($c['cat_name']));
+		$curl = $c['cat_url'];
 
 		echo "<li>\n";
 		echo "<a class=\"head\" href=\"" . url::base() . "category/" . strtolower($curl) ."\">" . $c['cat_name'] . "</a>\n";

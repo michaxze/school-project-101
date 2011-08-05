@@ -38,7 +38,7 @@
     </div>
     <div class="clear"></div>
     <p>
-    Copyright &copy; 2007-2009 Cebu Directories Co. <br />All rights reserved. <a href="<?php echo url::base(); ?>privacy-policy" title="Privacy Policy">Privacy Policy</a> | <a href="<?php echo url::base(); ?>terms-of-use" title="Terms of Use">Terms of Use</a>
+    Copyright &copy; 2007-<?php echo date("Y"); ?> Cebu Directories Co. <br />All rights reserved. <a href="<?php echo url::base(); ?>privacy-policy" title="Privacy Policy">Privacy Policy</a> | <a href="<?php echo url::base(); ?>terms-of-use" title="Terms of Use">Terms of Use</a>
     </p>
 </div>
 <!-- End of Footer -->
@@ -48,24 +48,7 @@
 
 </body>
 </html>
-<script type="text/javascript">
-function bgChanger()
-{
-   var bgs = new Array(5);
-   bgs[0] = "xpat";
-   bgs[1] = "xpat2";
-   bgs[2] = "xpat3";
-   bgs[3] = "xpat4";
-   bgs[4] = "xpat5";
-   
-   var adjustedHigh = (parseFloat(bgs.length) - parseFloat(0)) + 1;
-   var numRand = Math.floor(Math.random()*adjustedHigh) + parseFloat(0);
-   var background = 'images/background/' + bgs[numRand] + '.png';
-   $("#cd-body").blur().css('background-image', 'url(' + background + ')');
-}
 
-setInterval("bgChanger()", 15000);
-</script>
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -76,3 +59,5 @@ var pageTracker = _gat._getTracker("UA-2373151-2");
 pageTracker._initData();
 pageTracker._trackPageview();
 </script>
+
+<script type='text/javascript'> var mp_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://'); document.write(unescape('%3Cscript src="' + mp_protocol + 'api.mixpanel.com/site_media/js/api/mixpanel.js" type="text/javascript"%3E%3C/script%3E')); </script> <script type='text/javascript'> try {  var mpmetrics = new MixpanelLib('49d695fcc3baa332f014ab8019523693'); } catch(err) { null_fn = function () {}; var mpmetrics = {  track: null_fn,  track_funnel: null_fn,  register: null_fn,  register_once: null_fn, register_funnel: null_fn }; } </script>

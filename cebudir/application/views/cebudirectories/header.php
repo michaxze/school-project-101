@@ -1,5 +1,5 @@
 <?php defined('SYSPATH') OR die('No direct access allowed.'); ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 
@@ -7,28 +7,49 @@
 	<meta name="Distribution" content="Global" />
 	<meta name="verify-v1" content="HPFKZjNDMP2X6Vq/j7socoRtksdjGX1tyvzKPo4Qbn0=" />
 	<meta name="Robots" content="index,follow" />
-	<meta name="Description" content="Cebu Directories is an online cebu directory listing that caters to the needs of Cebu businesses, organizations, and other entities who are seeking to publish information about themselves, their products, or their services on the World Wide Web." />
-	<meta name="Keywords" content="cebu directory, cebu directories, cebu business directory, directory" />
-
-	<link rel="stylesheet" href="<?php echo url::base(FALSE) ?>css/main.css" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="<?php echo url::base(FALSE) ?>css/ads.css" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="<?php echo url::base(FALSE) ?>css/thickbox.css" type="text/css" media="screen"/>
-
-    <link rel="shortcut icon" href="<?php echo url::base(FALSE) ?>cebudirectories.png">
+	
 	<?php
-	$bgs = array("xpat","xpat2","xpat3","xpat4","xpat5");
-	$bg = url::base(FALSE) . 'images/background/' . $bgs[rand(0, count($bgs) - 1)] . ".png";
+	$meta_description = isset($description) ? $description : 'Cebu Directories is an online cebu directory listing that caters to the needs of Cebu businesses, organizations, and other entities who are seeking to publish information about themselves, their products, or their services on the World Wide Web.';
+	$keywords = isset($keywords)
+			? $keywords
+			: 'cebu directory, cebu directories, cebu business directory, directory cebu, cebu philippines, cebu events, events cebu';
+	$mtitle = isset($ptitle) ? $ptitle : $title;
+	$murl   = "http://" . $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+	$mtype  = isset($ptype) ? $ptype : 'cebudirectories';
+	$mimage = isset($pimage) ? $pimage : 'http://cebudirectories.com/images/cebu-directories-fb_thumb.jpg';
 	?>
+	
+	<meta property="fb:app_id" content="196234737057814" />
+	<meta property="og:description" content="<?php echo $meta_description; ?>" />
+	<meta property="og:site_name" content="Cebu Directories Co." />
+	<meta property="og:title" content="<?php echo $mtitle; ?>" />
+	<meta property="og:url" content="<?php echo $murl; ?>" />
+	<meta property="og:type" content="<?php echo $mtype; ?>" />
+	<meta property="og:image" content="<?php echo $mimage; ?>" />
+	
+	<meta name="keyword" content="<?php echo $keywords; ?>" />
+	<meta name="author" content="Cebu Directories Co." />
+
+	<link rel="stylesheet" href="<?php echo url::base(FALSE) ?>css/main.css" type="text/css" media="screen"/>    	
+    	<link rel="stylesheet" href="<?php echo url::base(FALSE) ?>css/ads.css" type="text/css" media="screen"/>
+    	<link rel="stylesheet" href="<?php echo url::base(FALSE) ?>css/thickbox.css" type="text/css" media="screen"/>
+    	<link rel="stylesheet" href="<?php echo url::base(FALSE) ?>javascript/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen"/>
+
+    	<link rel="shortcut icon" href="<?php echo url::base(FALSE) ?>cebudirectories.png">
+
 	<style>
-	#cd-body { background: #FFF url(<?php echo $bg; ?>) top left repeat; }
+	#cd-body { background: #000 url(http://cebudirectories.com/images/background/rootcon-bg.jpg) top center no-repeat; }
 	</style>
 
-  	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.min.js"></script>
+  	<!-- <script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.min.js"></script> -->
+  	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
   	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.easing.js"></script>
   	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.accordion.js"></script>
   	<script type="text/javascript" src="<?php echo url::base(FALSE) ?>javascript/jquery.cycle.all.2.72.js"></script>
 
-    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA5siaJWihF_VAT8BT4vobXBStf0SYYC-7HG1ciYzoNQSEcsM8DBSWFpsuxHWROz5rLWyuPpByYFEckQ&sensor=true" type="text/javascript"></script>
+    	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA5siaJWihF_VAT8BT4vobXBStf0SYYC-7HG1ciYzoNQSEcsM8DBSWFpsuxHWROz5rLWyuPpByYFEckQ&sensor=true" type="text/javascript"></script>
 
 	<?php
 	## Append Dynamic Javascripts
@@ -57,17 +78,22 @@
 			event: 'mouseover',
 			autoheight: false,
 			animated: 'bounceslide'
-		});
-		
+		});		
 	});
 	
   $(document).ready(function() {
       $('.slideshow').cycle({
-        fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-        timeout: 8000
+        fx: 'scrollUp', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+        timeout: 10000
       });
+      $("#cd-body").click(function(e) {
+      	if($(this).attr('id') == e.target.id) {
+      	  window.location = "http://ads.cebudirectories.com/advertisements/view/14";
+      	}
+      });
+      	
   });
-	
+
 	</script>
 
 </head>

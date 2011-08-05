@@ -19,7 +19,7 @@ class Home_Controller extends Controller {
 		$this->cat   = new Categories_Core;
 				
 		$this->categories = $this->cat->get_categories();
-		$this->listings   = $this->lists->get_listings(5);
+		$this->listings   = $this->lists->get_listings(10);
 		
 		parent::__construct();
 	}
@@ -108,7 +108,9 @@ ACTIVESCRIPT;
 				$date = date("Y-m-d H:i:s");
 				
 				//echo $fname . ' -- ' . $email . ' -- ' . $url . ' -- ' . $message . ' -- ' . $type;
-								
+				$useragent = $_SERVER['HTTP_USER_AGENT'];
+                $ip = $_SERVER['REMOTE_ADDR'];
+
 				$db = new Database;
 				$result = $db->insert("cebu_contactus", 
 										array('name'=> $fname,
@@ -116,7 +118,9 @@ ACTIVESCRIPT;
 											  'report_type' => $type,
 											  'report_message' => $message,
 											  'report_email' => $email,
-											  'report_datesent' => $date));
+											  'report_datesent' => $date,
+											  'ip_address' => $ip,
+											  'user_agent' => $useragent));
 				print_r($result->insert_id());
 			
 				$to      = 'pwvillacorta@hostfortes.com';  // Address can also be array('to@example.com', 'Name')
@@ -157,13 +161,17 @@ ACTIVESCRIPT;
 	function contact_send()
     {
       $date = date("Y-m-d H:i:s");
+	  $useragent = $_SERVER['HTTP_USER_AGENT'];
+      $ip = $_SERVER['REMOTE_ADDR'];
       $db = new Database;
       $result = $db->insert("cebu_contactus", array('name'=> $_POST['fname'],
                                                     'address' => $_POST['faddress'],
                                                     'report_type' => $_POST['ftype'],
                                                     'report_message' => $_POST['fmessage'],
                                                     'report_email' => $_POST['femail'],
-                                                    'report_datesent' => $date ));
+                                                    'report_datesent' => $date,
+											  'ip_address' => $ip,
+											  'user_agent' => $useragent));
 
         $to = Kohana::config('cebudirectories.email_to');
         $from = Kohana::config('cebudirectories.email_from');

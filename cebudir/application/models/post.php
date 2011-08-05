@@ -37,6 +37,7 @@ class Post_Model extends ORM {
 						"url" => $post->post_name,
 						"date_created" => $post->date_created,
 						"user_id" => $post->user_id,
+						"primary_image" => $post->primary_image,
 						"status" => $post->status);
 		return $return;
 	}
