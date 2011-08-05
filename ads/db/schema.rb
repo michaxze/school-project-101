@@ -9,14 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 8) do
+ActiveRecord::Schema.define(:version => 20110804195350) do
 
   create_table "ads", :force => true do |t|
     t.string   "name",                           :null => false
     t.string   "image"
     t.string   "redirect_to",                    :null => false
     t.boolean  "is_active",   :default => false
-    t.integer  "total_views"
+    t.integer  "total_views", :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -26,6 +26,13 @@ ActiveRecord::Schema.define(:version => 8) do
     t.string   "ipaddress",  :null => false
     t.string   "hostname",   :null => false
     t.datetime "created_at", :null => false
+  end
+
+  create_table "categories", :force => true do |t|
+    t.string  "name"
+    t.string  "description"
+    t.string  "code"
+    t.integer "parent_id"
   end
 
   create_table "cebu_administrator", :primary_key => "admin_id", :force => true do |t|
@@ -57,6 +64,7 @@ ActiveRecord::Schema.define(:version => 8) do
   end
 
   create_table "cebu_business", :primary_key => "bus_id", :force => true do |t|
+    t.integer  "id",                                                           :null => false
     t.integer  "bus_mem_id",                                :default => 0,     :null => false
     t.integer  "bus_cat_id",                                :default => 0,     :null => false
     t.integer  "bus_temp_id",                               :default => 0,     :null => false
@@ -76,7 +84,10 @@ ActiveRecord::Schema.define(:version => 8) do
     t.datetime "bus_date_added"
     t.datetime "bus_date_lastviewed"
     t.boolean  "is_pro_account",                            :default => false, :null => false
-    t.integer  "status",              :limit => 1,          :default => 0,     :null => false
+    t.integer  "status",                                    :default => 0,     :null => false
+    t.string   "page_code",                                                    :null => false
+    t.string   "twitter"
+    t.string   "facebook"
   end
 
   add_index "cebu_business", ["bus_cat_id"], :name => "bus_cat_id"
@@ -118,6 +129,9 @@ ActiveRecord::Schema.define(:version => 8) do
     t.text     "report_message",                                 :null => false
     t.datetime "report_datesent",                                :null => false
     t.integer  "is_viewed",       :limit => 1,   :default => 0,  :null => false
+    t.string   "ip_address"
+    t.string   "user_agent"
+    t.text     "browser_info"
   end
 
   create_table "cebu_events", :primary_key => "cevents_id", :force => true do |t|
@@ -263,6 +277,63 @@ ActiveRecord::Schema.define(:version => 8) do
     t.string "name"
   end
 
+  create_table "listings", :force => true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.integer  "member_id"
+    t.integer  "category_id"
+    t.integer  "location_id"
+    t.string   "website"
+    t.string   "email"
+    t.string   "telno"
+    t.string   "mobile_no"
+    t.string   "fax_no"
+    t.string   "logo_url"
+    t.string   "page_url"
+    t.string   "description"
+    t.string   "tags"
+    t.integer  "views"
+    t.string   "listing_type", :default => "basic"
+    t.integer  "status"
+    t.string   "page_code"
+    t.string   "twitter"
+    t.string   "facebook"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "locations", :force => true do |t|
+    t.string "name"
+  end
+
+  create_table "member_types", :force => true do |t|
+    t.string "name"
+    t.string "description"
+    t.string "code"
+  end
+
+  create_table "members", :force => true do |t|
+    t.integer "member_type_id"
+    t.string  "name"
+    t.string  "address"
+    t.string  "email"
+    t.string  "telno"
+    t.string  "mobileno"
+    t.string  "password"
+    t.integer "status"
+    t.date    "last_login"
+  end
+
+  create_table "posts", :force => true do |t|
+    t.string   "type",         :limit => 25,         :null => false
+    t.text     "title",                              :null => false
+    t.text     "content",      :limit => 2147483647, :null => false
+    t.text     "post_name",                          :null => false
+    t.datetime "date_created",                       :null => false
+    t.integer  "user_id",                            :null => false
+    t.string   "status",       :limit => 0,          :null => false
+  end
+
   create_table "products", :force => true do |t|
     t.string   "itemname",         :limit => 50,  :default => "", :null => false
     t.string   "picture",          :limit => 100, :default => "", :null => false
@@ -283,10 +354,11 @@ ActiveRecord::Schema.define(:version => 8) do
     t.string   "name"
     t.string   "position"
     t.string   "company_name"
-    t.string   "email",                                 :null => false
-    t.boolean  "prospect_status_id", :default => false
-    t.datetime "created_at",                            :null => false
+    t.string   "email",                             :null => false
+    t.integer  "prospect_status_id", :default => 1
+    t.datetime "created_at",                        :null => false
     t.datetime "updated_at"
+    t.datetime "deleted_at"
   end
 
   add_index "prospects", ["email"], :name => "email"
@@ -307,11 +379,11 @@ ActiveRecord::Schema.define(:version => 8) do
     t.string   "yahoo_id",        :null => false
     t.string   "skype_id",        :null => false
     t.string   "status",          :null => false
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
     t.string   "billing_type",    :null => false
     t.string   "billing_name",    :null => false
     t.string   "billing_address", :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "users", :force => true do |t|
@@ -322,6 +394,10 @@ ActiveRecord::Schema.define(:version => 8) do
     t.boolean  "verified",                    :default => true, :null => false
     t.datetime "created_at",                                    :null => false
     t.datetime "updated_at"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+    t.text     "auth_params",                                   :null => false
   end
 
   add_index "users", ["login"], :name => "login"

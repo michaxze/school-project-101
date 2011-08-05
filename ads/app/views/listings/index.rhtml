@@ -1,1 +1,35 @@
-Businesses:
+<h3>Businesses: <%= link_to "Add new", new_listing_path%></h3>
+
+<div style="margin-bottom:30px">
+<%= will_paginate(@listings)%>
+</div>
+
+<table cellspacing=4 cellpadding=4 border=1 style="border-collapse: collapse" width="1000">
+<% @listings.each do |l| %>
+  <%
+  premium_color = l.listing_type == "premium" ? "bgcolor=\"#FFFF99\"" : ""
+  %>
+  <tr <%= premium_color %>>
+    <td>
+      <%= link_to l.name, listing_path(l)%>
+      <span style="color: gray; font-size: 11px">(<%= l.views%> views)</span>
+      <br/>
+      <span style="font-size: 11px">
+        <%= l.address %>
+        <%= l.location.name %>
+      </span>
+    </td>
+    <td><%= l.email %></td>    
+    <td><%= link_to l.member.name, member_path(l.member) %></td>
+    <td><%= l.created_at.strftime("%B %d, %Y") %></td>
+    <td><%= link_to "Edit", edit_listing_path(l) %>
+      <%= link_to "Delete", listing_path(l), :confirm => "Are you sure you want to delete this?", :method => :delete %>
+    </td>
+  </tr>
+<% end %>
+
+</table>
+<br/>
+<div>
+Total: <%= Listing.count(:conditions => "status='1'") %>
+</div>

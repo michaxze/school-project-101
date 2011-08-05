@@ -9,9 +9,14 @@ class EmailsController < ApplicationController
   
   def create
     begin
-      email = EmailAddress.new
-      email.email = params[:email]
-      email.save
+      params[:email].split(",").each do |email|
+        existing_email = EmailAddress.find_by_email(email) rescue nil
+        if existing_email.nil?
+          e = EmailAddress.new
+          e.email = email
+          e.save
+        end
+      end
       index
       render :action => 'index' and return
     rescue StandardError => error

@@ -1,9 +1,44 @@
 class ListingsController < ApplicationController
   layout 'global'
   before_filter :authorize
+  before_filter :categories_for_select, :only => [:new, :create]
+  before_filter :locations_for_select, :only => [:new, :create]
 
+  def show
+    @listing = Listing.find(params[:id])
+  end
+  
   def index
-    
+    @listings = Listing.get_all(params[:page])
+  end
+  
+  def create
+    @listing = Listing.new(params[:listing])
+    begin
+      default_user = Member.find_by_email("pwvillacorta@gmail.com")
+      @listing.member_id = default_user.id
+      @listing.status=1
+      @listing.save!
+      flash[:notice] = "Business added successfully"
+      redirect_to listings_path
+    rescue Exception => e
+      render :new
+    end
+  end
+
+  def approve
+    s = SubmittedBusiness.find(params[:id])
+    redirect_to signups_listings_path if s.nil?
+    if approve_new_listing(s, params[:t])
+      s.update_attribute(:status, "accepted")
+      render :text => "ok"
+    else
+      render :text => "no"
+    end
+  end
+  
+  def new
+    @listing = Listing.new
   end
   
   def update_status
@@ -29,6 +64,56 @@ class ListingsController < ApplicationController
   end
   
   def signups
-    
+    @listings = SubmittedBusiness.find(:all, :conditions => "status='pending'", :order => "created_at DESC")
   end
+
+  def newlisting
+    @listing = SubmittedBusiness.find(params[:id])
+  end
+  
+  private
+
+  def approve_new_listing(s, type)
+    default_user = Member.find_by_email("pwvillacorta@gmail.com")
+    
+    b = Listing.new
+    b.name = s.name
+    b.address = s.address
+    b.location_id = s.location_id
+    b.member_id = default_user.id
+    b.category_id = s.category_id
+    b.website = s.website
+    b.email = s.email_address
+    b.telno = s.telno
+    b.mobile_no = s.mobileno
+    b.fax_no = s.faxno
+    b.description = s.description
+    b.status = 1
+    b.page_code = s.name.downcase.split(" ").join("-")
+    b.created_at = s.created_at
+    b.listing_type = (type == "p") ? "premium" : "basic"
+
+    if b.save
+      true
+    else
+      false
+    end
+  end
+
+  def categories_for_select
+    cats = Category.find(:all, :order => "name asc")
+    @categories = []
+    cats.each do |c|
+      @categories << [c.name, c.id]
+    end
+  end
+
+  def locations_for_select
+    locations = Location.find(:all, :order => "name asc")
+    @locations = []
+    locations.each do |l|
+      @locations << [l.name, l.id]
+    end
+  end
+
 end

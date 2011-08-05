@@ -62,3 +62,37 @@ ul li {
 #notice_wrapper {
   color: #019f4a;
 }
+
+
+
+#signups div .bus_info {
+  font-weight: bold;
+  position: relative;
+  float: left;
+}
+
+#signups div .approved {
+  font-weight: bold;
+  position: relative;
+  float: left;
+}
+
+#signups div .delete {
+  font-weight: bold;
+  position: relative;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+#errorExplanation h2 {
+  font-size: 14px;
+  font-weight: bold;
+}
+#errorExplanation ul {
+  list-style-type: none;
+}
+#errorExplanation ul li {
+  color: red;
+}

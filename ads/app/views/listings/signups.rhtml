@@ -1,1 +1,22 @@
-New Sign-ups
+<h3>New Sign-ups</h3>
+
+<table cellspacing=4 cellpadding=4 border=1 style="border-collapse: collapse" width="1000">
+<% @listings.each do |l| %>
+  <tr>
+    <td><%= link_to l.name, newlisting_listings_path(:id => l.id)%><br/>
+      <span style="font-size: 11px"><%= l.address %>
+        <%= l.location.name %>
+      </span>
+    </td>
+    <td><%= l.category.name %></td>    
+    <td><%= l.email_address %></td>    
+    <td><%= l.created_at.strftime("%B %d, %Y") %></td>
+    <td>
+      <%= link_to "Delete", deletenewlisting_listings_path(:id => l.id), :confirm => "Are you sure you want to delete this?", :method => :delete %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br/>
+<div>Total: <%= SubmittedBusiness.count(:conditions => "status='pending'") %> </div>
