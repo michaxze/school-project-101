@@ -1,4 +1,12 @@
 namespace :setup do 
+  
+  task :update_page_code => :environment do
+    Listing.find(:all).each do |l|
+      page_code = CGI.escape(l.name.to_s + "-" + l.id.to_s)
+      l.update_attribute(:page_code, page_code)
+    end
+  end
+  
   task :update_data => :environment do
     email_types = [ 
               [ "newsletter", "Newsletter mail"],
