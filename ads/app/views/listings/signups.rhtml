@@ -8,8 +8,8 @@
         <%= l.location.name %>
       </span>
     </td>
-    <td><%= l.category.name %></td>    
-    <td><%= l.email_address %></td>    
+    <td><%= l.category.name rescue '' %></td>    
+    <td><%= l.email_address rescue '' %></td>    
     <td><%= l.created_at.strftime("%B %d, %Y") %></td>
     <td>
       <%= link_to "Delete", deletenewlisting_listings_path(:id => l.id), :confirm => "Are you sure you want to delete this?", :method => :delete %>
