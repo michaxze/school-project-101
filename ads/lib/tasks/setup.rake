@@ -91,7 +91,7 @@ namespace :setup do
       b.listing_type = "basic"
       b.status = cb.status
       b.page_code = cb.page_code
-      b.created_at = cb.bus_date_added.to_date
+      b.created_at = cb.bus_date_added.to_date unless cb.bus_date_added.nil?
       b.save
     end
   end
