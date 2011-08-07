@@ -1,11 +1,15 @@
 <h3><%= @listing.name.titleize %></h3>
 
 <% if @listing.listing_type == "premium"%>
-<div style="background-color: #FFFF99; width: 340px; line-height: 50px; text-align: center; float: left; font-size: 18px; color: #99CCFF">
+<div style="background-color: #FFFF99; width: 340px; line-height: 50px; text-align: center; font-size: 18px; color: #99CCFF; margin-left: 145px">
 Premium listing
 </div>
 <% end %>
 <table cellspacing=4 cellpadding=5 border=0 style="border-collapse: collapse" width="800">
+  <tr>
+    <td width="80">Page code : </td>    
+    <td><%= @listing.page_code %></td>
+  </tr>
   <tr>
     <td width="80">Creator : </td>    
     <td><%= link_to @listing.member.name, member_path(@listing.member)%></td>

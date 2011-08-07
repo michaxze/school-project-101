@@ -19,6 +19,9 @@ class ListingsController < ApplicationController
       @listing.member_id = default_user.id
       @listing.status=1
       @listing.save!
+
+      page_code = CGI.escape(@listing.name.to_s + "-" + @listing.id.to_s)
+      @listing.update_attribute(:page_code, page_code)
       flash[:notice] = "Business added successfully"
       redirect_to listings_path
     rescue Exception => e

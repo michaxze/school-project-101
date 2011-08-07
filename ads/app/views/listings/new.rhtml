@@ -56,6 +56,13 @@
     <td> <%= f.text_area :description, :style=> "width: 500px; height: 200px" %></td>
   </tr>
   <tr>
+    <td> Listing type: </td>
+    <td> <%= f.radio_button :listing_type, "premium" %> Premium
+      <%= f.radio_button :listing_type, "basic" %> Basic
+      </td>
+  </tr>
+
+  <tr>
     <td> </td>
     <td> <%= submit_tag "Add to list" %></td>
   </tr>
