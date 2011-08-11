@@ -2,7 +2,7 @@ class Listing < ActiveRecord::Base
   belongs_to :location
   belongs_to :member
 
-  validates_uniqueness_of :name,
+  validates_uniqueness_of :name
   validates_presence_of :name, :address, :member_id, :category_id, :location_id
 
   def self.get_all(page)
