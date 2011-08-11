@@ -17,6 +17,14 @@ namespace :setup do
     new_categories << ['Electronics', 'local-business']
     new_categories << ['Transportation', 'community']
     new_categories << ['Coffee Shop', 'food-bar-and-cafe']
+    new_categories.each do |c|
+      cat = Category.find_by_name(c.first) || Category.new
+      cat.name = c.first
+      cat.description = c.first
+      cat.code = c.first.downcase.gsub(" ", "-")
+      cat.parent_id = Category.find_by_code(c[1]).id rescue nil
+      cat.save
+    end
   end
   
   task :update_page_code => :environment do
