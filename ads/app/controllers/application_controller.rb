@@ -9,15 +9,6 @@ class ApplicationController < ActionController::Base
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
 
-  def user_required(e)
-    if request.xhr?
-      render_403
-    else
-      flash[:error] = 'Log a.u.b. in om verder te gaan'
-      redirect_to(:controller => 'session')
-    end
-  end
-
   def current_user
     @current_user ||= User.find_by_login(session[:user])
   end

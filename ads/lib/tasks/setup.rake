@@ -1,8 +1,29 @@
 namespace :setup do 
+
+  task :update_categories => :environment do
+    new_categories = []
+    new_categories << ['Taxi Service', 'government']
+    new_categories << ['Heritage', 'community']
+    new_categories << ['Bank', 'financial']
+    new_categories << ['ATM', 'financial']
+    new_categories << ['Gasoline Station', 'community']
+    new_categories << ['Fashion and Accessory', 'local-business']
+    new_categories << ['Pizza Parlor', 'food-bar-and-cafe']
+    new_categories << ['Call Center', 'local-business']
+    new_categories << ['Computer Shop', 'local-business']
+    new_categories << ['Event Services', 'local-business']
+    new_categories << ['Advertising', 'local-business']
+    new_categories << ['Prints', 'local-business']
+    new_categories << ['Electronics', 'local-business']
+    new_categories << ['Transportation', 'community']
+    new_categories << ['Coffee Shop', 'food-bar-and-cafe']
+  end
   
   task :update_page_code => :environment do
     Listing.find(:all).each do |l|
-      page_code = CGI.escape(l.name.to_s + "-" + l.id.to_s)
+      page_code = CGI.escape(l.name.to_s)
+      page_code.gsub("+", "-")
+      page_code = page_code + "-" + l.id.to_s
       l.update_attribute(:page_code, page_code)
     end
   end

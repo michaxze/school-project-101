@@ -17,7 +17,7 @@ ActionController::Routing::Routes.draw do |map|
 
   # Sample resource route with sub-resources:
   #   map.resources :products, :has_many => [ :comments, :sales ], :has_one => :seller
-  
+
   # Sample resource route with more complex sub-resources
   #   map.resources :products do |products|
   #     products.resources :comments
@@ -36,9 +36,10 @@ ActionController::Routing::Routes.draw do |map|
   # See how all your routes lay out with "rake routes"
 
   map.resources :members, :controller => 'members'
+  map.resources :users, :controller => 'users'
   map.resources :messages, :controller => 'messages'  
   map.resources :listings, :controller => 'listings',
-                           :collection => { :signups => :get, :newlisting => :get, :deletenewlisting => :get, :approve => :get}
+                           :collection => { :signups => :get, :newlisting => :get, :deletenewlisting => :get, :approve => :get, :your => :get}
   map.resources :posts, :controller => 'posts'
   
   map.resources :advertisements, :controller => 'advertisements',

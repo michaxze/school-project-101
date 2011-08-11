@@ -14,8 +14,14 @@
   <%= content_tag("li", (link_to 'Business Listing', listings_path ) )%>
   <%= content_tag("li", (link_to 'Posts', posts_path ) )%>
   <%= content_tag("li", (link_to 'Prospects', prospects_path ) )%>
+  <%= content_tag("li", (link_to 'Users', users_path ) )%>
   <%= content_tag("li", (link_to 'Quit', logout_logins_path ) )%>
 </ul>
+
+  <% elsif current_user.permissions == 3 %>
+  <%= content_tag("li", (link_to 'Business Listing', listings_path ) )%>
+  <%= content_tag("li", (link_to 'Your Listing', your_listings_path ) )%>
+  <%= content_tag("li", (link_to 'Quit', logout_logins_path ) )%>  
 
   <% else %>
   <ul>

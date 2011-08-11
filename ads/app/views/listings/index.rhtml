@@ -22,8 +22,13 @@
     <td><%= l.email %></td>    
     <td><%= link_to l.member.name, member_path(l.member) %></td>
     <td><%= l.created_at.strftime("%B %d, %Y") %></td>
-    <td><%= link_to "Edit", edit_listing_path(l) %>
+    <td>
+      <% if current_user.permissions == 1 || current_user.login == l.created_by%>
+      <%= link_to "Edit", edit_listing_path(l) %>
+      <% end %>
+      <% if current_user.permissions == 1%>
       <%= link_to "Delete", listing_path(l), :confirm => "Are you sure you want to delete this?", :method => :delete %>
+      <% end %>
     </td>
   </tr>
 <% end %>

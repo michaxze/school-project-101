@@ -19,7 +19,7 @@ class LoginsController < ApplicationController
       if user.permissions == 1
         redirect_to emails_path
       else
-        redirect_to prospects_path
+        redirect_to listings_path
       end
     else
       flash[:error] = "Incorrect username or password"

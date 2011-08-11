@@ -1,23 +1,39 @@
 class ListingsController < ApplicationController
   layout 'global'
   before_filter :authorize
-  before_filter :categories_for_select, :only => [:new, :create]
-  before_filter :locations_for_select, :only => [:new, :create]
+  before_filter :categories_for_select, :only => [:new, :create, :edit]
+  before_filter :locations_for_select, :only => [:new, :create, :edit]
 
   def show
     @listing = Listing.find(params[:id])
   end
   
+  def your
+    @listings = Listing.my_listing(current_user, params[:page])
+  end
+
   def index
     @listings = Listing.get_all(params[:page])
   end
   
+  def edit
+    @listing = Listing.find(params[:id])
+  end
+
+  def update
+    @listing = Listing.find(params[:id])
+    @listing.update_attributes(params[:listing])
+    flash[:notice]  = "Listing updated."
+    redirect_to listings_path
+  end
+
   def create
     @listing = Listing.new(params[:listing])
     begin
       default_user = Member.find_by_email("pwvillacorta@gmail.com")
       @listing.member_id = default_user.id
       @listing.status=1
+      @listing.created_by = current_user.login
       @listing.save!
 
       page_code = CGI.escape(@listing.name.to_s + "-" + @listing.id.to_s)
@@ -44,7 +60,7 @@ class ListingsController < ApplicationController
     @listing = Listing.new
   end
   
-  def update_status
+  def update_status_fordeletion
     members = CebuMember.find(:all)
     members.each do |member|
       if member.mem_reg_status.to_i == 1
@@ -57,7 +73,7 @@ class ListingsController < ApplicationController
     end
   end
   
-  def www
+  def www_fordeletion
     businesses = CebuBusiness.find(:all)
     businesses.each do |bus|
       www = bus.bus_website.gsub("http://", "")
@@ -66,11 +82,11 @@ class ListingsController < ApplicationController
     end
   end
   
-  def signups
+  def signups_fordeletion
     @listings = SubmittedBusiness.find(:all, :conditions => "status='pending'", :order => "created_at DESC")
   end
 
-  def newlisting
+  def newlisting_fordeletion
     @listing = SubmittedBusiness.find(params[:id])
   end
   
