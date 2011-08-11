@@ -1,0 +1,10 @@
+<%= link_to "Add new", new_user_path%>
+<table cellpadding=5 cellspacing=5>
+<% @users.each do |u|%>
+<tr>
+  <td> <%= u.name rescue ''%></td>
+  <td><%= u.login %> </td>
+  <td> <%= link_to "Edit", edit_user_path(u)%> </td>
+</tr>
+<% end %>
+</table>

@@ -1,0 +1,28 @@
+<% form_for @user do |f|%>
+  <%= f.error_messages %>
+<table cellpadding=5 cellspacing=5>
+  <tr>
+    <td> Name:</td>
+    <td><%= f.text_field :name %></td>
+  </tr>
+
+<tr>
+  <td> Username:</td>
+  <td><%= f.text_field :login %></td>
+</tr>
+<tr>
+  <td> Password:</td>
+  <td><%= password_field :password, nil %></td>
+</tr>
+<tr>
+  <td> User type:</td>
+  <td><%= select_tag "user[permissions]", options_for_select([1,2,3], @user.permissions) %></td>
+</tr>
+
+<tr>
+  <td> </td>
+  <td><%= submit_tag "Submit" %> or <%= link_to "Cancel", users_path%></td>
+</tr>
+
+</table>
+<% end %>
