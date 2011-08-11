@@ -82,7 +82,7 @@ class ListingsController < ApplicationController
     end
   end
   
-  def signups_fordeletion
+  def signups
     @listings = SubmittedBusiness.find(:all, :conditions => "status='pending'", :order => "created_at DESC")
   end
 
