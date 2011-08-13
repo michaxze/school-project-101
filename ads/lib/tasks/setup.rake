@@ -29,9 +29,10 @@ namespace :setup do
   
   task :update_page_code => :environment do
     Listing.find(:all).each do |l|
-      page_code = CGI.escape(l.name.to_s)
-      page_code.gsub("+", "-")
-      page_code = page_code + "-" + l.id.to_s
+      #TODO 
+      # remove symbols ' / \ " .,# * & 
+      #page_code = CGI.escape(l.name.to_s)
+      page_code = l.name.downcase.gsub(" ", "-")
       l.update_attribute(:page_code, page_code)
     end
   end

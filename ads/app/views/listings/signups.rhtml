@@ -1,9 +1,13 @@
 <h3>New Sign-ups</h3>
 
+<div style="margin-bottom:30px">
+<%= will_paginate(@listings)%>
+</div>
+
 <table cellspacing=4 cellpadding=4 border=1 style="border-collapse: collapse" width="1000">
 <% @listings.each do |l| %>
   <tr>
-    <td><%= link_to l.name, newlisting_listings_path(:id => l.id)%><br/>
+    <td><%= link_to l.name, listing_path(l)%><br/>
       <span style="font-size: 11px"><%= l.address %>
         <%= l.location.name %>
       </span>
@@ -19,4 +23,7 @@
 </table>
 
 <br/>
-<div>Total: <%= SubmittedBusiness.count(:conditions => "status='pending'") %> </div>
+<div style="margin-bottom:30px">
+<%= will_paginate(@listings)%>
+</div>
+

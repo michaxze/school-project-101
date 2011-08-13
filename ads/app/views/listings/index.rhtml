@@ -20,7 +20,7 @@
       </span>
     </td>
     <td><%= l.email %></td>    
-    <td><%= link_to l.member.name, member_path(l.member) %></td>
+    <td><%= link_to l.member.name, member_path(l.member)  rescue 'none'%></td>
     <td><%= l.created_at.strftime("%B %d, %Y") %></td>
     <td>
       <% if current_user.permissions == 1 || current_user.login == l.created_by%>

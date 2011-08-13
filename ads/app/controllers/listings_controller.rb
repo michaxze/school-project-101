@@ -46,14 +46,13 @@ class ListingsController < ApplicationController
   end
 
   def approve
-    s = SubmittedBusiness.find(params[:id])
-    redirect_to signups_listings_path if s.nil?
-    if approve_new_listing(s, params[:t])
-      s.update_attribute(:status, "accepted")
-      render :text => "ok"
-    else
-      render :text => "no"
-    end
+    l = Listing.find(params[:id])
+    redirect_to signups_listings_path if l.nil?
+    l.listing_type = (params[:t] == "p") ? "premium" : "basic"
+    l.status = 1
+    l.save
+    l.member.update_attribute(:status, 1)
+    render :text => "ok"
   end
   
   def new
@@ -83,7 +82,7 @@ class ListingsController < ApplicationController
   end
   
   def signups
-    @listings = SubmittedBusiness.find(:all, :conditions => "status='pending'", :order => "created_at DESC")
+    @listings = Listing.get_unapproved(params[:page])
   end
 
   def newlisting_fordeletion

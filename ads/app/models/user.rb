@@ -4,8 +4,6 @@ class User < ActiveRecord::Base
   
   def before_save
     str = self.password_hash.first.blank? ? "d3f4ult101" : self.password_hash.first
-    puts "000000000000000000000000000000000000"
-    puts str.inspect
     self.password_hash = Digest::SHA256.hexdigest(str)
   end
 end

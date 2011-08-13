@@ -1,5 +1,10 @@
 <h3><%= @listing.name.titleize %></h3>
 
+
+<%= link_to "Approve as premium", "#", :id => "approved_premium"%> &nbsp; | &nbsp; <%= link_to "Approve as basic", "#", :id => "approved_basic"%>
+<%= image_tag("loader.gif", :id => "loader", :style => "display: none")%>
+
+
 <% if @listing.listing_type == "premium"%>
 <div style="background-color: #FFFF99; width: 340px; line-height: 50px; text-align: center; font-size: 18px; color: #99CCFF; margin-left: 145px">
 Premium listing
@@ -51,3 +56,35 @@ Premium listing
     <td><%= @listing.description%></td>
   </tr>
 </table>
+
+<script>
+  $("#approved_basic").click(function(){
+     $("#loader").show();
+     $.ajax({
+     url: "/listings/approve?id=<%=@listing.id%>&t=b",
+     context: document.body,
+     success: function(){
+       $("#loader").hide();
+       location.href="<%= signups_listings_url %>"
+     }
+    });
+  });
+
+  $("#approved_premium").click(function(){
+     $("#loader").show();
+     $.ajax({
+     url: "/listings/approve?id=<%=@listing.id%>&t=p",
+     context: document.body,
+     success: function(data){
+       if (data == "ok") {
+         $("#loader").hide();
+         location.href="<%= signups_listings_url %>"
+       }else {
+         alert('An error occured while approving it.')
+       }
+     }
+    }); 
+  });
+
+
+</script>

@@ -10,8 +10,8 @@
   <%= content_tag("li", (link_to 'Advertisements', advertisements_path ) )%>
   <%= content_tag("li", (link_to 'Ads Views', views_advertisements_path ) )%>
   <%= content_tag("li", (link_to 'Messages', messages_path ) )%>
-  <%= content_tag("li", (link_to 'New Signups', signups_listings_path ) )%>
-  <%= content_tag("li", (link_to 'Business Listing', listings_path ) )%>
+  <%= content_tag("li", (link_to "New Signups (#{@new_listings.to_s})", signups_listings_path ) )%>
+  <%= content_tag("li", (link_to "Business Listing (#{@all_listings.to_s})", listings_path ) )%>
   <%= content_tag("li", (link_to 'Posts', posts_path ) )%>
   <%= content_tag("li", (link_to 'Prospects', prospects_path ) )%>
   <%= content_tag("li", (link_to 'Users', users_path ) )%>

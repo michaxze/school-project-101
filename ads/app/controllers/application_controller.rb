@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
   include AuthenticateHelper
-  
+  before_filter :show_counters
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
 
@@ -18,5 +18,10 @@ class ApplicationController < ActionController::Base
     session[:user] != nil
   end
   helper_method :logged_in?
+  
+  def show_counters
+    @all_listings = Listing.count(:conditions => ["status=1"])
+    @new_listings = Listing.count(:conditions => ["status IS NULL"])
+  end
 
 end
