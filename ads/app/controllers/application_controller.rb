@@ -24,4 +24,9 @@ class ApplicationController < ActionController::Base
     @new_listings = Listing.count(:conditions => ["status IS NULL"])
   end
 
+  def create_page_code(name)
+    name.gsub!(/(['",;&^$%@!+:])/, '')
+    name.gsub!(" ", "-")
+  end
+
 end

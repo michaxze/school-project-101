@@ -36,7 +36,7 @@ class ListingsController < ApplicationController
       @listing.created_by = current_user.login
       @listing.save!
 
-      page_code = CGI.escape(@listing.name.to_s + "-" + @listing.id.to_s)
+      page_code = create_page_code(@listing.name)
       @listing.update_attribute(:page_code, page_code)
       flash[:notice] = "Business added successfully"
       redirect_to listings_path
